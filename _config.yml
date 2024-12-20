@@ -28,9 +28,19 @@ url: "https://fabianvdw.github.io" # the base hostname & protocol for your site,
 github_username:  fabianvdW
 
 # Build settings
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Your Name"
+      mathjax: true  # Enable MathJax by default for posts
 
 # Exclude from processing.
 # The following items will not be processed, by default.
