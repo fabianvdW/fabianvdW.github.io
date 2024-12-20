@@ -73,9 +73,16 @@ Der **erwartete Rundengewinn** gegeben einer Bombe im Team beträgt **70.5(\*)/9
 
 Das entsteht, wie wir alle wissen, aufgrund der folgenden Faktoren: 
 
-- Möglichkeit, GT's zu zerstören: **GT Success Rate**, wenn Gegnerteam Bombe hat, sinkt auf  **41.8% (\*)/38.2% (\*\*)** [von den Default  **61.8%(\*)/59.2%(\*\*)**]
-- Möglichkeit, T's zu zerstören: **T Success Rate**, wenn Gegnerteam Bombe hat, sinkt auf  **51.4% (\*)/47.3% (\*\*)** [von den Default **73.4%(\*)/72.2%(\*\*)**]
-- Möglichkeit, selbst T anzusagen: Die **T Call Rate** bei eigener Bombe steigt auf **23.7%(\*)/21.6% (\*\*)** [von den Default **13.9%(\*)/13.0%(\*\*)**]. Die **T Success Rate** bei eigener Bombe steigt auf  **79.3% (\*) / 79.4% (\*\*)** [von den Default **73.4%(\*)/72.2%(\*\*)**]
+| Faktor | Metrik | Wahrscheinlichkeit gegeben Bombe im Gegnerteam | Wahrscheinlichkeit (normal) auf \*/\**| 
+|-----------|--------------------------------|-----------------------------------|-------------------------------|
+| GT zerstören | **GT Success Rate** | **41.8% (\*)/38.2% (\*\*)**| **61.8%(\*)/59.2%(\*\*)**|
+| T zerstören | **T Success Rate** |  **51.4% (\*)/47.3% (\*\*)** |**73.4%(\*)/72.2%(\*\*)**|
+
+| Faktor | Metrik | Wahrscheinlichkeit gegeben Bombe auf eigener Hand | Wahrscheinlichkeit (normal) auf \*/\**| 
+|-----------|--------------------------------|-----------------------------------|-------------------------------|
+| T ansagen | **T Call Rate** | **23.7%(\*)/21.6% (\*\*)** | **13.9%(\*)/13.0%(\*\*)**|
+| T ansagen und gewinnen | **T Success Rate** |  **79.3% (\*) / 79.4% (\*\*)**  |**73.4%(\*)/72.2%(\*\*)**|
+
 
 Das liefert im Grunde auch schon die Begründung, warum der erwartete Rundengewinn im gefilterten Datensatz mit rund **20** Punkte höher ist, als bei dem vollständigen: Dort werden einfach mehr Ansagen gemacht.
 
