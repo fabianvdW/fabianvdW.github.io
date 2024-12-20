@@ -83,6 +83,8 @@ eine ganz andere Tichu "Meta" vorherrschend gewesen zu sein. Wir werden später,
 ob das so sinnvoll ist, oder ob eine seltenere Ansage von großen Tichu's zu mehr Erfolg führen kann.
 
 
+Zunächst aber beschäftigen wir uns mit den konzeptuell leichteren Thema der Bomben. Danach sind wir aufgewärmt für die GT Analyse.
+
 ---
 
 *Nächster Post: [Tichu & Statistik Pt.1: Bomben]({% post_url 2024-12-20-tichu-und-bomben %})*

@@ -34,7 +34,7 @@ Diese Wahrscheinlichkeit beträgt **21.7%(\*)/21.9%(\*\*)**.
 Natürlich hängt diese Wahrscheinlichkeit auch von meinen eigenen Karten ab - wie im Tichu.One Forum auch schon richtigerweise gemutmaßt, ist die Wahrscheinlichkeit einer Bombe beim Gegner etwas höher,
 wenn ich selbst eine besitze: **25.7%(\* und \*\*)**. 
 
-Dooferweise steigt die Wahrscheinlichkeit einer Bombe beim Gegner aber auch bei einer Ansage meinerseits: **22.7%(\*)/23.0%(\*)**.
+Dooferweise steigt die Wahrscheinlichkeit einer Bombe beim Gegner aber auch bei einer Ansage(sowohl T als auch GT) meinerseits: **22.7%(\*)/23.0%(\*)**.
 
 Das kann tatsächlich aber durch Korrelation mit den Bomben die man selbst hat erklärt werden -
 die Wahrscheinlichkeit einer **Bombe beim Gegner gegeben einer Ansage meinerseits, und keiner Bombe meinerseits**
@@ -55,9 +55,9 @@ Sind sie sehr gut, kann man ggfs.  ein Kontertichu ansagen. Dabei ist folgendes 
 
 | Situation | Wahrscheinlichkeit Standard (*) | Wahrscheinlichkeit Gefiltert (**) |
 |-----------|--------------------------------|-----------------------------------|
-| Wahrscheinlichkeit, dass Gegner Bombe hat, bei T-Ansage | 28.4% | 28.5% |
-| Wahrscheinilchkeit, dass Gegner Bombe hat, bei GT-Ansage | 21.7% | 21.1% |
-| Wahrscheinlichkeit, dass Gegner Bombe hat, bei T-Ansage mit ≤2 Highcards\*\*\* | 40.1% | 39.8% |
+| Wahrscheinlichkeit, dass Gegner Bombe hat, wenn er T-Ansage hat | 28.4% | 28.5% |
+| Wahrscheinilchkeit, dass Gegner Bombe hat, wenn er GT-Ansage hat | 21.7% | 21.1% |
+| Wahrscheinlichkeit, dass Gegner Bombe hat, wenn er T-Ansage mit ≤2 Highcards\*\*\* hat | 40.1% | 39.8% |
 
 Bei einem großen Tichu hat der Gegner genauso wahrscheinlich wie immer eine Bombe. Bei einem kleinen Tichu hingegen erhöht sich die Wahrscheinlichkeit drastisch.
 Hat man selbst 4 High Cards, so hat der Gegner bereits zu **40%** eine Bombe. 
@@ -73,11 +73,11 @@ Der **erwartete Rundengewinn** gegeben einer Bombe im Team beträgt **70.5(\*)/9
 
 Das entsteht, wie wir alle wissen, aufgrund der folgenden Faktoren: 
 
-- Möglichkeit, GT's zu zerstören: **GT Success Rate** mit Gegner-Bombe sinkt auf  **41.8% (\*)/38.2% (\*\*)** [von den Default  **61.8%(\*)/59.2%(\*\*)**]
-- Möglichkeit, T's zu zerstören: **T Success Rate** mit Gegner-Bombe sinkt auf  **51.4% (\*)/47.3% (\*\*)** [von den Default **73.4%(\*)/72.2%(\*\*)**]
+- Möglichkeit, GT's zu zerstören: **GT Success Rate**, wenn Gegnerteam Bombe hat, sinkt auf  **41.8% (\*)/38.2% (\*\*)** [von den Default  **61.8%(\*)/59.2%(\*\*)**]
+- Möglichkeit, T's zu zerstören: **T Success Rate**, wenn Gegnerteam Bombe hat, sinkt auf  **51.4% (\*)/47.3% (\*\*)** [von den Default **73.4%(\*)/72.2%(\*\*)**]
 - Möglichkeit, selbst T anzusagen: Die **T Call Rate** bei eigener Bombe steigt auf **23.7%(\*)/21.6% (\*\*)** [von den Default **13.9%(\*)/13.0%(\*\*)**]. Die **T Success Rate** bei eigener Bombe steigt auf  **79.3% (\*) / 79.4% (\*\*)** [von den Default **73.4%(\*)/72.2%(\*\*)**]
 
-Das liefert im Grunde auch schon die Begründung, warum der erwartete Rundengewinn im gefilterten Datensatz mit rund **20** Punkte höher ist, als bei dem vollständigen: Dort werden einfach mehr GT's angesagt.
+Das liefert im Grunde auch schon die Begründung, warum der erwartete Rundengewinn im gefilterten Datensatz mit rund **20** Punkte höher ist, als bei dem vollständigen: Dort werden einfach mehr Ansagen gemacht.
 
 ## Schupfstrategien und Bomben
 
@@ -89,8 +89,10 @@ ungerade links wurde schließlich auch damit im Hinterkopf entworfen. Doch wie e
 Ich habe die Wahrscheinlichkeit einer Bombe beim Gegner untersucht, gegeben dass man sich an die Schupfstrategie hält oder nicht. Die Strategie habe ich etwas relaxiert:
 An die Strategie hält sich ein Team, wenn bei jedem Gegner entweder gerade + ungerade, oder gerade/ungerade + doppelte oder gerade/ungerade + Sonderkarte ankommt. 
 Das doppelt bezieht sich hier auf die Ursprungshand, aus der die Karte kam, denn das verhindert ja bereits eine Viererbombe beim Gegner.
-Die Sonderkarte ist in den meisten Fällen wohl der Hund. (1 Schupfen ist nicht gut, bzw.
-Runden, in denen die 1 zum Gegner geschupft, haben negativen erwarteten Rundengewinn [**-13.9(\*)/-5.3(\*)** Punkte], wird in einem anderen Post nochmal behandelt).
+Die Sonderkarte ist in den meisten Fällen wohl der Hund. 
+>1 Schupfen ist nicht gut:
+Runden, in denen die 1 zum Gegner geschupft wurde, haben negativen erwarteten Rundengewinn [**-13.9(\*)/-5.3(\*)** Punkte]. Ggfs. wird das in einem anderen Post nochmal ausführlicher behandelt.
+
 Ungerade links, gerade rechts usw. wäre damit also auch legitim. 
 
 Nicht an die Strategie halten ist damit äquivalent dazu, dass bei einem Gegner zwei gerade und nicht gedoppelte oder zwei ungerade und nicht gedoppelte Karten ankommen.
@@ -99,7 +101,7 @@ Und tatsächlich: Die Wahrscheinlichkeit einer Bombe beim Gegner reduziert sich 
 Hier kam meine erste persönliche Überraschung: Das ist weitaus weniger wenig (gegenüber den Default **21.7%(\*)/22.4%(\*\*)**), als erwartet.
 Das liegt aber auch daran, dass die Strategie in den meisten Runden angewendet wird. 
 Die Wahrscheinlichkeit einer Bombe beim Gegner wenn man sich nicht an die Schupfstrategie hält, beträgt **27.9%(\*)/28.1(\*\*)**.
-Das ist ca 36% höher gegenüber der Wahrscheinlichkeit, wenn man sich an die Strategie hält.
+Das ist ca **36%** höher gegenüber der Wahrscheinlichkeit, wenn man sich an die Strategie hält.
 
 ### Aufschlüsselung der Bomben
 
@@ -167,6 +169,9 @@ wenn man eine andere Schupfstrategie gewählt hätte. Diesen Wert müssten wir d
 Eine weitere Alternative ist die dritte Schupfstrategie mit klein links + groß rechts oder umgekehrt. Das erhöht die Bombenwahrscheinlichkeit  leicht gegenüber
 gerade + ungerade. Der erwartete Rundengewinn auf dem Datensatz ist für diese Strategie leicht positiv. Auch hier wissen wir aber nicht,
 wie die Runde verlaufen wäre, wenn man eine andere Strategie gewählt hätte. Es kann sein, dass man gerade in diesen Runden besonders gute Karten hat.
+
+Einen Unterschied zwischen dem normalen Datensatz (\*) und (\*\*) ist eigentlich nicht groß zu erkennen: Die Bomben sind
+in den gefilterten Spielen lediglich mehr Wert, da dort öfter angesagt wird. Die Häufigkeit von Bomben ist aber überall etwa gleich.
 
 ---
 
