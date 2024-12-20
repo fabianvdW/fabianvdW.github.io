@@ -3,7 +3,6 @@ layout: home
 title: Tichu Statistik
 ---
 
-# Tichu Statistik
 
 Willkommen zu meiner statistischen Analyse des Kartenspiels Tichu. In dieser Blogreihe untersuche ich verschiedene Aspekte des Spiels aus statistischer Sicht, basierend auf einem umfangreichen Datensatz von über 21 Millionen Runden.
 
