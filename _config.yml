@@ -39,7 +39,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Your Name"
+      author: "Fabian vdW"
       mathjax: true  # Enable MathJax by default for posts
 
 # Exclude from processing.

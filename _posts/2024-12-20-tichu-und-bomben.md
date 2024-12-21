@@ -84,7 +84,8 @@ Das entsteht, wie wir alle wissen, aufgrund der folgenden Faktoren:
 | T ansagen und gewinnen | **T Success Rate** |  **79.3% (\*) / 79.4% (\*\*)**  |**73.4%(\*)/72.2%(\*\*)**|
 
 
-Das liefert im Grunde auch schon die Begründung, warum der erwartete Rundengewinn im gefilterten Datensatz mit rund **20** Punkte höher ist, als bei dem vollständigen: Dort werden einfach mehr Ansagen gemacht.
+Das liefert auch schon eine Begründung, warum der erwartete Rundengewinn im gefilterten Datensatz rund **20** Punkte höher ist, als bei dem vollständigen: 
+Dort werden einfach mehr große Tichu Ansagen gemacht, die zerstört werden können.
 
 ## Schupfstrategien und Bomben
 
