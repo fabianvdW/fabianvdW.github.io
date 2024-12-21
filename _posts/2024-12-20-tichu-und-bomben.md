@@ -49,6 +49,22 @@ Nochmal zusammengefasst:
 | Bombe im Gegnerteam bei eigener Ansage | 22.7% | 23.0% |
 | Bombe im Gegnerteam bei eigener Ansage ohne Bombe | 21.7% | 22.4%|
 
+Die Wahrscheinlichkeit, eine Bombe zu verschupfen/geschupft zu bekommen, hängt stark von der Anzahl an Drillingen unter den ersten 14 ab:
+
+| Anzahl Drillinge unter ersten 14 (und keine Bomben) | Situation | Wahrscheinlichkeit Standard (*) | Wahrscheinlichkeit Gefiltert (**) |
+|-----------|--------------------------------|-----------------------------------|
+|0| Bombe auf Hand nach Schupfen      | 3.1% | 2.5% |
+|0| Bombe im Gegnerteam nach Schupfen | 20.7%| 21.1%|
+|1| Bombe auf Hand nach Schupfen      | 15.8% | 14.2% |
+|1| Bombe im Gegnerteam nach Schupfen | 24.1%| 24.5% |
+|2| Bombe auf Hand nach Schupfen      | 28.4%| 26.6% |
+|2| Bombe im Gegnerteam nach Schupfen |27.5% | 27.6%|
+|3+| Bombe auf Hand nach Schupfen     | 41.5% | 41.5% |
+|3+| Bombe im Gegnerteam nach Schupfen| 30.5%| 29.7%|
+
+Dabei wurden alle Runden aussortiert, in denen bereits eine Bombe unter den eigenen ersten 14 ist. Die Wahrscheinlichkeit für die Situation **Bombe auf Hand nach Schupfen** ist dementsprechend insgesamt höher, als in den jeweiligen Zeilen zu erkennen.
+
+Hat man also keinen Drilling und keine Bombe unter den ersten 14, sollte man auch keine erwarten: Nur in ca. 3% aller Runden ist dies der Fall. Umso mehr Drillinge man hat, desto wahrscheinlicher bekommt man eine Bombe geschupft. Allerdings erhöht sich damit auch die Wahrscheinlichkeit, dass der Gegner eine besitzt: Hat man 3 oder mehr Drillinge, hat der Gegner schon zu ca. 30% eine Bombe!
 
 Wenn ein Gegner ein Tichu ansagt, ist man manchmal in der glücklichen Lage, selbst gute Karten zu besitzen. 
 Sind sie sehr gut, kann man ggfs.  ein Kontertichu ansagen. Dabei ist folgendes relevant:
