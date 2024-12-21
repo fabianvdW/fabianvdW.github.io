@@ -9,15 +9,25 @@ description: "Einführung in die statistische Analyse von Tichu-Spielstrategien"
 In dieser kleinen Reihe an Posts werde ich Tichu etwas aus statistischer Sicht begutachten.
 Dazu werden, wie sich das in der Statistik halt so gehört, ein Haufen Wahrscheinlichkeiten und Erwartungswerte ausgerechnet.
 
-Dankbarerweise wurde mir von Felix ein großer Datensatz zur Verfügung gestellt. Ein paar Wahrscheinlichkeiten sind aber auch theoretisch exakt ausgerechnet. Wer von zu viel "Mathe gebrabbel" kein Fan ist, freut sich vielleicht trotzdem an den Interpretationen die ich basierend darauf mache - ab und zu wage ich mich sogar zu echten Schlussfolgerungen.
+
+Dankbarerweise wurde mir von Felix ein großer Datensatz zur Verfügung gestellt.
+ Ein paar Wahrscheinlichkeiten sind aber auch theoretisch exakt ausgerechnet. Wer von zu viel "Mathe gebrabbel" kein Fan ist, freut sich vielleicht trotzdem an den Interpretationen die ich basierend darauf mache - ab und zu wage ich mich sogar zu echten Schlussfolgerungen.
 
 Insgesamt ist das Ziel, bisherige Tichu Strategien statistisch zu beurteilen und ggfs. optimales Spielen herzuleiten.
+
+
+Felix ist einer der Entwickler der Tichu.one App. Das zur App zugehörige [Tichu Forum ](forum.tichu.one) wird ab und zu auch mal referenziert.
+Bedanken möchte ich mich vorab auch bei HeyWen, der zahlreiche Verbesserungsvorschläge und Ideen für die Analyse mit eingebracht hat.
+
+
 
 ### Was ist optimales Spielen?
 
 Mein Definitionsversuch: Die Art des Spielens, mit derer man (vorausgesetzt der Partner kennt die eigene Spielstrategie) seine Winrate maximiert.
 
 **Achtung**: Das unterscheidet sich also per Definition bereits von einem Spiel, dass man mit einem inkompetenten/weniger aufgeklärten Teampartner spielen müsste. So ein Spiel interessiert mich aber auch nicht.
+
+Tichu Spiele gehen, laut offiziellem Regelwerk, bis 1000 Punkte. In der Tichu.one App hat jedes Spiel nur 6 Runden. Das führt zu unterschiedlichen Spielstrategien was optimales Spielen angeht, wird an gegebenen Stellen aber auch noch ausführlicher diskutiert.
 
 ## Methodische Überlegungen
 
@@ -36,13 +46,18 @@ Was den erwarteten Punktegewinn angeht, so lautet die Antwort (denke ich zuminde
 Wenn ich aber meine Gewinnchancen maximieren will, so wäre das GT keine schlechte Idee.
 Ich hoffe man hat den Unterschied verstanden, unabhängig davon ob man mit den exakten Aussagen im Beispiel d'accord geht oder nicht.
 
+Das macht vorallem bei Spielen auf 6 Runden einen größeren Unterschied, als bei Spielen auf 1000 Punkte. 
+Eine kurze Analogie dazu: Den erwarteten Punktegewinn zu maximieren, ist wie ein Marathon zu laufen.
+Das Spiel auf 1000 Punkte ist dann vielleicht ein 10 KM Lauf, und die 6 Runden Spiele ein 3000m lauf. An dieser Stelle gehen die Meinungen
+bereits auseinander: Laut HeyWen wäre ersteres ein 3000m Lauf und letzteres ein 800m Lauf.
+
 Der erwartete Rundengewinn ist insofern leichter zu analysieren, da wir diesen Erwartungswert einfach durch den Durchschnitt schätzen können. 
 Ich werde also im Folgenden oft den erwarteten Rundengewinn
 (ein theoretisches Objekt) synonym zu dem durchschnittlichen Rundengewinn (eine Zahl, ausgewertet auf dem Datensatz) benutzen.
 
 Ideel deckt sich das optimale Spiel mit dem "Rundengewinnmaximierungsspiel" also nur, wenn noch genügend Zeit im Spiel übrig ist und man nicht in starker
 Bedrängnis ist. Das sollte man bei all meinen Analysen im Hinterkopf behalten. 
-Darüber hinaus sollte man sich im klaren sein, dass die folgenden Statistiken nicht den Einzelfall repräsentieren, den man in der Runde vor sich hat. Dafür gibt es schlicht
+Darüber hinaus sollte man sich im Klaren sein, dass die folgenden Statistiken nicht den Einzelfall repräsentieren, den man in der Runde vor sich hat. Dafür gibt es schlicht
 nicht genügend Daten. Das heißt nicht, dass wir unsere Spielstrategie nicht basierend der Statistiken überdenken und anpassen können - aber wer stur
 wie ein Roboter spielt, zu viel in die Statistiken reininterpretiert, und den menschlichen und psychologischen Faktor nicht berücksichtigt, wird im Nachteil bleiben.
 Im Allgemeinen würde ich dem Leser raten, nicht mehr in die Statistiken reinzuinterpretieren, als ich es in meinem geschriebenen Text tue.
@@ -55,7 +70,10 @@ man an allen interessiert ist.
 
 ## Datengrundlage
 
-Der BSW Datensatz enthält ca. 21 Millionen Runden von echten Spielern, gespielt auf BrettSpielWelt. Dabei wurden bereits alle Runden aussortiert, in denen zwei Spieler eines Teams gleichzeitig ein großes Tichu angesagt haben (ca. 14000 Stück), da dies in Tichu.one nicht möglich ist und auch beim Live Spielen nicht vorkommt. Darüber hinaus habe ich einen gefilterten BSW Datensatz erstellt, der nur aus Spielen besteht, die von "guten" Spielern gespielt wurden. Ein Spieler ist gut wenn er mehr
+Der BSW Datensatz enthält ca. 21 Millionen Runden von echten Spielern, gespielt auf BrettSpielWelt. Dabei wurden bereits alle Runden aussortiert, in denen zwei Spieler eines Teams gleichzeitig ein großes Tichu angesagt haben (ca. 14000 Stück), da dies in Tichu.one nicht möglich ist und auch beim Live Spielen nicht vorkommt.
+Die Daten sind auch über (http://tichulog.brettspielwelt.de) online bereitgestellt.
+
+ Darüber hinaus habe ich einen gefilterten BSW Datensatz erstellt, der nur aus Spielen besteht, die von "guten" Spielern gespielt wurden. Ein Spieler ist gut wenn er mehr
 als 100 Spiele mit >= 55% Winrate absolviert hat. Dieser Datensatz enthält immerhin noch ca. 400 000 Runden. Zusammenfassend gibt es also folgende Datensatz Varianten:
 
 1. **Standard BSW Datensatz** (*): Alle verfügbaren Spiele
@@ -87,4 +105,4 @@ Zunächst aber beschäftigen wir uns mit den konzeptuell leichteren Thema der Bo
 
 ---
 
-*Nächster Post: [Tichu & Statistik Pt.1: Bomben]({% post_url 2024-12-20-tichu-und-bomben %})*
+*Nächster Post: [Tichu & Statistik Pt.1.1: Bomben]({% post_url 2024-12-20-tichu-und-bomben %})*
