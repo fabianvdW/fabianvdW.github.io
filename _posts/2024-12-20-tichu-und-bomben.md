@@ -13,6 +13,7 @@ description: "Detaillierte Analyse der Bomben-Wahrscheinlichkeiten und Strategie
 Wie im  [Tichu.One Forum](https://forum.tichu.one/threads/bombenwahrscheinlichkeit-unter-den-ersten-14-8.198/#post-1058)
 berichtet, beträgt die Wahrscheinlichkeit einer **Bombe unter den ersten 8** eines Spielers ca **0.3%** und **unter den ersten 14** ca **5.1%**.
 Das ist zwar nett zu Wissen, bringt aber relativ wenig. Die Wahrscheinlichkeit einer **Bombe auf meiner Hand nach dem Schupfen** ist da schon aussagekräftiger: **11.7%(\*)/11.8%(\*\*)**.
+Diese Wahrscheinlichkeit teilt sich (mit etwas Schnitt) in die 4-er Bomben nach dem Schupfen [**8.57%(\*)/8.68%(\*\*)**] und die Straßenbomben [**3.30%(\*)/3.32%(\*\*)**]. 
 
 Wenn ich spiele, ist mir eigentlich auch egal, ob jetzt mein linker oder rechter Gegner die Bombe hat. Interessierter bin ich eher daran, ob *EINER* meiner Gegner eine Bombe hat.
 Diese Wahrscheinlichkeit beträgt **21.7%(\*)/21.9%(\*\*)**.
@@ -25,7 +26,9 @@ Diese Wahrscheinlichkeit beträgt **21.7%(\*)/21.9%(\*\*)**.
 |-----------|--------------------------------|-----------------------------------|
 | Bombe unter ersten 8 | ~0.3%  | Die Wahrscheinlichkeit ist exakt|
 | Bombe unter ersten 14 | ~5.1% | Die Wahrscheinlichkeit ist exakt|
-| Bombe nach Schupfen | 11.7% | 11.8% |
+| Bombe auf Hand nach Schupfen | 11.7% | 11.8% |
+| 4er Bombe auf Hand nach Schupfen| 8.57% | 8.68%|
+| Straßenbombe auf Hand nach Schupfen| 3.30% | 3.32%|
 | Bombe im Gegnerteam | 21.7% | 21.9% |
 | Bombe in einer Runde | 37.9% | 38.3% |
 
@@ -49,30 +52,46 @@ Nochmal zusammengefasst:
 | Bombe im Gegnerteam bei eigener Ansage | 22.7% | 23.0% |
 | Bombe im Gegnerteam bei eigener Ansage ohne Bombe | 21.7% | 22.4%|
 
-Die Wahrscheinlichkeit, eine Bombe zu verschupfen/geschupft zu bekommen, hängt stark von der Anzahl an Drillingen unter den ersten 14 ab:
+#### Drillinge
+
+Die Wahrscheinlichkeit, eine Bombe zu verschupfen/geschupft zu bekommen, hängt stark von der Anzahl an Drillingen unter den ersten 14 ab.
+Wir betrachten im Folgenden den Fall 0 bis 3+ Drillinge und keine Bombe auf der Hand zu haben, und untersuchen den Zusammenhang
+mit der Wahrscheinlichkeit, selbst eine Bombe nach dem Schupfen zu besitzen und der Wahrscheinlichkeit, dass der Gegner
+eine Bombe besitzt.
 
 | Anzahl Drillinge unter ersten 14 (und keine Bomben) | Situation | Wahrscheinlichkeit Standard (*) | Wahrscheinlichkeit Gefiltert (**) |
 |-----------|--------------------------------|-----------------------------------|
 |0| Bombe auf Hand nach Schupfen      | 3.1% | 2.5% |
-|0| Bombe im Gegnerteam nach Schupfen | 20.7%| 21.1%|
 |1| Bombe auf Hand nach Schupfen      | 15.8% | 14.2% |
-|1| Bombe im Gegnerteam nach Schupfen | 24.1%| 24.5% |
 |2| Bombe auf Hand nach Schupfen      | 28.4%| 26.6% |
-|2| Bombe im Gegnerteam nach Schupfen |27.5% | 27.6%|
 |3+| Bombe auf Hand nach Schupfen     | 41.5% | 41.5% |
+|0| Bombe im Gegnerteam nach Schupfen | 20.7%| 21.1%|
+|1| Bombe im Gegnerteam nach Schupfen | 24.1%| 24.5% |
+|2| Bombe im Gegnerteam nach Schupfen |27.5% | 27.6%|
 |3+| Bombe im Gegnerteam nach Schupfen| 30.5%| 29.7%|
 
 Dabei wurden alle Runden aussortiert, in denen bereits eine Bombe unter den eigenen ersten 14 ist. Die Wahrscheinlichkeit für die Situation **Bombe auf Hand nach Schupfen** ist dementsprechend insgesamt höher, als in den jeweiligen Zeilen zu erkennen.
 
 Hat man also keinen Drilling und keine Bombe unter den ersten 14, sollte man auch keine erwarten: Nur in ca. 3% aller Runden ist dies der Fall. Umso mehr Drillinge man hat, desto wahrscheinlicher bekommt man eine Bombe geschupft. Allerdings erhöht sich damit auch die Wahrscheinlichkeit, dass der Gegner eine besitzt: Hat man 3 oder mehr Drillinge, hat der Gegner schon zu ca. 30% eine Bombe!
 
+Auch die Anzahl der Drillinge nach dem Schupfen korreliert in sehr ähnlicherweise mit der Wahrscheinlichkeit, dass das Gegnerteam eine Bombe besitzt:
+
+| Anzahl Drillinge nach dem Schupfen (und keine Bombe) | Situation | Wahrscheinlichkeit Standard (*) | Wahrscheinlichkeit Gefiltert (**) |
+|-----------|--------------------------------|-----------------------------------|
+|0| Bombe im Gegnerteam nach Schupfen | 19.1%| 19.6%|
+|1| Bombe im Gegnerteam nach Schupfen | 23.0%| 23.5% |
+|2| Bombe im Gegnerteam nach Schupfen |26.6% | 27.0%|
+|3+| Bombe im Gegnerteam nach Schupfen| 29.9%| 30.0%|
+
+
+## Ansagen und Bomben
 Wenn ein Gegner ein Tichu ansagt, ist man manchmal in der glücklichen Lage, selbst gute Karten zu besitzen. 
 Sind sie sehr gut, kann man ggfs.  ein Kontertichu ansagen. Dabei ist folgendes relevant:
 
 | Situation | Wahrscheinlichkeit Standard (*) | Wahrscheinlichkeit Gefiltert (**) |
 |-----------|--------------------------------|-----------------------------------|
 | Wahrscheinlichkeit, dass Gegner Bombe hat, wenn er T-Ansage hat | 28.4% | 28.5% |
-| Wahrscheinilchkeit, dass Gegner Bombe hat, wenn er GT-Ansage hat | 21.7% | 21.1% |
+| Wahrscheinlichkeit, dass Gegner Bombe hat, wenn er GT-Ansage hat | 21.7% | 21.1% |
 | Wahrscheinlichkeit, dass Gegner Bombe hat, wenn er T-Ansage mit ≤2 Highcards\*\*\* hat | 40.1% | 39.8% |
 
 Bei einem großen Tichu hat der Gegner genauso wahrscheinlich wie immer eine Bombe. Bei einem kleinen Tichu hingegen erhöht sich die Wahrscheinlichkeit drastisch.
