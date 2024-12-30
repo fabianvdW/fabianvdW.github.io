@@ -104,4 +104,5 @@ In jedem Falle sollte man seinem Partner eine Strategie befolgen: In einem unkoo
 \* Ausgewertet auf dem BSW Datensatz  
 \*\* Ausgewertet auf dem gefilterten BSW Datensatz (nur gute Spieler)
 
+*Nächster Post: [Tichu & Statistik Pt.2.1: Große Tichus und erwarteter Punktegewinn]({% post_url 2024-12-30-tichu-gt %})*
 
