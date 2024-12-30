@@ -47,3 +47,19 @@ Sagt man ein GT an, ändern sich die Verteilungen der Karten, die man erhält. A
 </div>
 
 Man erhält in etwas über 70% aller Fälle eine Premium Karte vom Partner. Bei den Gegnern ändert sich lediglich die Bereitschaft, den Hund zu verschupfen, ansonsten bleiben die Wahrscheinlichkeitsverteilungen sehr ähnlich.
+
+## Der Hund
+TODO: 
+- ERS bei Hund zum Gegner schupfen
+- Wahrscheinlichkeit, Hund zu erhalten (bei GT), wenn man ihn nicht selbst hat.
+- ERS (bei GT) wenn man Hund kriegt vs. ERS (bei GT) insgesamt
+- DS % wenn man Hund kriegt vs. normal
+- DS % (bei GT) wenn man Hund kriegt vs. normal
+
+
+## Der Partner
+TODO:
+    Wsk Ass schupfen vs. Wsk Ass schupfen bei einziger HighCard vs. Wsk Ass schupfen bei einzigem Ass
+    Wsk, dass Partner Ass hat, wenn er mir eins schupft?
+    
+---
