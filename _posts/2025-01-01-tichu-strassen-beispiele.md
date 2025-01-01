@@ -15,7 +15,7 @@ Erhält man das Aufspiel, bspw. durch den Hund, den Mahjong, oder weil man den D
 Im Tichu.one [Forum](https://pun2.tichu.one/display_strassen_wahrscheinlichkeit.php) verlinkt ist bereits eine Auswertung, die angibt, wie oft eine gewisse Straße unter welchen Umständen gestochen wurde oder nicht. Jedoch wird dabei nicht darauf eingegangen, dass ein Gegner sich auch zum passen entscheiden kann, auch wenn er die Straße stechen kann. Dieses Verhalten wird maßgeblich durch eine potenzielle Ansage des Auflegers beeinflusst.
 Die dort angegebenen Wahrscheinlichkeiten **unterschätzen** also das tatsächliche Risko, dass man bei so einer Aktion trägt.
 
-In dieser Analyse untersuchen wir einfach nur an dem Fallbeispiel 4-Q, wie oft die Gegner die Möglichkeit haben, diese Straße mit einer höheren Straße zu überstechen, falls der Phönix im Gegnerteam ist: **18.98%(\*)/18.88%(\*\*)**. Rechnet man zudem mit einem Verlust der Runde durch eine Bombe im Gegnerteam, so verliert man die Runde in insgesamt **30.15%(\*)/29.47%(\*\*)** der Fälle.
+In dieser Analyse untersuchen wir einfach nur an dem Fallbeispiel 4-Q, wie oft die Gegner am Anfang der Runde (also mit all ihren Karten) die Möglichkeit haben, diese Straße mit einer höheren Straße zu überstechen (gegeben, dass ich selbst 4-Q auf der Hand habe, am Anfang der Runde), falls der Phönix im Gegnerteam ist: **18.98%(\*)/18.88%(\*\*)**. Rechnet man zudem mit einem Verlust der Runde durch eine Bombe im Gegnerteam, so verliert man die Runde in insgesamt **30.15%(\*)/29.47%(\*\*)** der Fälle.
 
 Weitere Fallbeispiele folgen bei Relevanz dieser.
 
