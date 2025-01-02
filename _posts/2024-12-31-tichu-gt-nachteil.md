@@ -33,18 +33,32 @@ $$\begin{eqnarray}
  Pr( \text{relativer Rundengewinn} \ge -p | k \text{ unter den ersten 8}, \text{Punktedifferenz zum Gegner } = p, \text{Keine GT Ansage} ) & \nonumber 
 \end{eqnarray}$$
 
-Wir gehen vereinfachend davon aus, dass die Punktedifferenz zum Gegner keinen Einfluss auf das Ergebnis der Runde hat (da es nicht teil der elementaren Spielmechanik ist).
+Wir gehen vereinfachend davon aus, dass die Punktedifferenz zum Gegner keinen Einfluss auf das Ergebnis der Runde hat (da es nicht Teil der elementaren Spielmechanik ist).
 > Das ist natürlich nicht ganz richtig. Die Punktedifferenz hat z.B. Einfluss auf die Psyche aller Spieler und verändert dementsprechend auch die Spielweise.
 
 Dann erhalten wir
 
 $$\begin{eqnarray} 
- Pr( \text{Sieg} | k \text{ unter den ersten 8}, \text{Punktedifferenz zum Gegner } = p, \text{GT Ansage} ) &=     \nonumber \\
- Pr( \text{relativer Rundengewinn} \ge -p | k \text{ unter den ersten 8}, \text{Punktedifferenz zum Gegner } = p, \text{GT Ansage} ) &= \nonumber \\
- Pr( \text{relativer Rundengewinn} \ge -p | k \text{ unter den ersten 8}, \text{GT Ansage} ) &\nonumber 
+ Pr( \text{Sieg} | k \text{ unter den ersten 8}, \text{Punktedifferenz zum Gegner } = p, \text{GT Ansage} ) &=     \\
+ Pr( \text{relativer Rundengewinn} \ge -p | k \text{ unter den ersten 8}, \text{Punktedifferenz zum Gegner } = p, \text{GT Ansage} ) &=  \\
+ Pr( \text{relativer Rundengewinn} \ge -p | k \text{ unter den ersten 8}, \text{GT Ansage} ) & 
 \end{eqnarray}$$
+, was wir bei gegebenen $p$ sowie $k$ auf dem Datensatz einfach ausrechnen können.
 
-[WIP]
+
+Wie im letzten Kapitel benutzen wir die theoretischen Übergangswahrscheinlichkeiten zu den Kategorien innerhalb der ersten 14 Karten, um die zweite Wahrscheinlichkeit auszurechnen:
+
+$$\begin{eqnarray} 
+ Pr( \text{Sieg} | k \text{ unter den ersten 8}, \text{Punktedifferenz zum Gegner } = p, \text{Keine GT Ansage} ) &=     \nonumber \\
+ Pr( \text{relativer Rundengewinn} \ge -p | k \text{ unter den ersten 8}, \text{Punktedifferenz zum Gegner } = p, \text{Keine GT Ansage} ) &= \nonumber \\
+ Pr( \text{relativer Rundengewinn} \ge -p | k \text{ unter den ersten 8}, \text{Keine GT Ansage} ) &= \nonumber  \\
+ \sum_{k' \in \text{Kategorie} }Pr(\text{relativer Rundengewinn} \ge -p | k' \text{ unter den ersten 14}, \text{Keine GT Ansage}) \cdot Pr(k' \text{ unter den ersten 14} | k \text{ unter den ersten 8}) & \nonumber
+\end{eqnarray}.$$
+
+Letztlich tauschen wir also die Erwartungswerte aus dem letzten Kapitel mit errechneten Wahrscheinlichkeiten aus - das funktioniert aber nur bei fixer Punktedifferenz $p$ und weil wir uns in der letzten Runde befinden.
+Wie im letzten Kapitel werden geschätzte Wahrscheinlichkeiten nur bei 300 oder mehr Vorkomnissen berichtet unten ansonsten durch das Maximum aller 
+
+
 ---
 *Nächster Post: [Tichu & Statistik Pt.3: Riskantes Spielen mit Straßen: Fallbeispiele]({% post_url 2025-01-01-tichu-strassen-beispiele %})*
 

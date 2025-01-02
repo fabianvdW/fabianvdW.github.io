@@ -33,6 +33,7 @@ theme: minima
 plugins:
   - jekyll-feed
 future: true
+include: ['_pages']
 defaults:
   -
     scope:
