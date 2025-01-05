@@ -1,3 +1,47 @@
+// Add global styles when script loads
+const style = document.createElement('style');
+style.textContent = `
+    .tichu-filter-container {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 16px;
+        align-items: baseline;
+    }
+    .tichu-filter-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .tichu-filter-label {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .tichu-filter-input,
+    .tichu-filter-select {
+        padding: 2px 6px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 60px;
+        font-size: 14px;
+    }
+    .tichu-stats-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 8px;
+    }
+    .tichu-stats-table th,
+    .tichu-stats-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    .tichu-stats-table th {
+        background-color: #f5f5f5;
+    }
+`;
+document.head.appendChild(style);
+
 // Main function to create filterable table from markdown
 function createFilterableTable(markdownTable, containerId) {
     // Create container if it doesn't exist
@@ -15,46 +59,45 @@ function createFilterableTable(markdownTable, containerId) {
     createTichuTableFilter(tableElement);
 }
 
-// Helper function to create filter controls
 function createTichuTableFilter(tableElement) {
     const filterDiv = document.createElement('div');
-    filterDiv.style.marginBottom = '20px';
+    
     filterDiv.innerHTML = `
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 20px;">
-            <div>
-                <label>Anzahl Asse:</label>
-                <input type="number" id="aces-filter-${tableElement.id}" min="0" max="4" style="width: 100px; padding: 5px;">
+        <div class="tichu-filter-container">
+            <div class="tichu-filter-item">
+                <span class="tichu-filter-label">Anzahl Asse:</span>
+                <input type="number" id="aces-filter-${tableElement.id}" min="0" max="4" class="tichu-filter-input">
             </div>
-            <div>
-                <label>Dragon:</label>
-                <select id="dragon-filter-${tableElement.id}" style="padding: 5px;">
-                    <option value="all">All</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
+            <div class="tichu-filter-item">
+                <span class="tichu-filter-label">Drache:</span>
+                <select id="dragon-filter-${tableElement.id}" class="tichu-filter-select">
+                    <option value="all">Alle</option>
+                    <option value="yes">Ja</option>
+                    <option value="no">Nein</option>
                 </select>
             </div>
-            <div>
-                <label>Phoenix:</label>
-                <select id="phoenix-filter-${tableElement.id}" style="padding: 5px;">
-                    <option value="all">All</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
+            <div class="tichu-filter-item">
+                <span class="tichu-filter-label">Phoenix:</span>
+                <select id="phoenix-filter-${tableElement.id}" class="tichu-filter-select">
+                    <option value="all">Alle</option>
+                    <option value="yes">Ja</option>
+                    <option value="no">Nein</option>
                 </select>
             </div>
-            <div>
-                <label>Dog:</label>
-                <select id="dog-filter-${tableElement.id}" style="padding: 5px;">
-                    <option value="all">All</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
+            <div class="tichu-filter-item">
+                <span class="tichu-filter-label">Dog:</span>
+                <select id="dog-filter-${tableElement.id}" class="tichu-filter-select">
+                    <option value="all">Alle</option>
+                    <option value="yes">Ja</option>
+                    <option value="no">Nein</option>
                 </select>
             </div>
-            <div>
-                <label>Mahjong:</label>
-                <select id="mahjong-filter-${tableElement.id}" style="padding: 5px;">
-                    <option value="all">All</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
+            <div class="tichu-filter-item">
+                <span class="tichu-filter-label">Mahjong:</span>
+                <select id="mahjong-filter-${tableElement.id}" class="tichu-filter-select">
+                    <option value="all">Alle</option>
+                    <option value="yes">Ja</option>
+                    <option value="no">Nein</option>
                 </select>
             </div>
         </div>
@@ -63,7 +106,6 @@ function createTichuTableFilter(tableElement) {
     // Insert filter controls before table
     tableElement.parentNode.insertBefore(filterDiv, tableElement);
     
-    // Function to check if a cell matches filter value
     function matchesFilter(cell, filterValue, filterType) {
         if (filterType === 'number') {
             return filterValue === '' || parseInt(cell.textContent) === parseInt(filterValue);
@@ -74,7 +116,6 @@ function createTichuTableFilter(tableElement) {
         }
     }
     
-    // Function to filter table rows
     function filterTable() {
         const acesValue = document.getElementById(`aces-filter-${tableElement.id}`).value;
         const dragonValue = document.getElementById(`dragon-filter-${tableElement.id}`).value;
@@ -84,12 +125,11 @@ function createTichuTableFilter(tableElement) {
         
         const rows = tableElement.getElementsByTagName('tr');
         
-        // Start from 1 to skip header row
         for (let i = 1; i < rows.length; i++) {
             const row = rows[i];
             const cells = row.getElementsByTagName('td');
             
-            if (cells.length === 0) continue; // Skip if no cells (header row)
+            if (cells.length === 0) continue;
             
             const matches = 
                 matchesFilter(cells[0], acesValue, 'number') &&
@@ -102,7 +142,7 @@ function createTichuTableFilter(tableElement) {
         }
     }
     
-    // Add event listeners to all filter inputs
+    // Add event listeners
     document.getElementById(`aces-filter-${tableElement.id}`).addEventListener('input', filterTable);
     document.getElementById(`dragon-filter-${tableElement.id}`).addEventListener('change', filterTable);
     document.getElementById(`phoenix-filter-${tableElement.id}`).addEventListener('change', filterTable);
@@ -110,27 +150,24 @@ function createTichuTableFilter(tableElement) {
     document.getElementById(`mahjong-filter-${tableElement.id}`).addEventListener('change', filterTable);
 }
 
-// Helper function to convert markdown table to HTML
 function convertMarkdownTableToHTML(markdownTable) {
     const rows = markdownTable.trim().split('\n');
     const headerRow = rows[0];
     const headers = headerRow.split('|').filter(cell => cell.trim()).map(cell => cell.trim());
     
-    // Generate a random ID for the table
     const tableId = 'tichu-table-' + Math.random().toString(36).substr(2, 9);
     
-    let html = `<table id="${tableId}" class="tichu-stats-table" style="width: 100%; border-collapse: collapse;">`;
+    let html = `<table id="${tableId}" class="tichu-stats-table">`;
     
     // Add header
     html += '<thead><tr>';
     headers.forEach(header => {
-        html += `<th style="border: 1px solid #ddd; padding: 8px; text-align: left;">${header}</th>`;
+        html += `<th>${header}</th>`;
     });
     html += '</tr></thead>';
     
     // Add body
     html += '<tbody>';
-    // Skip header and separator rows (rows[0] and rows[1])
     for (let i = 2; i < rows.length; i++) {
         const row = rows[i];
         if (!row.trim()) continue;
@@ -138,7 +175,7 @@ function convertMarkdownTableToHTML(markdownTable) {
         const cells = row.split('|').filter(cell => cell.trim()).map(cell => cell.trim());
         html += '<tr>';
         cells.forEach(cell => {
-            html += `<td style="border: 1px solid #ddd; padding: 8px;">${cell}</td>`;
+            html += `<td>${cell}</td>`;
         });
         html += '</tr>';
     }
