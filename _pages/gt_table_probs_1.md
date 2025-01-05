@@ -1,12 +1,21 @@
 ---
 layout: post
 ---
+<script src="{{ '/assets/js/tichu-table-filter.js' | relative_url }}"></script>
+
 Bedienen dieser Seite durch Strg+F und p=... eingeben!
 
- 
- Wahrscheinlichkeit von relativem Rundengewinn für p=50, wenn Kategorie unter ersten 14 vorliegt.
+<div id="global-filter-container"></div>
+<script>
+createGlobalTichuFilter(document.getElementById('global-filter-container'));
+</script>
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+
+ Wahrscheinlichkeit von relativem Rundengewinn für p=50, wenn Kategorie unter ersten 14 vorliegt
+
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|27.36%/25.85%|0.10%/0.10%|43.21%/40.02%|1.52%/1.01%|
 |0|-|-|-|Ma|27.16%/27.72%|0.12%/0.00%|43.78%/41.55%|1.48%/0.96%|
 |0|-|-|Do|-|29.07%/24.57%|0.11%/0.14%|42.82%/41.27%|1.43%/0.95%|
@@ -87,10 +96,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|88.31%/**87.18%**|0.25%/**0.43%**|
 |4|Dr|Ph|Do|-|82.88%/**84.47%**|0.00%/**0.08%**|86.37%/**87.18%**|0.73%/**0.43%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**88.31%**/**87.18%**|**0.25%**/**0.43%**|
+`, 'gt-probs-roundscore-gr-50-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=45, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|27.36%/25.85%|0.00%/0.00%|43.21%/40.02%|0.00%/0.00%|
 |0|-|-|-|Ma|27.16%/27.72%|0.00%/0.00%|43.78%/41.55%|0.00%/0.00%|
 |0|-|-|Do|-|29.07%/24.57%|0.00%/0.00%|42.82%/41.27%|0.00%/0.00%|
@@ -171,10 +184,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|88.31%/**87.18%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.47%**|0.00%/**0.00%**|86.37%/**87.18%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**88.31%**/**87.18%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr-45-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=40, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|27.27%/25.59%|0.08%/0.26%|41.62%/39.01%|1.59%/1.01%|
 |0|-|-|-|Ma|27.04%/27.46%|0.12%/0.26%|42.25%/40.57%|1.53%/0.99%|
 |0|-|-|Do|-|29.02%/24.57%|0.06%/0.00%|41.34%/40.34%|1.49%/0.93%|
@@ -255,10 +272,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|87.56%/**86.97%**|0.75%/**0.21%**|
 |4|Dr|Ph|Do|-|82.88%/**84.40%**|0.00%/**0.08%**|86.13%/**86.97%**|0.24%/**0.21%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**87.82%**/**86.97%**|**0.42%**/**0.21%**|
+`, 'gt-probs-roundscore-gr-40-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=35, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|27.27%/25.59%|0.00%/0.00%|41.62%/39.01%|0.00%/0.00%|
 |0|-|-|-|Ma|27.04%/27.46%|0.00%/0.00%|42.25%/40.57%|0.00%/0.00%|
 |0|-|-|Do|-|29.02%/24.57%|0.00%/0.00%|41.34%/40.34%|0.00%/0.00%|
@@ -339,10 +360,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|87.56%/**86.97%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.40%**|0.00%/**0.00%**|86.13%/**86.97%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**87.82%**/**86.97%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr-35-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=30, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|27.17%/25.44%|0.10%/0.15%|40.21%/38.06%|1.41%/0.95%|
 |0|-|-|-|Ma|26.92%/27.46%|0.13%/0.00%|40.90%/39.64%|1.35%/0.93%|
 |0|-|-|Do|-|28.93%/24.43%|0.09%/0.14%|40.03%/39.55%|1.30%/0.79%|
@@ -423,10 +448,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|86.57%/**86.32%**|1.00%/**0.64%**|
 |4|Dr|Ph|Do|-|82.88%/**84.40%**|0.00%/**0.00%**|84.43%/**86.32%**|1.70%/**0.64%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**86.61%**/**86.32%**|**1.20%**/**0.64%**|
+`, 'gt-probs-roundscore-gr-30-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=25, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|27.17%/25.44%|0.00%/0.00%|40.21%/38.06%|0.00%/0.00%|
 |0|-|-|-|Ma|26.92%/27.46%|0.00%/0.00%|40.90%/39.64%|0.00%/0.00%|
 |0|-|-|Do|-|28.93%/24.43%|0.00%/0.00%|40.03%/39.55%|0.00%/0.00%|
@@ -507,10 +536,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|86.57%/**86.32%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.40%**|0.00%/**0.00%**|84.43%/**86.32%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**86.61%**/**86.32%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr-25-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=20, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|27.07%/25.33%|0.10%/0.10%|38.77%/37.11%|1.43%/0.95%|
 |0|-|-|-|Ma|26.86%/27.46%|0.06%/0.00%|39.53%/38.75%|1.38%/0.89%|
 |0|-|-|Do|-|28.86%/24.28%|0.07%/0.14%|38.71%/38.78%|1.32%/0.77%|
@@ -591,10 +624,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|85.82%/**85.26%**|0.75%/**1.07%**|
 |4|Dr|Ph|Do|-|82.88%/**84.40%**|0.00%/**0.00%**|83.70%/**85.26%**|0.73%/**1.07%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**85.82%**/**85.26%**|**0.75%**/**1.07%**|
+`, 'gt-probs-roundscore-gr-20-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=15, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|27.07%/25.33%|0.00%/0.00%|38.77%/37.11%|0.00%/0.00%|
 |0|-|-|-|Ma|26.86%/27.46%|0.00%/0.00%|39.53%/38.75%|0.00%/0.00%|
 |0|-|-|Do|-|28.86%/24.28%|0.00%/0.00%|38.71%/38.78%|0.00%/0.00%|
@@ -675,10 +712,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|85.82%/**85.26%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.40%**|0.00%/**0.00%**|83.70%/**85.26%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**85.82%**/**85.26%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr-15-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=10, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|27.02%/25.23%|0.05%/0.10%|37.47%/36.29%|1.30%/0.82%|
 |0|-|-|-|Ma|26.79%/27.33%|0.06%/0.13%|38.26%/37.92%|1.27%/0.82%|
 |0|-|-|Do|-|28.81%/23.99%|0.05%/0.29%|37.49%/38.01%|1.23%/0.77%|
@@ -759,10 +800,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|84.58%/**83.97%**|1.24%/**1.28%**|
 |4|Dr|Ph|Do|-|82.88%/**84.32%**|0.00%/**0.08%**|81.75%/**83.97%**|1.95%/**1.28%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**84.67%**/**83.97%**|**1.11%**/**1.28%**|
+`, 'gt-probs-roundscore-gr-10-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=5, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|27.02%/25.23%|0.00%/0.00%|37.47%/36.29%|0.00%/0.00%|
 |0|-|-|-|Ma|26.79%/27.33%|0.00%/0.00%|38.26%/37.92%|0.00%/0.00%|
 |0|-|-|Do|-|28.81%/23.99%|0.00%/0.00%|37.49%/38.01%|0.00%/0.00%|
@@ -843,10 +888,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|84.58%/**83.97%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.32%**|0.00%/**0.00%**|81.75%/**83.97%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**84.67%**/**83.97%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr-5-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=0, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.79%/25.13%|0.23%/0.10%|35.99%/35.29%|1.48%/1.00%|
 |0|-|-|-|Ma|26.53%/27.33%|0.27%/0.00%|36.79%/36.90%|1.46%/1.02%|
 |0|-|-|Do|-|28.69%/23.99%|0.12%/0.00%|36.07%/37.12%|1.42%/0.89%|
@@ -927,10 +976,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.82%**|0.00%/**0.12%**|83.08%/**82.26%**|1.49%/**1.71%**|
 |4|Dr|Ph|Do|-|82.88%/**84.01%**|0.00%/**0.31%**|79.32%/**82.26%**|2.43%/**1.71%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.82%**|**0.00%**/**0.12%**|**83.37%**/**82.26%**|**1.30%**/**1.71%**|
+`, 'gt-probs-roundscore-gr-0-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-5, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.79%/25.13%|0.00%/0.00%|35.99%/35.29%|0.00%/0.00%|
 |0|-|-|-|Ma|26.53%/27.33%|0.00%/0.00%|36.79%/36.90%|0.00%/0.00%|
 |0|-|-|Do|-|28.69%/23.99%|0.00%/0.00%|36.07%/37.12%|0.00%/0.00%|
@@ -1011,10 +1064,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.82%**|0.00%/**0.00%**|83.08%/**82.26%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.01%**|0.00%/**0.00%**|79.32%/**82.26%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.82%**|**0.00%**/**0.00%**|**83.37%**/**82.26%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--5-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-10, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.74%/25.13%|0.05%/0.00%|34.78%/34.53%|1.21%/0.76%|
 |0|-|-|-|Ma|26.46%/27.33%|0.06%/0.00%|35.57%/36.02%|1.22%/0.89%|
 |0|-|-|Do|-|28.65%/23.99%|0.04%/0.00%|34.88%/36.45%|1.19%/0.67%|
@@ -1095,10 +1152,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.12%**|80.60%/**79.70%**|2.49%/**2.56%**|
 |4|Dr|Ph|Do|-|82.88%/**84.01%**|0.00%/**0.00%**|77.37%/**79.70%**|1.95%/**2.56%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.12%**|**81.43%**/**79.70%**|**1.95%**/**2.56%**|
+`, 'gt-probs-roundscore-gr--10-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-15, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.74%/25.13%|0.00%/0.00%|34.78%/34.53%|0.00%/0.00%|
 |0|-|-|-|Ma|26.46%/27.33%|0.00%/0.00%|35.57%/36.02%|0.00%/0.00%|
 |0|-|-|Do|-|28.65%/23.99%|0.00%/0.00%|34.88%/36.45%|0.00%/0.00%|
@@ -1179,10 +1240,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|80.60%/**79.70%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.01%**|0.00%/**0.00%**|77.37%/**79.70%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**81.43%**/**79.70%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--15-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-20, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.70%/25.13%|0.05%/0.00%|33.55%/33.80%|1.23%/0.72%|
 |0|-|-|-|Ma|26.42%/27.33%|0.04%/0.00%|34.36%/35.24%|1.22%/0.77%|
 |0|-|-|Do|-|28.61%/23.85%|0.04%/0.14%|33.68%/35.75%|1.20%/0.70%|
@@ -1263,10 +1328,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|79.10%/**77.99%**|1.49%/**1.71%**|
 |4|Dr|Ph|Do|-|82.88%/**83.94%**|0.00%/**0.08%**|75.43%/**77.99%**|1.95%/**1.71%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**79.25%**/**77.99%**|**2.18%**/**1.71%**|
+`, 'gt-probs-roundscore-gr--20-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-25, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.70%/25.13%|0.00%/0.00%|33.55%/33.80%|0.00%/0.00%|
 |0|-|-|-|Ma|26.42%/27.33%|0.00%/0.00%|34.36%/35.24%|0.00%/0.00%|
 |0|-|-|Do|-|28.61%/23.85%|0.00%/0.00%|33.68%/35.75%|0.00%/0.00%|
@@ -1347,10 +1416,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|79.10%/**77.99%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**83.94%**|0.00%/**0.00%**|75.43%/**77.99%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**79.25%**/**77.99%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--25-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-30, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.64%/25.08%|0.05%/0.05%|32.39%/33.11%|1.16%/0.69%|
 |0|-|-|-|Ma|26.39%/27.33%|0.03%/0.00%|33.13%/34.46%|1.23%/0.78%|
 |0|-|-|Do|-|28.56%/23.71%|0.04%/0.14%|32.53%/35.02%|1.14%/0.73%|
@@ -1431,10 +1504,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|78.61%/**76.28%**|0.50%/**1.71%**|
 |4|Dr|Ph|Do|-|82.88%/**83.94%**|0.00%/**0.00%**|74.21%/**76.28%**|1.22%/**1.71%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**78.61%**/**76.28%**|**0.50%**/**1.71%**|
+`, 'gt-probs-roundscore-gr--30-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-35, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.64%/25.08%|0.00%/0.00%|32.39%/33.11%|0.00%/0.00%|
 |0|-|-|-|Ma|26.39%/27.33%|0.00%/0.00%|33.13%/34.46%|0.00%/0.00%|
 |0|-|-|Do|-|28.56%/23.71%|0.00%/0.00%|32.53%/35.02%|0.00%/0.00%|
@@ -1515,10 +1592,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|78.61%/**76.28%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**83.94%**|0.00%/**0.00%**|74.21%/**76.28%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**78.61%**/**76.28%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--35-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-40, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.61%/25.03%|0.03%/0.05%|31.17%/32.37%|1.21%/0.75%|
 |0|-|-|-|Ma|26.34%/27.33%|0.04%/0.00%|31.89%/33.74%|1.24%/0.73%|
 |0|-|-|Do|-|28.52%/23.56%|0.04%/0.14%|31.33%/34.25%|1.21%/0.77%|
@@ -1599,10 +1680,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|77.36%/**73.72%**|1.24%/**2.56%**|
 |4|Dr|Ph|Do|-|82.88%/**83.94%**|0.00%/**0.00%**|71.53%/**73.72%**|2.68%/**2.56%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**77.36%**/**73.72%**|**1.24%**/**2.56%**|
+`, 'gt-probs-roundscore-gr--40-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-45, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.61%/25.03%|0.00%/0.00%|31.17%/32.37%|0.00%/0.00%|
 |0|-|-|-|Ma|26.34%/27.33%|0.00%/0.00%|31.89%/33.74%|0.00%/0.00%|
 |0|-|-|Do|-|28.52%/23.56%|0.00%/0.00%|31.33%/34.25%|0.00%/0.00%|
@@ -1683,10 +1768,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|77.36%/**73.72%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**83.94%**|0.00%/**0.00%**|71.53%/**73.72%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**77.36%**/**73.72%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--45-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-50, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.56%/24.92%|0.05%/0.10%|30.00%/31.63%|1.17%/0.73%|
 |0|-|-|-|Ma|26.30%/27.20%|0.04%/0.13%|30.65%/32.90%|1.24%/0.84%|
 |0|-|-|Do|-|28.45%/23.56%|0.07%/0.00%|30.15%/33.52%|1.18%/0.73%|
@@ -1767,10 +1856,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.47%**|0.00%/**0.23%**|75.12%/**71.58%**|2.24%/**2.14%**|
 |4|Dr|Ph|Do|-|82.58%/**83.86%**|0.30%/**0.08%**|70.07%/**71.58%**|1.46%/**2.14%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.47%**|**0.00%**/**0.23%**|**75.12%**/**71.58%**|**2.24%**/**2.14%**|
+`, 'gt-probs-roundscore-gr--50-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-55, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.56%/24.92%|0.00%/0.00%|30.00%/31.63%|0.00%/0.00%|
 |0|-|-|-|Ma|26.30%/27.20%|0.00%/0.00%|30.65%/32.90%|0.00%/0.00%|
 |0|-|-|Do|-|28.45%/23.56%|0.00%/0.00%|30.15%/33.52%|0.00%/0.00%|
@@ -1851,10 +1944,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**84.47%**|0.00%/**0.00%**|75.12%/**71.58%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.58%/**83.86%**|0.00%/**0.00%**|70.07%/**71.58%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.47%**|**0.00%**/**0.00%**|**75.12%**/**71.58%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--55-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-60, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.49%/24.87%|0.07%/0.05%|28.78%/30.84%|1.23%/0.79%|
 |0|-|-|-|Ma|26.22%/27.20%|0.08%/0.00%|29.37%/32.13%|1.27%/0.77%|
 |0|-|-|Do|-|28.43%/23.56%|0.02%/0.00%|28.91%/32.68%|1.24%/0.84%|
@@ -1935,10 +2032,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**83.94%**|0.00%/**0.52%**|71.14%/**68.80%**|3.98%/**2.78%**|
 |4|Dr|Ph|Do|-|82.42%/**83.47%**|0.15%/**0.38%**|68.13%/**68.80%**|1.95%/**2.78%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**83.94%**|**0.00%**/**0.52%**|**71.83%**/**68.80%**|**2.31%**/**2.78%**|
+`, 'gt-probs-roundscore-gr--60-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-65, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.49%/24.87%|0.00%/0.00%|28.78%/30.84%|0.00%/0.00%|
 |0|-|-|-|Ma|26.22%/27.20%|0.00%/0.00%|29.37%/32.13%|0.00%/0.00%|
 |0|-|-|Do|-|28.43%/23.56%|0.00%/0.00%|28.91%/32.68%|0.00%/0.00%|
@@ -2019,10 +2120,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|89.08%/**83.94%**|0.00%/**0.00%**|71.14%/**68.80%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.42%/**83.47%**|0.00%/**0.00%**|68.13%/**68.80%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**83.94%**|**0.00%**/**0.00%**|**71.83%**/**68.80%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--65-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-70, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.44%/24.87%|0.05%/0.00%|27.69%/30.16%|1.08%/0.68%|
 |0|-|-|-|Ma|26.17%/26.94%|0.05%/0.26%|28.23%/31.33%|1.15%/0.80%|
 |0|-|-|Do|-|28.34%/23.42%|0.10%/0.14%|27.80%/31.93%|1.11%/0.75%|
@@ -2103,10 +2208,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|88.94%/**83.25%**|0.14%/**0.70%**|69.65%/**66.67%**|1.49%/**2.14%**|
 |4|Dr|Ph|Do|-|82.12%/**82.86%**|0.30%/**0.61%**|64.72%/**66.67%**|3.41%/**2.14%**|
 |4|Dr|Ph|Do|Ma|**88.94%**/**83.25%**|**0.14%**/**0.70%**|**69.65%**/**66.67%**|**1.49%**/**2.14%**|
+`, 'gt-probs-roundscore-gr--70-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-75, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.44%/24.87%|0.00%/0.00%|27.69%/30.16%|0.00%/0.00%|
 |0|-|-|-|Ma|26.17%/26.94%|0.00%/0.00%|28.23%/31.33%|0.00%/0.00%|
 |0|-|-|Do|-|28.34%/23.42%|0.00%/0.00%|27.80%/31.93%|0.00%/0.00%|
@@ -2187,10 +2296,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|88.94%/**83.25%**|0.00%/**0.00%**|69.65%/**66.67%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.12%/**82.86%**|0.00%/**0.00%**|64.72%/**66.67%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**88.94%**/**83.25%**|**0.00%**/**0.00%**|**69.65%**/**66.67%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--75-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-80, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.35%/24.82%|0.09%/0.05%|26.52%/29.39%|1.17%/0.77%|
 |0|-|-|-|Ma|26.10%/26.94%|0.07%/0.00%|27.00%/30.50%|1.23%/0.82%|
 |0|-|-|Do|-|28.22%/23.28%|0.11%/0.14%|26.60%/31.07%|1.20%/0.86%|
@@ -2271,10 +2384,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|88.51%/**82.02%**|0.43%/**1.22%**|67.41%/**64.53%**|2.24%/**2.14%**|
 |4|Dr|Ph|Do|-|81.67%/**82.01%**|0.45%/**0.85%**|61.80%/**64.53%**|2.92%/**2.14%**|
 |4|Dr|Ph|Do|Ma|**88.51%**/**82.02%**|**0.43%**/**1.22%**|**67.41%**/**64.53%**|**2.24%**/**2.14%**|
+`, 'gt-probs-roundscore-gr--80-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-85, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.35%/24.82%|0.00%/0.00%|26.52%/29.39%|0.00%/0.00%|
 |0|-|-|-|Ma|26.10%/26.94%|0.00%/0.00%|27.00%/30.50%|0.00%/0.00%|
 |0|-|-|Do|-|28.22%/23.28%|0.00%/0.00%|26.60%/31.07%|0.00%/0.00%|
@@ -2355,10 +2472,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|88.51%/**82.02%**|0.00%/**0.00%**|67.41%/**64.53%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|81.67%/**82.01%**|0.00%/**0.00%**|61.80%/**64.53%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**88.51%**/**82.02%**|**0.00%**/**0.00%**|**67.41%**/**64.53%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--85-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-90, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.26%/24.82%|0.09%/0.00%|25.48%/28.66%|1.04%/0.72%|
 |0|-|-|-|Ma|26.02%/26.94%|0.07%/0.00%|25.90%/29.68%|1.10%/0.82%|
 |0|-|-|Do|-|28.09%/23.13%|0.14%/0.14%|25.51%/30.19%|1.09%/0.88%|
@@ -2439,10 +2560,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|87.66%/**80.71%**|0.85%/**1.31%**|64.93%/**62.61%**|2.49%/**1.92%**|
 |4|Dr|Ph|Do|-|80.76%/**80.71%**|0.91%/**1.31%**|59.12%/**62.61%**|2.68%/**1.92%**|
 |4|Dr|Ph|Do|Ma|**87.66%**/**80.71%**|**0.85%**/**1.31%**|**64.93%**/**62.61%**|**2.49%**/**1.92%**|
+`, 'gt-probs-roundscore-gr--90-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-95, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.26%/24.82%|0.00%/0.00%|25.48%/28.66%|0.00%/0.00%|
 |0|-|-|-|Ma|26.02%/26.94%|0.00%/0.00%|25.90%/29.68%|0.00%/0.00%|
 |0|-|-|Do|-|28.09%/23.13%|0.00%/0.00%|25.51%/30.19%|0.00%/0.00%|
@@ -2523,10 +2648,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|87.66%/**80.71%**|0.00%/**0.00%**|64.93%/**62.61%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|80.76%/**80.71%**|0.00%/**0.00%**|59.12%/**62.61%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**87.66%**/**80.71%**|**0.00%**/**0.00%**|**64.93%**/**62.61%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--95-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-100, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.00%/24.41%|0.27%/0.41%|24.25%/27.72%|1.23%/0.94%|
 |0|-|-|-|Ma|25.72%/26.55%|0.30%/0.39%|24.58%/28.58%|1.32%/1.10%|
 |0|-|-|Do|-|27.79%/22.56%|0.30%/0.57%|24.21%/29.09%|1.31%/1.10%|
@@ -2607,10 +2736,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|86.10%/**80.09%**|1.56%/**0.61%**|63.43%/**60.90%**|1.49%/**1.71%**|
 |4|Dr|Ph|Do|-|80.00%/**80.09%**|0.76%/**0.61%**|56.93%/**60.90%**|2.19%/**1.71%**|
 |4|Dr|Ph|Do|Ma|**86.10%**/**80.09%**|**1.56%**/**0.61%**|**63.43%**/**60.90%**|**1.49%**/**1.71%**|
+`, 'gt-probs-roundscore-gr--100-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-105, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|26.00%/24.41%|0.00%/0.00%|24.25%/27.72%|0.00%/0.00%|
 |0|-|-|-|Ma|25.72%/26.55%|0.00%/0.00%|24.58%/28.58%|0.00%/0.00%|
 |0|-|-|Do|-|27.79%/22.56%|0.00%/0.00%|24.21%/29.09%|0.00%/0.00%|
@@ -2691,10 +2824,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|86.10%/**80.09%**|0.00%/**0.00%**|63.43%/**60.90%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|80.00%/**80.09%**|0.00%/**0.00%**|56.93%/**60.90%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**86.10%**/**80.09%**|**0.00%**/**0.00%**|**63.43%**/**60.90%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--105-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-110, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|25.81%/24.15%|0.19%/0.26%|23.27%/26.91%|0.98%/0.81%|
 |0|-|-|-|Ma|25.47%/25.91%|0.26%/0.65%|23.53%/27.62%|1.05%/0.95%|
 |0|-|-|Do|-|27.54%/22.13%|0.25%/0.43%|23.15%/28.19%|1.05%/0.90%|
@@ -2775,10 +2912,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|85.25%/**78.94%**|0.85%/**1.15%**|61.69%/**57.48%**|1.74%/**3.42%**|
 |4|Dr|Ph|Do|-|78.18%/**78.94%**|1.82%/**1.15%**|54.01%/**57.48%**|2.92%/**3.42%**|
 |4|Dr|Ph|Do|Ma|**85.25%**/**78.94%**|**0.85%**/**1.15%**|**61.69%**/**57.48%**|**1.74%**/**3.42%**|
+`, 'gt-probs-roundscore-gr--110-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-115, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|25.81%/24.15%|0.00%/0.00%|23.27%/26.91%|0.00%/0.00%|
 |0|-|-|-|Ma|25.47%/25.91%|0.00%/0.00%|23.53%/27.62%|0.00%/0.00%|
 |0|-|-|Do|-|27.54%/22.13%|0.00%/0.00%|23.15%/28.19%|0.00%/0.00%|
@@ -2859,10 +3000,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|85.25%/**78.94%**|0.00%/**0.00%**|61.69%/**57.48%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|78.18%/**78.94%**|0.00%/**0.00%**|54.01%/**57.48%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**85.25%**/**78.94%**|**0.00%**/**0.00%**|**61.69%**/**57.48%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--115-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-120, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|25.59%/24.00%|0.21%/0.15%|22.23%/26.02%|1.04%/0.89%|
 |0|-|-|-|Ma|25.12%/25.52%|0.35%/0.39%|22.42%/26.61%|1.11%/1.02%|
 |0|-|-|Do|-|27.16%/21.98%|0.38%/0.14%|22.00%/27.09%|1.15%/1.10%|
@@ -2943,10 +3088,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|83.55%/**77.40%**|1.70%/**1.54%**|59.20%/**55.77%**|2.49%/**1.71%**|
 |4|Dr|Ph|Do|-|77.27%/**77.40%**|0.91%/**1.54%**|52.31%/**55.77%**|1.70%/**1.71%**|
 |4|Dr|Ph|Do|Ma|**83.55%**/**77.40%**|**1.70%**/**1.54%**|**59.20%**/**55.77%**|**2.49%**/**1.71%**|
+`, 'gt-probs-roundscore-gr--120-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-125, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|25.59%/24.00%|0.00%/0.00%|22.23%/26.02%|0.00%/0.00%|
 |0|-|-|-|Ma|25.12%/25.52%|0.00%/0.00%|22.42%/26.61%|0.00%/0.00%|
 |0|-|-|Do|-|27.16%/21.98%|0.00%/0.00%|22.00%/27.09%|0.00%/0.00%|
@@ -3027,10 +3176,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|83.55%/**77.40%**|0.00%/**0.00%**|59.20%/**55.77%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|77.27%/**77.40%**|0.00%/**0.00%**|52.31%/**55.77%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**83.55%**/**77.40%**|**0.00%**/**0.00%**|**59.20%**/**55.77%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--125-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-130, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|25.23%/23.22%|0.36%/0.77%|21.23%/25.15%|1.00%/0.87%|
 |0|-|-|-|Ma|24.51%/25.00%|0.61%/0.52%|21.37%/25.71%|1.05%/0.89%|
 |0|-|-|Do|-|26.56%/21.41%|0.59%/0.57%|20.91%/26.02%|1.09%/1.07%|
@@ -3111,10 +3264,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|81.13%/**75.56%**|2.41%/**1.84%**|57.21%/**52.99%**|1.99%/**2.78%**|
 |4|Dr|Ph|Do|-|76.36%/**75.56%**|0.91%/**1.84%**|50.36%/**52.99%**|1.95%/**2.78%**|
 |4|Dr|Ph|Do|Ma|**81.13%**/**75.56%**|**2.41%**/**1.84%**|**57.21%**/**52.99%**|**1.99%**/**2.78%**|
+`, 'gt-probs-roundscore-gr--130-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-135, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|25.23%/23.22%|0.00%/0.00%|21.23%/25.15%|0.00%/0.00%|
 |0|-|-|-|Ma|24.51%/25.00%|0.00%/0.00%|21.37%/25.71%|0.00%/0.00%|
 |0|-|-|Do|-|26.56%/21.41%|0.00%/0.00%|20.91%/26.02%|0.00%/0.00%|
@@ -3195,10 +3352,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|81.13%/**75.56%**|0.00%/**0.00%**|57.21%/**52.99%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|76.36%/**75.56%**|0.00%/**0.00%**|50.36%/**52.99%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**81.13%**/**75.56%**|**0.00%**/**0.00%**|**57.21%**/**52.99%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--135-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-140, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|24.76%/22.86%|0.47%/0.36%|20.11%/24.15%|1.13%/1.00%|
 |0|-|-|-|Ma|24.03%/24.35%|0.48%/0.65%|20.19%/24.62%|1.18%/1.09%|
 |0|-|-|Do|-|25.83%/21.12%|0.74%/0.29%|19.66%/24.73%|1.25%/1.29%|
@@ -3279,10 +3440,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|79.15%/**74.48%**|1.99%/**1.08%**|54.23%/**51.28%**|2.99%/**1.71%**|
 |4|Dr|Ph|Do|-|74.55%/**74.48%**|1.82%/**1.08%**|46.72%/**51.28%**|3.65%/**1.71%**|
 |4|Dr|Ph|Do|Ma|**79.46%**/**74.48%**|**1.47%**/**1.08%**|**54.23%**/**51.28%**|**2.99%**/**1.71%**|
+`, 'gt-probs-roundscore-gr--140-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-145, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|24.76%/22.86%|0.00%/0.00%|20.11%/24.15%|0.00%/0.00%|
 |0|-|-|-|Ma|24.03%/24.35%|0.00%/0.00%|20.19%/24.62%|0.00%/0.00%|
 |0|-|-|Do|-|25.83%/21.12%|0.00%/0.00%|19.66%/24.73%|0.00%/0.00%|
@@ -3363,10 +3528,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|79.15%/**74.48%**|0.00%/**0.00%**|54.23%/**51.28%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|74.55%/**74.48%**|0.00%/**0.00%**|46.72%/**51.28%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**79.46%**/**74.48%**|**0.00%**/**0.00%**|**54.23%**/**51.28%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--145-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-150, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|24.25%/22.35%|0.51%/0.51%|19.09%/23.15%|1.02%/1.01%|
 |0|-|-|-|Ma|23.36%/23.70%|0.67%/0.65%|19.12%/23.56%|1.07%/1.07%|
 |0|-|-|Do|-|25.13%/20.40%|0.70%/0.72%|18.52%/23.50%|1.14%/1.23%|
@@ -3447,10 +3616,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|76.74%/**72.25%**|2.41%/**2.23%**|51.00%/**49.15%**|3.23%/**2.14%**|
 |4|Dr|Ph|Do|-|72.12%/**72.25%**|2.42%/**2.23%**|45.01%/**49.15%**|1.70%/**2.14%**|
 |4|Dr|Ph|Do|Ma|**77.76%**/**72.25%**|**1.70%**/**2.23%**|**51.00%**/**49.15%**|**3.23%**/**2.14%**|
+`, 'gt-probs-roundscore-gr--150-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-155, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|24.25%/22.35%|0.00%/0.00%|19.09%/23.15%|0.00%/0.00%|
 |0|-|-|-|Ma|23.36%/23.70%|0.00%/0.00%|19.12%/23.56%|0.00%/0.00%|
 |0|-|-|Do|-|25.13%/20.40%|0.00%/0.00%|18.52%/23.50%|0.00%/0.00%|
@@ -3531,10 +3704,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|76.74%/**72.25%**|0.00%/**0.00%**|51.00%/**49.15%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|72.12%/**72.25%**|0.00%/**0.00%**|45.01%/**49.15%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**77.76%**/**72.25%**|**0.00%**/**0.00%**|**51.00%**/**49.15%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--155-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-160, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|23.59%/21.94%|0.66%/0.41%|17.91%/21.95%|1.18%/1.20%|
 |0|-|-|-|Ma|22.77%/22.80%|0.58%/0.91%|17.90%/22.33%|1.22%/1.23%|
 |0|-|-|Do|-|24.34%/19.97%|0.79%/0.43%|17.21%/22.14%|1.30%/1.35%|
@@ -3615,10 +3792,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|74.61%/**69.72%**|2.13%/**2.54%**|47.51%/**46.37%**|3.48%/**2.78%**|
 |4|Dr|Ph|Do|-|70.61%/**69.72%**|1.52%/**2.54%**|43.31%/**46.37%**|1.70%/**2.78%**|
 |4|Dr|Ph|Do|Ma|**75.78%**/**69.72%**|**1.97%**/**2.54%**|**47.51%**/**46.37%**|**3.48%**/**2.78%**|
+`, 'gt-probs-roundscore-gr--160-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-165, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|23.59%/21.94%|0.00%/0.00%|17.91%/21.95%|0.00%/0.00%|
 |0|-|-|-|Ma|22.77%/22.80%|0.00%/0.00%|17.90%/22.33%|0.00%/0.00%|
 |0|-|-|Do|-|24.34%/19.97%|0.00%/0.00%|17.21%/22.14%|0.00%/0.00%|
@@ -3699,10 +3880,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|74.61%/**69.72%**|0.00%/**0.00%**|47.51%/**46.37%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|70.61%/**69.72%**|0.00%/**0.00%**|43.31%/**46.37%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**75.78%**/**69.72%**|**0.00%**/**0.00%**|**47.51%**/**46.37%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--165-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-170, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|22.97%/21.22%|0.62%/0.72%|16.96%/20.91%|0.95%/1.03%|
 |0|-|-|-|Ma|22.07%/22.02%|0.70%/0.78%|16.90%/21.27%|1.00%/1.06%|
 |0|-|-|Do|-|23.48%/19.11%|0.86%/0.86%|16.15%/20.98%|1.07%/1.16%|
@@ -3783,10 +3968,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|71.21%/**67.41%**|3.40%/**2.31%**|44.78%/**44.23%**|2.74%/**2.14%**|
 |4|Dr|Ph|Do|-|68.18%/**67.41%**|2.42%/**2.31%**|41.85%/**44.23%**|1.46%/**2.14%**|
 |4|Dr|Ph|Do|Ma|**73.42%**/**67.41%**|**2.36%**/**2.31%**|**44.78%**/**44.23%**|**2.74%**/**2.14%**|
+`, 'gt-probs-roundscore-gr--170-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-175, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|22.97%/21.22%|0.00%/0.00%|16.96%/20.91%|0.00%/0.00%|
 |0|-|-|-|Ma|22.07%/22.02%|0.00%/0.00%|16.90%/21.27%|0.00%/0.00%|
 |0|-|-|Do|-|23.48%/19.11%|0.00%/0.00%|16.15%/20.98%|0.00%/0.00%|
@@ -3867,10 +4056,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|71.21%/**67.41%**|0.00%/**0.00%**|44.78%/**44.23%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|68.18%/**67.41%**|0.00%/**0.00%**|41.85%/**44.23%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**73.42%**/**67.41%**|**0.00%**/**0.00%**|**44.78%**/**44.23%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--175-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-180, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|22.26%/20.85%|0.71%/0.36%|15.87%/19.81%|1.09%/1.10%|
 |0|-|-|-|Ma|21.22%/21.37%|0.85%/0.65%|15.81%/20.13%|1.09%/1.14%|
 |0|-|-|Do|-|22.56%/18.82%|0.92%/0.29%|14.96%/19.63%|1.19%/1.35%|
@@ -3951,10 +4144,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|69.93%/**65.49%**|1.28%/**1.92%**|42.54%/**42.31%**|2.24%/**1.92%**|
 |4|Dr|Ph|Do|-|66.36%/**65.49%**|1.82%/**1.92%**|40.39%/**42.31%**|1.46%/**1.92%**|
 |4|Dr|Ph|Do|Ma|**70.83%**/**65.49%**|**2.59%**/**1.92%**|**42.54%**/**42.31%**|**2.24%**/**1.92%**|
+`, 'gt-probs-roundscore-gr--180-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-185, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|22.26%/20.85%|0.00%/0.00%|15.87%/19.81%|0.00%/0.00%|
 |0|-|-|-|Ma|21.22%/21.37%|0.00%/0.00%|15.81%/20.13%|0.00%/0.00%|
 |0|-|-|Do|-|22.56%/18.82%|0.00%/0.00%|14.96%/19.63%|0.00%/0.00%|
@@ -4035,10 +4232,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|69.93%/**65.49%**|0.00%/**0.00%**|42.54%/**42.31%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|66.36%/**65.49%**|0.00%/**0.00%**|40.39%/**42.31%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**70.83%**/**65.49%**|**0.00%**/**0.00%**|**42.54%**/**42.31%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--185-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-190, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|21.62%/20.19%|0.64%/0.67%|15.00%/18.88%|0.87%/0.94%|
 |0|-|-|-|Ma|20.32%/20.60%|0.90%/0.78%|14.93%/19.13%|0.89%/1.00%|
 |0|-|-|Do|-|21.53%/17.82%|1.03%/1.01%|13.99%/18.54%|0.97%/1.09%|
@@ -4119,10 +4320,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|67.94%/**63.95%**|1.99%/**1.54%**|39.80%/**41.03%**|2.74%/**1.28%**|
 |4|Dr|Ph|Do|-|64.39%/**63.95%**|1.97%/**1.54%**|38.69%/**41.03%**|1.70%/**1.28%**|
 |4|Dr|Ph|Do|Ma|**68.24%**/**63.95%**|**2.59%**/**1.54%**|**40.53%**/**41.03%**|**0.35%**/**1.28%**|
+`, 'gt-probs-roundscore-gr--190-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-195, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|21.62%/20.19%|0.00%/0.00%|15.00%/18.88%|0.00%/0.00%|
 |0|-|-|-|Ma|20.32%/20.60%|0.00%/0.00%|14.93%/19.13%|0.00%/0.00%|
 |0|-|-|Do|-|21.53%/17.82%|0.00%/0.00%|13.99%/18.54%|0.00%/0.00%|
@@ -4203,10 +4408,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|67.94%/**63.95%**|0.00%/**0.00%**|39.80%/**41.03%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|64.39%/**63.95%**|0.00%/**0.00%**|38.69%/**41.03%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**68.24%**/**63.95%**|**0.00%**/**0.00%**|**40.53%**/**41.03%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--195-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-200, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|20.80%/19.52%|0.83%/0.67%|12.45%/17.17%|2.55%/1.71%|
 |0|-|-|-|Ma|19.26%/19.17%|1.06%/1.42%|12.39%/17.32%|2.53%/1.81%|
 |0|-|-|Do|-|20.42%/17.10%|1.11%/0.72%|11.75%/16.80%|2.24%/1.74%|
@@ -4287,10 +4496,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|65.11%/**61.57%**|2.84%/**2.38%**|35.32%/**36.32%**|4.48%/**4.70%**|
 |4|Dr|Ph|Do|-|61.36%/**61.57%**|3.03%/**2.38%**|30.66%/**36.32%**|8.03%/**4.70%**|
 |4|Dr|Ph|Do|Ma|**65.42%**/**61.57%**|**2.82%**/**2.38%**|**35.79%**/**36.32%**|**4.74%**/**4.70%**|
+`, 'gt-probs-roundscore-gr--200-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-205, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|20.80%/19.52%|0.00%/0.00%|12.45%/17.17%|0.00%/0.00%|
 |0|-|-|-|Ma|19.26%/19.17%|0.00%/0.00%|12.39%/17.32%|0.00%/0.00%|
 |0|-|-|Do|-|20.42%/17.10%|0.00%/0.00%|11.75%/16.80%|0.00%/0.00%|
@@ -4371,10 +4584,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|65.11%/**61.57%**|0.00%/**0.00%**|35.32%/**36.32%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|61.36%/**61.57%**|0.00%/**0.00%**|30.66%/**36.32%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**65.42%**/**61.57%**|**0.00%**/**0.00%**|**35.79%**/**36.32%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--205-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-210, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|19.99%/18.80%|0.80%/0.72%|11.76%/16.33%|0.69%/0.84%|
 |0|-|-|-|Ma|18.54%/18.39%|0.71%/0.78%|11.69%/16.48%|0.70%/0.84%|
 |0|-|-|Do|-|19.40%/16.09%|1.02%/1.01%|10.97%/15.81%|0.79%/0.99%|
@@ -4455,10 +4672,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|63.40%/**59.34%**|1.70%/**2.23%**|34.33%/**36.11%**|1.00%/**0.21%**|
 |4|Dr|Ph|Do|-|57.88%/**59.34%**|3.48%/**2.23%**|30.66%/**36.11%**|0.00%/**0.21%**|
 |4|Dr|Ph|Do|Ma|**63.40%**/**59.34%**|**1.70%**/**2.23%**|**34.91%**/**36.11%**|**0.88%**/**0.21%**|
+`, 'gt-probs-roundscore-gr--210-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-215, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|19.99%/18.80%|0.00%/0.00%|11.76%/16.33%|0.00%/0.00%|
 |0|-|-|-|Ma|18.54%/18.39%|0.00%/0.00%|11.69%/16.48%|0.00%/0.00%|
 |0|-|-|Do|-|19.40%/16.09%|0.00%/0.00%|10.97%/15.81%|0.00%/0.00%|
@@ -4539,10 +4760,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|63.40%/**59.34%**|0.00%/**0.00%**|34.33%/**36.11%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|57.88%/**59.34%**|0.00%/**0.00%**|30.66%/**36.11%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**63.40%**/**59.34%**|**0.00%**/**0.00%**|**34.91%**/**36.11%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--215-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-220, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|19.09%/18.02%|0.90%/0.77%|11.08%/15.43%|0.68%/0.90%|
 |0|-|-|-|Ma|17.63%/17.75%|0.91%/0.65%|10.99%/15.55%|0.70%/0.93%|
 |0|-|-|Do|-|18.29%/14.94%|1.11%/1.15%|10.18%/14.68%|0.79%/1.13%|
@@ -4623,10 +4848,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|61.13%/**57.57%**|2.27%/**1.77%**|33.58%/**35.90%**|0.75%/**0.21%**|
 |4|Dr|Ph|Do|-|55.76%/**57.57%**|2.12%/**1.77%**|30.66%/**35.90%**|0.00%/**0.21%**|
 |4|Dr|Ph|Do|Ma|**61.13%**/**57.57%**|**2.27%**/**1.77%**|**33.86%**/**35.90%**|**1.05%**/**0.21%**|
+`, 'gt-probs-roundscore-gr--220-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-225, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|19.09%/18.02%|0.00%/0.00%|11.08%/15.43%|0.00%/0.00%|
 |0|-|-|-|Ma|17.63%/17.75%|0.00%/0.00%|10.99%/15.55%|0.00%/0.00%|
 |0|-|-|Do|-|18.29%/14.94%|0.00%/0.00%|10.18%/14.68%|0.00%/0.00%|
@@ -4707,10 +4936,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|61.13%/**57.57%**|0.00%/**0.00%**|33.58%/**35.90%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|55.76%/**57.57%**|0.00%/**0.00%**|30.66%/**35.90%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**61.13%**/**57.57%**|**0.00%**/**0.00%**|**33.86%**/**35.90%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--225-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-230, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|18.24%/16.94%|0.85%/1.08%|10.44%/14.59%|0.64%/0.85%|
 |0|-|-|-|Ma|16.83%/16.84%|0.81%/0.91%|10.31%/14.65%|0.68%/0.90%|
 |0|-|-|Do|-|17.22%/14.08%|1.07%/0.86%|9.44%/13.66%|0.74%/1.02%|
@@ -4791,10 +5024,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|59.29%/**55.50%**|1.84%/**2.08%**|33.33%/**35.04%**|0.25%/**0.85%**|
 |4|Dr|Ph|Do|-|54.24%/**55.50%**|1.52%/**2.08%**|30.17%/**35.04%**|0.49%/**0.85%**|
 |4|Dr|Ph|Do|Ma|**59.29%**/**55.50%**|**1.84%**/**2.08%**|**33.33%**/**35.04%**|**0.25%**/**0.85%**|
+`, 'gt-probs-roundscore-gr--230-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-235, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|18.24%/16.94%|0.00%/0.00%|10.44%/14.59%|0.00%/0.00%|
 |0|-|-|-|Ma|16.83%/16.84%|0.00%/0.00%|10.31%/14.65%|0.00%/0.00%|
 |0|-|-|Do|-|17.22%/14.08%|0.00%/0.00%|9.44%/13.66%|0.00%/0.00%|
@@ -4875,10 +5112,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|59.29%/**55.50%**|0.00%/**0.00%**|33.33%/**35.04%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|54.24%/**55.50%**|0.00%/**0.00%**|30.17%/**35.04%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**59.29%**/**55.50%**|**0.00%**/**0.00%**|**33.33%**/**35.04%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--235-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-240, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|17.25%/15.91%|0.99%/1.03%|9.78%/13.68%|0.67%/0.90%|
 |0|-|-|-|Ma|15.87%/15.67%|0.96%/1.17%|9.65%/13.77%|0.66%/0.89%|
 |0|-|-|Do|-|16.21%/13.36%|1.01%/0.72%|8.68%/12.59%|0.76%/1.07%|
@@ -4959,10 +5200,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|56.60%/**52.73%**|2.70%/**2.77%**|32.59%/**34.40%**|0.75%/**0.64%**|
 |4|Dr|Ph|Do|-|50.00%/**52.73%**|4.24%/**2.77%**|29.44%/**34.40%**|0.73%/**0.64%**|
 |4|Dr|Ph|Do|Ma|**56.60%**/**52.73%**|**2.70%**/**2.77%**|**32.59%**/**34.40%**|**0.75%**/**0.64%**|
+`, 'gt-probs-roundscore-gr--240-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-245, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|17.25%/15.91%|0.00%/0.00%|9.78%/13.68%|0.00%/0.00%|
 |0|-|-|-|Ma|15.87%/15.67%|0.00%/0.00%|9.65%/13.77%|0.00%/0.00%|
 |0|-|-|Do|-|16.21%/13.36%|0.00%/0.00%|8.68%/12.59%|0.00%/0.00%|
@@ -5043,10 +5288,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|56.60%/**52.73%**|0.00%/**0.00%**|32.59%/**34.40%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|50.00%/**52.73%**|0.00%/**0.00%**|29.44%/**34.40%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**56.60%**/**52.73%**|**0.00%**/**0.00%**|**32.59%**/**34.40%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--245-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-250, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|16.34%/14.93%|0.92%/0.98%|9.18%/12.83%|0.60%/0.85%|
 |0|-|-|-|Ma|14.96%/14.90%|0.91%/0.78%|9.04%/12.85%|0.61%/0.92%|
 |0|-|-|Do|-|15.12%/12.36%|1.09%/1.01%|8.01%/11.61%|0.67%/0.98%|
@@ -5127,10 +5376,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|53.76%/**49.50%**|2.84%/**3.23%**|31.84%/**33.33%**|0.75%/**1.07%**|
 |4|Dr|Ph|Do|-|47.27%/**49.50%**|2.73%/**3.23%**|28.71%/**33.33%**|0.73%/**1.07%**|
 |4|Dr|Ph|Do|Ma|**53.76%**/**49.50%**|**2.84%**/**3.23%**|**31.84%**/**33.33%**|**0.75%**/**1.07%**|
+`, 'gt-probs-roundscore-gr--250-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-255, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|16.34%/14.93%|0.00%/0.00%|9.18%/12.83%|0.00%/0.00%|
 |0|-|-|-|Ma|14.96%/14.90%|0.00%/0.00%|9.04%/12.85%|0.00%/0.00%|
 |0|-|-|Do|-|15.12%/12.36%|0.00%/0.00%|8.01%/11.61%|0.00%/0.00%|
@@ -5211,10 +5464,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|53.76%/**49.50%**|0.00%/**0.00%**|31.84%/**33.33%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|47.27%/**49.50%**|0.00%/**0.00%**|28.71%/**33.33%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**53.76%**/**49.50%**|**0.00%**/**0.00%**|**31.84%**/**33.33%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--255-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-260, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|15.32%/13.95%|1.02%/0.98%|8.55%/11.93%|0.63%/0.91%|
 |0|-|-|-|Ma|14.07%/13.86%|0.89%/1.04%|8.43%/11.95%|0.62%/0.90%|
 |0|-|-|Do|-|14.01%/11.49%|1.12%/0.86%|7.31%/10.54%|0.70%/1.07%|
@@ -5295,10 +5552,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|49.65%/**46.58%**|4.11%/**2.92%**|31.84%/**32.91%**|0.00%/**0.43%**|
 |4|Dr|Ph|Do|-|43.33%/**46.58%**|3.94%/**2.92%**|28.71%/**32.91%**|0.00%/**0.43%**|
 |4|Dr|Ph|Do|Ma|**49.65%**/**46.58%**|**4.11%**/**2.92%**|**31.84%**/**32.91%**|**0.00%**/**0.43%**|
+`, 'gt-probs-roundscore-gr--260-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-265, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|15.32%/13.95%|0.00%/0.00%|8.55%/11.93%|0.00%/0.00%|
 |0|-|-|-|Ma|14.07%/13.86%|0.00%/0.00%|8.43%/11.95%|0.00%/0.00%|
 |0|-|-|Do|-|14.01%/11.49%|0.00%/0.00%|7.31%/10.54%|0.00%/0.00%|
@@ -5379,10 +5640,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|49.65%/**46.58%**|0.00%/**0.00%**|31.84%/**32.91%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|43.33%/**46.58%**|0.00%/**0.00%**|28.71%/**32.91%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**49.65%**/**46.58%**|**0.00%**/**0.00%**|**31.84%**/**32.91%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--265-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-270, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|14.49%/13.44%|0.83%/0.51%|8.10%/11.24%|0.45%/0.69%|
 |0|-|-|-|Ma|13.44%/13.47%|0.62%/0.39%|7.97%/11.27%|0.46%/0.67%|
 |0|-|-|Do|-|13.15%/11.21%|0.85%/0.29%|6.80%/9.75%|0.51%/0.79%|
@@ -5463,10 +5728,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|47.38%/**44.97%**|2.27%/**1.61%**|31.84%/**32.69%**|0.00%/**0.21%**|
 |4|Dr|Ph|Do|-|41.52%/**44.97%**|1.82%/**1.61%**|28.71%/**32.69%**|0.00%/**0.21%**|
 |4|Dr|Ph|Do|Ma|**47.38%**/**44.97%**|**2.27%**/**1.61%**|**31.84%**/**32.69%**|**0.00%**/**0.21%**|
+`, 'gt-probs-roundscore-gr--270-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-275, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|14.49%/13.44%|0.00%/0.00%|8.10%/11.24%|0.00%/0.00%|
 |0|-|-|-|Ma|13.44%/13.47%|0.00%/0.00%|7.97%/11.27%|0.00%/0.00%|
 |0|-|-|Do|-|13.15%/11.21%|0.00%/0.00%|6.80%/9.75%|0.00%/0.00%|
@@ -5547,10 +5816,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|47.38%/**44.97%**|0.00%/**0.00%**|31.84%/**32.69%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|41.52%/**44.97%**|0.00%/**0.00%**|28.71%/**32.69%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**47.38%**/**44.97%**|**0.00%**/**0.00%**|**31.84%**/**32.69%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--275-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-280, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|13.58%/12.87%|0.91%/0.57%|7.56%/10.46%|0.54%/0.78%|
 |0|-|-|-|Ma|12.64%/12.31%|0.80%/1.17%|7.45%/10.49%|0.51%/0.79%|
 |0|-|-|Do|-|12.26%/11.06%|0.90%/0.14%|6.23%/8.97%|0.56%/0.79%|
@@ -5631,10 +5904,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|45.25%/**42.43%**|2.13%/**2.54%**|31.59%/**32.26%**|0.25%/**0.43%**|
 |4|Dr|Ph|Do|-|40.00%/**42.43%**|1.52%/**2.54%**|28.22%/**32.26%**|0.49%/**0.43%**|
 |4|Dr|Ph|Do|Ma|**45.25%**/**42.43%**|**2.13%**/**2.54%**|**31.59%**/**32.26%**|**0.25%**/**0.43%**|
+`, 'gt-probs-roundscore-gr--280-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-285, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|13.58%/12.87%|0.00%/0.00%|7.56%/10.46%|0.00%/0.00%|
 |0|-|-|-|Ma|12.64%/12.31%|0.00%/0.00%|7.45%/10.49%|0.00%/0.00%|
 |0|-|-|Do|-|12.26%/11.06%|0.00%/0.00%|6.23%/8.97%|0.00%/0.00%|
@@ -5715,10 +5992,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|45.25%/**42.43%**|0.00%/**0.00%**|31.59%/**32.26%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|40.00%/**42.43%**|0.00%/**0.00%**|28.22%/**32.26%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**45.25%**/**42.43%**|**0.00%**/**0.00%**|**31.59%**/**32.26%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--285-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-290, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|12.90%/12.46%|0.68%/0.41%|7.19%/9.88%|0.37%/0.58%|
 |0|-|-|-|Ma|12.05%/12.05%|0.59%/0.26%|7.09%/9.97%|0.36%/0.52%|
 |0|-|-|Do|-|11.56%/10.78%|0.69%/0.29%|5.84%/8.39%|0.39%/0.58%|
@@ -5799,10 +6080,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|42.84%/**41.05%**|2.41%/**1.38%**|31.59%/**31.62%**|0.00%/**0.64%**|
 |4|Dr|Ph|Do|-|38.33%/**41.05%**|1.67%/**1.38%**|27.98%/**31.62%**|0.24%/**0.64%**|
 |4|Dr|Ph|Do|Ma|**42.84%**/**41.05%**|**2.41%**/**1.38%**|**31.59%**/**31.62%**|**0.00%**/**0.64%**|
+`, 'gt-probs-roundscore-gr--290-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-295, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|12.90%/12.46%|0.00%/0.00%|7.19%/9.88%|0.00%/0.00%|
 |0|-|-|-|Ma|12.05%/12.05%|0.00%/0.00%|7.09%/9.97%|0.00%/0.00%|
 |0|-|-|Do|-|11.56%/10.78%|0.00%/0.00%|5.84%/8.39%|0.00%/0.00%|
@@ -5883,10 +6168,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|42.84%/**41.05%**|0.00%/**0.00%**|31.59%/**31.62%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|38.33%/**41.05%**|0.00%/**0.00%**|27.98%/**31.62%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**42.84%**/**41.05%**|**0.00%**/**0.00%**|**31.59%**/**31.62%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--295-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-300, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|12.03%/11.89%|0.87%/0.57%|4.20%/7.32%|2.99%/2.56%|
 |0|-|-|-|Ma|11.33%/11.27%|0.72%/0.78%|4.12%/7.33%|2.97%/2.64%|
 |0|-|-|Do|-|10.60%/10.20%|0.96%/0.57%|3.48%/6.34%|2.35%/2.05%|
@@ -5967,10 +6256,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|40.99%/**38.89%**|1.84%/**2.15%**|2.49%/**12.29%**|29.10%/**10.61%**|
 |4|Dr|Ph|Do|-|36.36%/**38.89%**|1.97%/**2.15%**|1.70%/**11.67%**|26.28%/**10.49%**|
 |4|Dr|Ph|Do|Ma|**40.99%**/**38.89%**|**1.84%**/**2.15%**|**7.19%**/**12.29%**|**23.33%**/**10.61%**|
+`, 'gt-probs-roundscore-gr--300-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-305, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|12.03%/11.89%|0.00%/0.00%|4.20%/7.32%|0.00%/0.00%|
 |0|-|-|-|Ma|11.33%/11.27%|0.00%/0.00%|4.12%/7.33%|0.00%/0.00%|
 |0|-|-|Do|-|10.60%/10.20%|0.00%/0.00%|3.48%/6.34%|0.00%/0.00%|
@@ -6051,10 +6344,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|40.99%/**38.89%**|0.00%/**0.00%**|2.49%/**12.29%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|36.36%/**38.89%**|0.00%/**0.00%**|1.70%/**11.67%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**40.99%**/**38.89%**|**0.00%**/**0.00%**|**7.19%**/**12.29%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--305-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-310, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|11.56%/11.48%|0.47%/0.41%|3.96%/6.95%|0.24%/0.37%|
 |0|-|-|-|Ma|10.89%/10.75%|0.44%/0.52%|3.88%/6.92%|0.24%/0.41%|
 |0|-|-|Do|-|10.08%/9.91%|0.52%/0.29%|3.24%/5.96%|0.24%/0.38%|
@@ -6135,10 +6432,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|40.28%/**38.43%**|0.71%/**0.46%**|2.24%/**12.01%**|0.25%/**0.28%**|
 |4|Dr|Ph|Do|-|35.45%/**38.43%**|0.91%/**0.46%**|1.70%/**11.20%**|0.00%/**0.47%**|
 |4|Dr|Ph|Do|Ma|**40.28%**/**38.43%**|**0.71%**/**0.46%**|**7.02%**/**12.01%**|**0.18%**/**0.28%**|
+`, 'gt-probs-roundscore-gr--310-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-315, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|11.56%/11.48%|0.00%/0.00%|3.96%/6.95%|0.00%/0.00%|
 |0|-|-|-|Ma|10.89%/10.75%|0.00%/0.00%|3.88%/6.92%|0.00%/0.00%|
 |0|-|-|Do|-|10.08%/9.91%|0.00%/0.00%|3.24%/5.96%|0.00%/0.00%|
@@ -6219,10 +6520,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|40.28%/**38.43%**|0.00%/**0.00%**|2.24%/**12.01%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|35.45%/**38.43%**|0.00%/**0.00%**|1.70%/**11.20%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**40.28%**/**38.43%**|**0.00%**/**0.00%**|**7.02%**/**12.01%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--315-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-320, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|11.14%/11.23%|0.42%/0.26%|3.76%/6.64%|0.20%/0.31%|
 |0|-|-|-|Ma|10.48%/10.36%|0.41%/0.39%|3.67%/6.52%|0.21%/0.39%|
 |0|-|-|Do|-|9.57%/9.34%|0.50%/0.57%|3.03%/5.58%|0.21%/0.38%|
@@ -6303,10 +6608,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|39.43%/**38.20%**|0.85%/**0.23%**|2.24%/**10.89%**|0.00%/**1.12%**|
 |4|Dr|Ph|Do|-|35.15%/**38.20%**|0.30%/**0.23%**|1.46%/**10.38%**|0.24%/**0.19%**|
 |4|Dr|Ph|Do|Ma|**39.43%**/**38.20%**|**0.85%**/**0.23%**|**6.32%**/**10.89%**|**0.70%**/**1.12%**|
+`, 'gt-probs-roundscore-gr--320-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-325, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|11.14%/11.23%|0.00%/0.00%|3.76%/6.64%|0.00%/0.00%|
 |0|-|-|-|Ma|10.48%/10.36%|0.00%/0.00%|3.67%/6.52%|0.00%/0.00%|
 |0|-|-|Do|-|9.57%/9.34%|0.00%/0.00%|3.03%/5.58%|0.00%/0.00%|
@@ -6387,10 +6696,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|39.43%/**38.20%**|0.00%/**0.00%**|2.24%/**10.89%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|35.15%/**38.20%**|0.00%/**0.00%**|1.46%/**10.38%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**39.43%**/**38.20%**|**0.00%**/**0.00%**|**6.32%**/**10.89%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--325-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-330, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|10.74%/10.87%|0.40%/0.36%|3.56%/6.31%|0.20%/0.33%|
 |0|-|-|-|Ma|10.12%/9.72%|0.36%/0.65%|3.47%/6.15%|0.20%/0.37%|
 |0|-|-|Do|-|9.12%/8.76%|0.45%/0.57%|2.83%/5.27%|0.20%/0.31%|
@@ -6471,10 +6784,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|38.72%/**38.05%**|0.71%/**0.15%**|2.24%/**10.61%**|0.00%/**0.28%**|
 |4|Dr|Ph|Do|-|35.00%/**38.05%**|0.15%/**0.15%**|1.46%/**9.95%**|0.00%/**0.39%**|
 |4|Dr|Ph|Do|Ma|**38.72%**/**38.05%**|**0.71%**/**0.15%**|**6.14%**/**10.61%**|**0.18%**/**0.28%**|
+`, 'gt-probs-roundscore-gr--330-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-335, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|10.74%/10.87%|0.00%/0.00%|3.56%/6.31%|0.00%/0.00%|
 |0|-|-|-|Ma|10.12%/9.72%|0.00%/0.00%|3.47%/6.15%|0.00%/0.00%|
 |0|-|-|Do|-|9.12%/8.76%|0.00%/0.00%|2.83%/5.27%|0.00%/0.00%|
@@ -6555,10 +6872,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|38.72%/**38.05%**|0.00%/**0.00%**|2.24%/**10.61%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|35.00%/**38.05%**|0.00%/**0.00%**|1.46%/**9.95%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**38.72%**/**38.05%**|**0.00%**/**0.00%**|**6.14%**/**10.61%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--335-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-340, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|10.35%/10.35%|0.39%/0.51%|3.40%/5.99%|0.16%/0.32%|
 |0|-|-|-|Ma|9.75%/9.59%|0.37%/0.13%|3.30%/5.81%|0.17%/0.35%|
 |0|-|-|Do|-|8.77%/8.33%|0.35%/0.43%|2.67%/4.98%|0.16%/0.29%|
@@ -6639,10 +6960,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|38.16%/**37.28%**|0.57%/**0.77%**|2.24%/**10.34%**|0.00%/**0.28%**|
 |4|Dr|Ph|Do|-|34.85%/**37.28%**|0.15%/**0.77%**|1.46%/**9.71%**|0.00%/**0.23%**|
 |4|Dr|Ph|Do|Ma|**38.16%**/**37.28%**|**0.57%**/**0.77%**|**5.44%**/**10.34%**|**0.70%**/**0.28%**|
+`, 'gt-probs-roundscore-gr--340-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-345, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|10.35%/10.35%|0.00%/0.00%|3.40%/5.99%|0.00%/0.00%|
 |0|-|-|-|Ma|9.75%/9.59%|0.00%/0.00%|3.30%/5.81%|0.00%/0.00%|
 |0|-|-|Do|-|8.77%/8.33%|0.00%/0.00%|2.67%/4.98%|0.00%/0.00%|
@@ -6723,10 +7048,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|38.16%/**37.28%**|0.00%/**0.00%**|2.24%/**10.34%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|34.85%/**37.28%**|0.00%/**0.00%**|1.46%/**9.71%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**38.16%**/**37.28%**|**0.00%**/**0.00%**|**5.44%**/**10.34%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--345-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-350, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|9.98%/9.99%|0.37%/0.36%|3.25%/5.73%|0.15%/0.26%|
 |0|-|-|-|Ma|9.36%/9.07%|0.39%/0.52%|3.15%/5.52%|0.15%/0.29%|
 |0|-|-|Do|-|8.32%/8.05%|0.46%/0.29%|2.52%/4.68%|0.15%/0.30%|
@@ -6807,10 +7136,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|37.73%/**36.97%**|0.43%/**0.31%**|2.24%/**9.78%**|0.00%/**0.56%**|
 |4|Dr|Ph|Do|-|34.85%/**36.97%**|0.00%/**0.31%**|1.46%/**9.55%**|0.00%/**0.16%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.97%**|**0.43%**/**0.31%**|**5.19%**/**9.78%**|**0.18%**/**0.56%**|
+`, 'gt-probs-roundscore-gr--350-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-355, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|9.98%/9.99%|0.00%/0.00%|3.25%/5.73%|0.00%/0.00%|
 |0|-|-|-|Ma|9.36%/9.07%|0.00%/0.00%|3.15%/5.52%|0.00%/0.00%|
 |0|-|-|Do|-|8.32%/8.05%|0.00%/0.00%|2.52%/4.68%|0.00%/0.00%|
@@ -6891,10 +7224,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|37.73%/**36.97%**|0.00%/**0.00%**|2.24%/**9.78%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|34.85%/**36.97%**|0.00%/**0.00%**|1.46%/**9.55%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.97%**|**0.00%**/**0.00%**|**5.19%**/**9.78%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--355-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-360, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|9.55%/9.37%|0.43%/0.62%|3.13%/5.48%|0.12%/0.25%|
 |0|-|-|-|Ma|9.09%/8.42%|0.28%/0.65%|3.02%/5.21%|0.13%/0.31%|
 |0|-|-|Do|-|7.86%/7.90%|0.46%/0.14%|2.39%/4.42%|0.13%/0.26%|
@@ -6975,10 +7312,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|37.73%/**36.97%**|0.00%/**0.00%**|2.24%/**9.50%**|0.00%/**0.28%**|
 |4|Dr|Ph|Do|-|34.85%/**36.97%**|0.00%/**0.00%**|1.46%/**9.24%**|0.00%/**0.31%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.97%**|**0.00%**/**0.00%**|**5.09%**/**9.50%**|**0.00%**/**0.28%**|
+`, 'gt-probs-roundscore-gr--360-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-365, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|9.55%/9.37%|0.00%/0.00%|3.13%/5.48%|0.00%/0.00%|
 |0|-|-|-|Ma|9.09%/8.42%|0.00%/0.00%|3.02%/5.21%|0.00%/0.00%|
 |0|-|-|Do|-|7.86%/7.90%|0.00%/0.00%|2.39%/4.42%|0.00%/0.00%|
@@ -7059,10 +7400,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|37.73%/**36.97%**|0.00%/**0.00%**|2.24%/**9.50%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|34.85%/**36.97%**|0.00%/**0.00%**|1.46%/**9.24%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.97%**|**0.00%**/**0.00%**|**5.09%**/**9.50%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--365-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-370, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|9.21%/9.11%|0.33%/0.26%|3.05%/5.30%|0.09%/0.18%|
 |0|-|-|-|Ma|8.78%/7.51%|0.30%/0.91%|2.93%/5.02%|0.09%/0.19%|
 |0|-|-|Do|-|7.54%/7.90%|0.31%/0.00%|2.30%/4.22%|0.09%/0.20%|
@@ -7143,10 +7488,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|37.73%/**36.82%**|0.00%/**0.15%**|2.24%/**8.94%**|0.00%/**0.56%**|
 |4|Dr|Ph|Do|-|34.70%/**36.82%**|0.15%/**0.15%**|1.46%/**8.83%**|0.00%/**0.10%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.82%**|**0.00%**/**0.15%**|**5.09%**/**8.94%**|**0.00%**/**0.56%**|
+`, 'gt-probs-roundscore-gr--370-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-375, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|9.21%/9.11%|0.00%/0.00%|3.05%/5.30%|0.00%/0.00%|
 |0|-|-|-|Ma|8.78%/7.51%|0.00%/0.00%|2.93%/5.02%|0.00%/0.00%|
 |0|-|-|Do|-|7.54%/7.90%|0.00%/0.00%|2.30%/4.22%|0.00%/0.00%|
@@ -7227,10 +7576,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|37.73%/**36.82%**|0.00%/**0.00%**|2.24%/**8.94%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|34.70%/**36.82%**|0.00%/**0.00%**|1.46%/**8.83%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.82%**|**0.00%**/**0.00%**|**5.09%**/**8.94%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--375-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-380, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|8.83%/8.65%|0.38%/0.46%|2.94%/5.08%|0.11%/0.22%|
 |0|-|-|-|Ma|8.45%/6.74%|0.33%/0.78%|2.81%/4.78%|0.11%/0.23%|
 |0|-|-|Do|-|7.10%/7.18%|0.44%/0.72%|2.20%/4.01%|0.10%/0.21%|
@@ -7311,10 +7664,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|37.73%/**36.82%**|0.00%/**0.00%**|1.99%/**8.54%**|0.25%/**0.23%**|
 |4|Dr|Ph|Do|-|34.70%/**36.82%**|0.00%/**0.00%**|1.46%/**8.63%**|0.00%/**0.19%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.82%**|**0.00%**/**0.00%**|**4.91%**/**8.63%**|**0.18%**/**0.19%**|
+`, 'gt-probs-roundscore-gr--380-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-385, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|8.83%/8.65%|0.00%/0.00%|2.94%/5.08%|0.00%/0.00%|
 |0|-|-|-|Ma|8.45%/6.74%|0.00%/0.00%|2.81%/4.78%|0.00%/0.00%|
 |0|-|-|Do|-|7.10%/7.18%|0.00%/0.00%|2.20%/4.01%|0.00%/0.00%|
@@ -7395,10 +7752,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|37.73%/**36.82%**|0.00%/**0.00%**|1.99%/**8.54%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|34.70%/**36.82%**|0.00%/**0.00%**|1.46%/**8.63%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.82%**|**0.00%**/**0.00%**|**4.91%**/**8.63%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--385-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-390, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|8.52%/7.88%|0.32%/0.77%|2.87%/4.92%|0.07%/0.16%|
 |0|-|-|-|Ma|8.14%/6.48%|0.31%/0.26%|2.73%/4.58%|0.08%/0.20%|
 |0|-|-|Do|-|6.78%/6.90%|0.33%/0.29%|2.12%/3.81%|0.08%/0.20%|
@@ -7479,10 +7840,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|37.73%/**36.66%**|0.00%/**0.15%**|1.99%/**8.30%**|0.00%/**0.23%**|
 |4|Dr|Ph|Do|-|34.70%/**36.66%**|0.00%/**0.15%**|1.46%/**8.30%**|0.00%/**0.23%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.66%**|**0.00%**/**0.15%**|**4.91%**/**8.30%**|**0.00%**/**0.23%**|
+`, 'gt-probs-roundscore-gr--390-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-395, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|8.52%/7.88%|0.00%/0.00%|2.87%/4.92%|0.00%/0.00%|
 |0|-|-|-|Ma|8.14%/6.48%|0.00%/0.00%|2.73%/4.58%|0.00%/0.00%|
 |0|-|-|Do|-|6.78%/6.90%|0.00%/0.00%|2.12%/3.81%|0.00%/0.00%|
@@ -7563,10 +7928,14 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|37.73%/**36.66%**|0.00%/**0.00%**|1.99%/**8.30%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|34.70%/**36.66%**|0.00%/**0.00%**|1.46%/**8.30%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.66%**|**0.00%**/**0.00%**|**4.91%**/**8.30%**|**0.00%**/**0.00%**|
+`, 'gt-probs-roundscore-gr--395-bycat14');
+</script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-400, wenn Kategorie unter ersten 14 vorliegt
 
-|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = p bei nicht GT(\*/\*\*)|
+<script>
+createFilterableTable(`
+|Asse|Dr|Ph|Dog|Ma|Wsk Rundengewinn > -p  bei GT (\*/\*\*)|Wsk Rundengewinn = -p bei GT(\*/\*\*)|Wsk Rundengewinn > -p  bei nicht GT (\*/\*\*)|Wsk Rundengewinn = -p bei nicht GT(\*/\*\*)|
 |0|-|-|-|-|3.62%/3.86%|4.90%/4.02%|0.68%/1.63%|2.19%/3.29%|
 |0|-|-|-|Ma|3.55%/3.50%|4.59%/2.98%|0.68%/1.49%|2.05%/3.10%|
 |0|-|-|Do|-|3.03%/2.73%|3.75%/4.17%|0.59%/1.44%|1.53%/2.38%|
@@ -7647,3 +8016,5 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 |4|Dr|Ph|-|Ma|1.42%/**7.49%**|36.31%/**13.66%**|0.25%/**2.85%**|1.74%/**5.24%**|
 |4|Dr|Ph|Do|-|1.82%/**7.49%**|32.88%/**13.66%**|0.73%/**3.01%**|0.73%/**5.14%**|
 |4|Dr|Ph|Do|Ma|**4.49%**/**7.49%**|**16.39%**/**13.66%**|**1.28%**/**3.01%**|**2.29%**/**5.14%**|
+`, 'gt-probs-roundscore-gr--400-bycat14');
+</script>
