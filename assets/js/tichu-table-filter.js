@@ -139,7 +139,7 @@ function createGlobalTichuFilter(targetElement) {
 }
 
 // Main function to create filterable table from markdown
-function createFilterableTable(markdownTable, containerId) {
+function createFilterableTable(markdownTable, containerId, createFilter = true) {
     let container = document.getElementById(containerId);
     if (!container) {
         container = document.createElement('div');
@@ -150,7 +150,9 @@ function createFilterableTable(markdownTable, containerId) {
     const tableHTML = convertMarkdownTableToHTML(markdownTable);
     container.innerHTML = tableHTML;
     const tableElement = container.querySelector('.tichu-stats-table');
-    createTichuTableFilter(tableElement);
+    if (createFilter) {
+        createTichuTableFilter(tableElement);
+    }
 }
 
 function createTichuTableFilter(tableElement) {

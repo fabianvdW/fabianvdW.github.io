@@ -1,7 +1,14 @@
 ---
 layout: post
 ---
+<script src="{{ '/assets/js/tichu-table-filter.js' | relative_url }}"></script>
+
 Bedienen dieser Seite durch Strg+F und p=... eingeben!
+
+<div id="global-filter-container"></div>
+<script>
+createGlobalTichuFilter(document.getElementById('global-filter-container'));
+</script>
 
 
  Wahrscheinlichkeit von Sieg für p=50, wenn Kategorie unter ersten 8 vorliegt

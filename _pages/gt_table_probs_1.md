@@ -10,7 +10,7 @@ Bedienen dieser Seite durch Strg+F und p=... eingeben!
 createGlobalTichuFilter(document.getElementById('global-filter-container'));
 </script>
 
-
+ 
  Wahrscheinlichkeit von relativem Rundengewinn für p=50, wenn Kategorie unter ersten 14 vorliegt
 
 <script>
@@ -96,7 +96,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|88.31%/**87.18%**|0.25%/**0.43%**|
 |4|Dr|Ph|Do|-|82.88%/**84.47%**|0.00%/**0.08%**|86.37%/**87.18%**|0.73%/**0.43%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**88.31%**/**87.18%**|**0.25%**/**0.43%**|
-`, 'gt-probs-roundscore-gr-50-bycat14');
+`, 'gt-probs-roundscore-gr-50-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=45, wenn Kategorie unter ersten 14 vorliegt
@@ -184,7 +184,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|88.31%/**87.18%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.47%**|0.00%/**0.00%**|86.37%/**87.18%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**88.31%**/**87.18%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr-45-bycat14');
+`, 'gt-probs-roundscore-gr-45-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=40, wenn Kategorie unter ersten 14 vorliegt
@@ -272,7 +272,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|87.56%/**86.97%**|0.75%/**0.21%**|
 |4|Dr|Ph|Do|-|82.88%/**84.40%**|0.00%/**0.08%**|86.13%/**86.97%**|0.24%/**0.21%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**87.82%**/**86.97%**|**0.42%**/**0.21%**|
-`, 'gt-probs-roundscore-gr-40-bycat14');
+`, 'gt-probs-roundscore-gr-40-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=35, wenn Kategorie unter ersten 14 vorliegt
@@ -360,7 +360,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|87.56%/**86.97%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.40%**|0.00%/**0.00%**|86.13%/**86.97%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**87.82%**/**86.97%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr-35-bycat14');
+`, 'gt-probs-roundscore-gr-35-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=30, wenn Kategorie unter ersten 14 vorliegt
@@ -448,7 +448,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|86.57%/**86.32%**|1.00%/**0.64%**|
 |4|Dr|Ph|Do|-|82.88%/**84.40%**|0.00%/**0.00%**|84.43%/**86.32%**|1.70%/**0.64%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**86.61%**/**86.32%**|**1.20%**/**0.64%**|
-`, 'gt-probs-roundscore-gr-30-bycat14');
+`, 'gt-probs-roundscore-gr-30-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=25, wenn Kategorie unter ersten 14 vorliegt
@@ -536,7 +536,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|86.57%/**86.32%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.40%**|0.00%/**0.00%**|84.43%/**86.32%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**86.61%**/**86.32%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr-25-bycat14');
+`, 'gt-probs-roundscore-gr-25-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=20, wenn Kategorie unter ersten 14 vorliegt
@@ -624,7 +624,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|85.82%/**85.26%**|0.75%/**1.07%**|
 |4|Dr|Ph|Do|-|82.88%/**84.40%**|0.00%/**0.00%**|83.70%/**85.26%**|0.73%/**1.07%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**85.82%**/**85.26%**|**0.75%**/**1.07%**|
-`, 'gt-probs-roundscore-gr-20-bycat14');
+`, 'gt-probs-roundscore-gr-20-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=15, wenn Kategorie unter ersten 14 vorliegt
@@ -712,7 +712,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|85.82%/**85.26%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.40%**|0.00%/**0.00%**|83.70%/**85.26%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**85.82%**/**85.26%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr-15-bycat14');
+`, 'gt-probs-roundscore-gr-15-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=10, wenn Kategorie unter ersten 14 vorliegt
@@ -800,7 +800,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|84.58%/**83.97%**|1.24%/**1.28%**|
 |4|Dr|Ph|Do|-|82.88%/**84.32%**|0.00%/**0.08%**|81.75%/**83.97%**|1.95%/**1.28%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**84.67%**/**83.97%**|**1.11%**/**1.28%**|
-`, 'gt-probs-roundscore-gr-10-bycat14');
+`, 'gt-probs-roundscore-gr-10-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=5, wenn Kategorie unter ersten 14 vorliegt
@@ -888,7 +888,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|0.00%/**0.00%**|84.58%/**83.97%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.32%**|0.00%/**0.00%**|81.75%/**83.97%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**0.00%**/**0.00%**|**84.67%**/**83.97%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr-5-bycat14');
+`, 'gt-probs-roundscore-gr-5-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=0, wenn Kategorie unter ersten 14 vorliegt
@@ -976,7 +976,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.82%**|0.00%/**0.12%**|83.08%/**82.26%**|1.49%/**1.71%**|
 |4|Dr|Ph|Do|-|82.88%/**84.01%**|0.00%/**0.31%**|79.32%/**82.26%**|2.43%/**1.71%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.82%**|**0.00%**/**0.12%**|**83.37%**/**82.26%**|**1.30%**/**1.71%**|
-`, 'gt-probs-roundscore-gr-0-bycat14');
+`, 'gt-probs-roundscore-gr-0-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-5, wenn Kategorie unter ersten 14 vorliegt
@@ -1064,7 +1064,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.82%**|0.00%/**0.00%**|83.08%/**82.26%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.01%**|0.00%/**0.00%**|79.32%/**82.26%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.82%**|**0.00%**/**0.00%**|**83.37%**/**82.26%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--5-bycat14');
+`, 'gt-probs-roundscore-gr--5-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-10, wenn Kategorie unter ersten 14 vorliegt
@@ -1152,7 +1152,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.12%**|80.60%/**79.70%**|2.49%/**2.56%**|
 |4|Dr|Ph|Do|-|82.88%/**84.01%**|0.00%/**0.00%**|77.37%/**79.70%**|1.95%/**2.56%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.12%**|**81.43%**/**79.70%**|**1.95%**/**2.56%**|
-`, 'gt-probs-roundscore-gr--10-bycat14');
+`, 'gt-probs-roundscore-gr--10-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-15, wenn Kategorie unter ersten 14 vorliegt
@@ -1240,7 +1240,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|80.60%/**79.70%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**84.01%**|0.00%/**0.00%**|77.37%/**79.70%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**81.43%**/**79.70%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--15-bycat14');
+`, 'gt-probs-roundscore-gr--15-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-20, wenn Kategorie unter ersten 14 vorliegt
@@ -1328,7 +1328,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|79.10%/**77.99%**|1.49%/**1.71%**|
 |4|Dr|Ph|Do|-|82.88%/**83.94%**|0.00%/**0.08%**|75.43%/**77.99%**|1.95%/**1.71%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**79.25%**/**77.99%**|**2.18%**/**1.71%**|
-`, 'gt-probs-roundscore-gr--20-bycat14');
+`, 'gt-probs-roundscore-gr--20-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-25, wenn Kategorie unter ersten 14 vorliegt
@@ -1416,7 +1416,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|79.10%/**77.99%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**83.94%**|0.00%/**0.00%**|75.43%/**77.99%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**79.25%**/**77.99%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--25-bycat14');
+`, 'gt-probs-roundscore-gr--25-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-30, wenn Kategorie unter ersten 14 vorliegt
@@ -1504,7 +1504,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|78.61%/**76.28%**|0.50%/**1.71%**|
 |4|Dr|Ph|Do|-|82.88%/**83.94%**|0.00%/**0.00%**|74.21%/**76.28%**|1.22%/**1.71%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**78.61%**/**76.28%**|**0.50%**/**1.71%**|
-`, 'gt-probs-roundscore-gr--30-bycat14');
+`, 'gt-probs-roundscore-gr--30-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-35, wenn Kategorie unter ersten 14 vorliegt
@@ -1592,7 +1592,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|78.61%/**76.28%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**83.94%**|0.00%/**0.00%**|74.21%/**76.28%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**78.61%**/**76.28%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--35-bycat14');
+`, 'gt-probs-roundscore-gr--35-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-40, wenn Kategorie unter ersten 14 vorliegt
@@ -1680,7 +1680,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|77.36%/**73.72%**|1.24%/**2.56%**|
 |4|Dr|Ph|Do|-|82.88%/**83.94%**|0.00%/**0.00%**|71.53%/**73.72%**|2.68%/**2.56%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**77.36%**/**73.72%**|**1.24%**/**2.56%**|
-`, 'gt-probs-roundscore-gr--40-bycat14');
+`, 'gt-probs-roundscore-gr--40-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-45, wenn Kategorie unter ersten 14 vorliegt
@@ -1768,7 +1768,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|0.00%/**0.00%**|77.36%/**73.72%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.88%/**83.94%**|0.00%/**0.00%**|71.53%/**73.72%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**0.00%**/**0.00%**|**77.36%**/**73.72%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--45-bycat14');
+`, 'gt-probs-roundscore-gr--45-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-50, wenn Kategorie unter ersten 14 vorliegt
@@ -1856,7 +1856,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.47%**|0.00%/**0.23%**|75.12%/**71.58%**|2.24%/**2.14%**|
 |4|Dr|Ph|Do|-|82.58%/**83.86%**|0.30%/**0.08%**|70.07%/**71.58%**|1.46%/**2.14%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.47%**|**0.00%**/**0.23%**|**75.12%**/**71.58%**|**2.24%**/**2.14%**|
-`, 'gt-probs-roundscore-gr--50-bycat14');
+`, 'gt-probs-roundscore-gr--50-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-55, wenn Kategorie unter ersten 14 vorliegt
@@ -1944,7 +1944,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**84.47%**|0.00%/**0.00%**|75.12%/**71.58%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.58%/**83.86%**|0.00%/**0.00%**|70.07%/**71.58%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.47%**|**0.00%**/**0.00%**|**75.12%**/**71.58%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--55-bycat14');
+`, 'gt-probs-roundscore-gr--55-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-60, wenn Kategorie unter ersten 14 vorliegt
@@ -2032,7 +2032,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**83.94%**|0.00%/**0.52%**|71.14%/**68.80%**|3.98%/**2.78%**|
 |4|Dr|Ph|Do|-|82.42%/**83.47%**|0.15%/**0.38%**|68.13%/**68.80%**|1.95%/**2.78%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**83.94%**|**0.00%**/**0.52%**|**71.83%**/**68.80%**|**2.31%**/**2.78%**|
-`, 'gt-probs-roundscore-gr--60-bycat14');
+`, 'gt-probs-roundscore-gr--60-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-65, wenn Kategorie unter ersten 14 vorliegt
@@ -2120,7 +2120,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|89.08%/**83.94%**|0.00%/**0.00%**|71.14%/**68.80%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.42%/**83.47%**|0.00%/**0.00%**|68.13%/**68.80%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**83.94%**|**0.00%**/**0.00%**|**71.83%**/**68.80%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--65-bycat14');
+`, 'gt-probs-roundscore-gr--65-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-70, wenn Kategorie unter ersten 14 vorliegt
@@ -2208,7 +2208,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|88.94%/**83.25%**|0.14%/**0.70%**|69.65%/**66.67%**|1.49%/**2.14%**|
 |4|Dr|Ph|Do|-|82.12%/**82.86%**|0.30%/**0.61%**|64.72%/**66.67%**|3.41%/**2.14%**|
 |4|Dr|Ph|Do|Ma|**88.94%**/**83.25%**|**0.14%**/**0.70%**|**69.65%**/**66.67%**|**1.49%**/**2.14%**|
-`, 'gt-probs-roundscore-gr--70-bycat14');
+`, 'gt-probs-roundscore-gr--70-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-75, wenn Kategorie unter ersten 14 vorliegt
@@ -2296,7 +2296,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|88.94%/**83.25%**|0.00%/**0.00%**|69.65%/**66.67%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|82.12%/**82.86%**|0.00%/**0.00%**|64.72%/**66.67%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**88.94%**/**83.25%**|**0.00%**/**0.00%**|**69.65%**/**66.67%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--75-bycat14');
+`, 'gt-probs-roundscore-gr--75-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-80, wenn Kategorie unter ersten 14 vorliegt
@@ -2384,7 +2384,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|88.51%/**82.02%**|0.43%/**1.22%**|67.41%/**64.53%**|2.24%/**2.14%**|
 |4|Dr|Ph|Do|-|81.67%/**82.01%**|0.45%/**0.85%**|61.80%/**64.53%**|2.92%/**2.14%**|
 |4|Dr|Ph|Do|Ma|**88.51%**/**82.02%**|**0.43%**/**1.22%**|**67.41%**/**64.53%**|**2.24%**/**2.14%**|
-`, 'gt-probs-roundscore-gr--80-bycat14');
+`, 'gt-probs-roundscore-gr--80-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-85, wenn Kategorie unter ersten 14 vorliegt
@@ -2472,7 +2472,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|88.51%/**82.02%**|0.00%/**0.00%**|67.41%/**64.53%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|81.67%/**82.01%**|0.00%/**0.00%**|61.80%/**64.53%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**88.51%**/**82.02%**|**0.00%**/**0.00%**|**67.41%**/**64.53%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--85-bycat14');
+`, 'gt-probs-roundscore-gr--85-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-90, wenn Kategorie unter ersten 14 vorliegt
@@ -2560,7 +2560,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|87.66%/**80.71%**|0.85%/**1.31%**|64.93%/**62.61%**|2.49%/**1.92%**|
 |4|Dr|Ph|Do|-|80.76%/**80.71%**|0.91%/**1.31%**|59.12%/**62.61%**|2.68%/**1.92%**|
 |4|Dr|Ph|Do|Ma|**87.66%**/**80.71%**|**0.85%**/**1.31%**|**64.93%**/**62.61%**|**2.49%**/**1.92%**|
-`, 'gt-probs-roundscore-gr--90-bycat14');
+`, 'gt-probs-roundscore-gr--90-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-95, wenn Kategorie unter ersten 14 vorliegt
@@ -2648,7 +2648,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|87.66%/**80.71%**|0.00%/**0.00%**|64.93%/**62.61%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|80.76%/**80.71%**|0.00%/**0.00%**|59.12%/**62.61%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**87.66%**/**80.71%**|**0.00%**/**0.00%**|**64.93%**/**62.61%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--95-bycat14');
+`, 'gt-probs-roundscore-gr--95-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-100, wenn Kategorie unter ersten 14 vorliegt
@@ -2736,7 +2736,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|86.10%/**80.09%**|1.56%/**0.61%**|63.43%/**60.90%**|1.49%/**1.71%**|
 |4|Dr|Ph|Do|-|80.00%/**80.09%**|0.76%/**0.61%**|56.93%/**60.90%**|2.19%/**1.71%**|
 |4|Dr|Ph|Do|Ma|**86.10%**/**80.09%**|**1.56%**/**0.61%**|**63.43%**/**60.90%**|**1.49%**/**1.71%**|
-`, 'gt-probs-roundscore-gr--100-bycat14');
+`, 'gt-probs-roundscore-gr--100-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-105, wenn Kategorie unter ersten 14 vorliegt
@@ -2824,7 +2824,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|86.10%/**80.09%**|0.00%/**0.00%**|63.43%/**60.90%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|80.00%/**80.09%**|0.00%/**0.00%**|56.93%/**60.90%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**86.10%**/**80.09%**|**0.00%**/**0.00%**|**63.43%**/**60.90%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--105-bycat14');
+`, 'gt-probs-roundscore-gr--105-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-110, wenn Kategorie unter ersten 14 vorliegt
@@ -2912,7 +2912,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|85.25%/**78.94%**|0.85%/**1.15%**|61.69%/**57.48%**|1.74%/**3.42%**|
 |4|Dr|Ph|Do|-|78.18%/**78.94%**|1.82%/**1.15%**|54.01%/**57.48%**|2.92%/**3.42%**|
 |4|Dr|Ph|Do|Ma|**85.25%**/**78.94%**|**0.85%**/**1.15%**|**61.69%**/**57.48%**|**1.74%**/**3.42%**|
-`, 'gt-probs-roundscore-gr--110-bycat14');
+`, 'gt-probs-roundscore-gr--110-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-115, wenn Kategorie unter ersten 14 vorliegt
@@ -3000,7 +3000,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|85.25%/**78.94%**|0.00%/**0.00%**|61.69%/**57.48%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|78.18%/**78.94%**|0.00%/**0.00%**|54.01%/**57.48%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**85.25%**/**78.94%**|**0.00%**/**0.00%**|**61.69%**/**57.48%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--115-bycat14');
+`, 'gt-probs-roundscore-gr--115-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-120, wenn Kategorie unter ersten 14 vorliegt
@@ -3088,7 +3088,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|83.55%/**77.40%**|1.70%/**1.54%**|59.20%/**55.77%**|2.49%/**1.71%**|
 |4|Dr|Ph|Do|-|77.27%/**77.40%**|0.91%/**1.54%**|52.31%/**55.77%**|1.70%/**1.71%**|
 |4|Dr|Ph|Do|Ma|**83.55%**/**77.40%**|**1.70%**/**1.54%**|**59.20%**/**55.77%**|**2.49%**/**1.71%**|
-`, 'gt-probs-roundscore-gr--120-bycat14');
+`, 'gt-probs-roundscore-gr--120-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-125, wenn Kategorie unter ersten 14 vorliegt
@@ -3176,7 +3176,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|83.55%/**77.40%**|0.00%/**0.00%**|59.20%/**55.77%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|77.27%/**77.40%**|0.00%/**0.00%**|52.31%/**55.77%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**83.55%**/**77.40%**|**0.00%**/**0.00%**|**59.20%**/**55.77%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--125-bycat14');
+`, 'gt-probs-roundscore-gr--125-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-130, wenn Kategorie unter ersten 14 vorliegt
@@ -3264,7 +3264,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|81.13%/**75.56%**|2.41%/**1.84%**|57.21%/**52.99%**|1.99%/**2.78%**|
 |4|Dr|Ph|Do|-|76.36%/**75.56%**|0.91%/**1.84%**|50.36%/**52.99%**|1.95%/**2.78%**|
 |4|Dr|Ph|Do|Ma|**81.13%**/**75.56%**|**2.41%**/**1.84%**|**57.21%**/**52.99%**|**1.99%**/**2.78%**|
-`, 'gt-probs-roundscore-gr--130-bycat14');
+`, 'gt-probs-roundscore-gr--130-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-135, wenn Kategorie unter ersten 14 vorliegt
@@ -3352,7 +3352,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|81.13%/**75.56%**|0.00%/**0.00%**|57.21%/**52.99%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|76.36%/**75.56%**|0.00%/**0.00%**|50.36%/**52.99%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**81.13%**/**75.56%**|**0.00%**/**0.00%**|**57.21%**/**52.99%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--135-bycat14');
+`, 'gt-probs-roundscore-gr--135-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-140, wenn Kategorie unter ersten 14 vorliegt
@@ -3440,7 +3440,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|79.15%/**74.48%**|1.99%/**1.08%**|54.23%/**51.28%**|2.99%/**1.71%**|
 |4|Dr|Ph|Do|-|74.55%/**74.48%**|1.82%/**1.08%**|46.72%/**51.28%**|3.65%/**1.71%**|
 |4|Dr|Ph|Do|Ma|**79.46%**/**74.48%**|**1.47%**/**1.08%**|**54.23%**/**51.28%**|**2.99%**/**1.71%**|
-`, 'gt-probs-roundscore-gr--140-bycat14');
+`, 'gt-probs-roundscore-gr--140-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-145, wenn Kategorie unter ersten 14 vorliegt
@@ -3528,7 +3528,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|79.15%/**74.48%**|0.00%/**0.00%**|54.23%/**51.28%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|74.55%/**74.48%**|0.00%/**0.00%**|46.72%/**51.28%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**79.46%**/**74.48%**|**0.00%**/**0.00%**|**54.23%**/**51.28%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--145-bycat14');
+`, 'gt-probs-roundscore-gr--145-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-150, wenn Kategorie unter ersten 14 vorliegt
@@ -3616,7 +3616,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|76.74%/**72.25%**|2.41%/**2.23%**|51.00%/**49.15%**|3.23%/**2.14%**|
 |4|Dr|Ph|Do|-|72.12%/**72.25%**|2.42%/**2.23%**|45.01%/**49.15%**|1.70%/**2.14%**|
 |4|Dr|Ph|Do|Ma|**77.76%**/**72.25%**|**1.70%**/**2.23%**|**51.00%**/**49.15%**|**3.23%**/**2.14%**|
-`, 'gt-probs-roundscore-gr--150-bycat14');
+`, 'gt-probs-roundscore-gr--150-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-155, wenn Kategorie unter ersten 14 vorliegt
@@ -3704,7 +3704,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|76.74%/**72.25%**|0.00%/**0.00%**|51.00%/**49.15%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|72.12%/**72.25%**|0.00%/**0.00%**|45.01%/**49.15%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**77.76%**/**72.25%**|**0.00%**/**0.00%**|**51.00%**/**49.15%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--155-bycat14');
+`, 'gt-probs-roundscore-gr--155-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-160, wenn Kategorie unter ersten 14 vorliegt
@@ -3792,7 +3792,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|74.61%/**69.72%**|2.13%/**2.54%**|47.51%/**46.37%**|3.48%/**2.78%**|
 |4|Dr|Ph|Do|-|70.61%/**69.72%**|1.52%/**2.54%**|43.31%/**46.37%**|1.70%/**2.78%**|
 |4|Dr|Ph|Do|Ma|**75.78%**/**69.72%**|**1.97%**/**2.54%**|**47.51%**/**46.37%**|**3.48%**/**2.78%**|
-`, 'gt-probs-roundscore-gr--160-bycat14');
+`, 'gt-probs-roundscore-gr--160-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-165, wenn Kategorie unter ersten 14 vorliegt
@@ -3880,7 +3880,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|74.61%/**69.72%**|0.00%/**0.00%**|47.51%/**46.37%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|70.61%/**69.72%**|0.00%/**0.00%**|43.31%/**46.37%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**75.78%**/**69.72%**|**0.00%**/**0.00%**|**47.51%**/**46.37%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--165-bycat14');
+`, 'gt-probs-roundscore-gr--165-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-170, wenn Kategorie unter ersten 14 vorliegt
@@ -3968,7 +3968,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|71.21%/**67.41%**|3.40%/**2.31%**|44.78%/**44.23%**|2.74%/**2.14%**|
 |4|Dr|Ph|Do|-|68.18%/**67.41%**|2.42%/**2.31%**|41.85%/**44.23%**|1.46%/**2.14%**|
 |4|Dr|Ph|Do|Ma|**73.42%**/**67.41%**|**2.36%**/**2.31%**|**44.78%**/**44.23%**|**2.74%**/**2.14%**|
-`, 'gt-probs-roundscore-gr--170-bycat14');
+`, 'gt-probs-roundscore-gr--170-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-175, wenn Kategorie unter ersten 14 vorliegt
@@ -4056,7 +4056,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|71.21%/**67.41%**|0.00%/**0.00%**|44.78%/**44.23%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|68.18%/**67.41%**|0.00%/**0.00%**|41.85%/**44.23%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**73.42%**/**67.41%**|**0.00%**/**0.00%**|**44.78%**/**44.23%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--175-bycat14');
+`, 'gt-probs-roundscore-gr--175-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-180, wenn Kategorie unter ersten 14 vorliegt
@@ -4144,7 +4144,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|69.93%/**65.49%**|1.28%/**1.92%**|42.54%/**42.31%**|2.24%/**1.92%**|
 |4|Dr|Ph|Do|-|66.36%/**65.49%**|1.82%/**1.92%**|40.39%/**42.31%**|1.46%/**1.92%**|
 |4|Dr|Ph|Do|Ma|**70.83%**/**65.49%**|**2.59%**/**1.92%**|**42.54%**/**42.31%**|**2.24%**/**1.92%**|
-`, 'gt-probs-roundscore-gr--180-bycat14');
+`, 'gt-probs-roundscore-gr--180-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-185, wenn Kategorie unter ersten 14 vorliegt
@@ -4232,7 +4232,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|69.93%/**65.49%**|0.00%/**0.00%**|42.54%/**42.31%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|66.36%/**65.49%**|0.00%/**0.00%**|40.39%/**42.31%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**70.83%**/**65.49%**|**0.00%**/**0.00%**|**42.54%**/**42.31%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--185-bycat14');
+`, 'gt-probs-roundscore-gr--185-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-190, wenn Kategorie unter ersten 14 vorliegt
@@ -4320,7 +4320,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|67.94%/**63.95%**|1.99%/**1.54%**|39.80%/**41.03%**|2.74%/**1.28%**|
 |4|Dr|Ph|Do|-|64.39%/**63.95%**|1.97%/**1.54%**|38.69%/**41.03%**|1.70%/**1.28%**|
 |4|Dr|Ph|Do|Ma|**68.24%**/**63.95%**|**2.59%**/**1.54%**|**40.53%**/**41.03%**|**0.35%**/**1.28%**|
-`, 'gt-probs-roundscore-gr--190-bycat14');
+`, 'gt-probs-roundscore-gr--190-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-195, wenn Kategorie unter ersten 14 vorliegt
@@ -4408,7 +4408,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|67.94%/**63.95%**|0.00%/**0.00%**|39.80%/**41.03%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|64.39%/**63.95%**|0.00%/**0.00%**|38.69%/**41.03%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**68.24%**/**63.95%**|**0.00%**/**0.00%**|**40.53%**/**41.03%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--195-bycat14');
+`, 'gt-probs-roundscore-gr--195-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-200, wenn Kategorie unter ersten 14 vorliegt
@@ -4496,7 +4496,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|65.11%/**61.57%**|2.84%/**2.38%**|35.32%/**36.32%**|4.48%/**4.70%**|
 |4|Dr|Ph|Do|-|61.36%/**61.57%**|3.03%/**2.38%**|30.66%/**36.32%**|8.03%/**4.70%**|
 |4|Dr|Ph|Do|Ma|**65.42%**/**61.57%**|**2.82%**/**2.38%**|**35.79%**/**36.32%**|**4.74%**/**4.70%**|
-`, 'gt-probs-roundscore-gr--200-bycat14');
+`, 'gt-probs-roundscore-gr--200-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-205, wenn Kategorie unter ersten 14 vorliegt
@@ -4584,7 +4584,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|65.11%/**61.57%**|0.00%/**0.00%**|35.32%/**36.32%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|61.36%/**61.57%**|0.00%/**0.00%**|30.66%/**36.32%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**65.42%**/**61.57%**|**0.00%**/**0.00%**|**35.79%**/**36.32%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--205-bycat14');
+`, 'gt-probs-roundscore-gr--205-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-210, wenn Kategorie unter ersten 14 vorliegt
@@ -4672,7 +4672,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|63.40%/**59.34%**|1.70%/**2.23%**|34.33%/**36.11%**|1.00%/**0.21%**|
 |4|Dr|Ph|Do|-|57.88%/**59.34%**|3.48%/**2.23%**|30.66%/**36.11%**|0.00%/**0.21%**|
 |4|Dr|Ph|Do|Ma|**63.40%**/**59.34%**|**1.70%**/**2.23%**|**34.91%**/**36.11%**|**0.88%**/**0.21%**|
-`, 'gt-probs-roundscore-gr--210-bycat14');
+`, 'gt-probs-roundscore-gr--210-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-215, wenn Kategorie unter ersten 14 vorliegt
@@ -4760,7 +4760,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|63.40%/**59.34%**|0.00%/**0.00%**|34.33%/**36.11%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|57.88%/**59.34%**|0.00%/**0.00%**|30.66%/**36.11%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**63.40%**/**59.34%**|**0.00%**/**0.00%**|**34.91%**/**36.11%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--215-bycat14');
+`, 'gt-probs-roundscore-gr--215-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-220, wenn Kategorie unter ersten 14 vorliegt
@@ -4848,7 +4848,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|61.13%/**57.57%**|2.27%/**1.77%**|33.58%/**35.90%**|0.75%/**0.21%**|
 |4|Dr|Ph|Do|-|55.76%/**57.57%**|2.12%/**1.77%**|30.66%/**35.90%**|0.00%/**0.21%**|
 |4|Dr|Ph|Do|Ma|**61.13%**/**57.57%**|**2.27%**/**1.77%**|**33.86%**/**35.90%**|**1.05%**/**0.21%**|
-`, 'gt-probs-roundscore-gr--220-bycat14');
+`, 'gt-probs-roundscore-gr--220-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-225, wenn Kategorie unter ersten 14 vorliegt
@@ -4936,7 +4936,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|61.13%/**57.57%**|0.00%/**0.00%**|33.58%/**35.90%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|55.76%/**57.57%**|0.00%/**0.00%**|30.66%/**35.90%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**61.13%**/**57.57%**|**0.00%**/**0.00%**|**33.86%**/**35.90%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--225-bycat14');
+`, 'gt-probs-roundscore-gr--225-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-230, wenn Kategorie unter ersten 14 vorliegt
@@ -5024,7 +5024,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|59.29%/**55.50%**|1.84%/**2.08%**|33.33%/**35.04%**|0.25%/**0.85%**|
 |4|Dr|Ph|Do|-|54.24%/**55.50%**|1.52%/**2.08%**|30.17%/**35.04%**|0.49%/**0.85%**|
 |4|Dr|Ph|Do|Ma|**59.29%**/**55.50%**|**1.84%**/**2.08%**|**33.33%**/**35.04%**|**0.25%**/**0.85%**|
-`, 'gt-probs-roundscore-gr--230-bycat14');
+`, 'gt-probs-roundscore-gr--230-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-235, wenn Kategorie unter ersten 14 vorliegt
@@ -5112,7 +5112,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|59.29%/**55.50%**|0.00%/**0.00%**|33.33%/**35.04%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|54.24%/**55.50%**|0.00%/**0.00%**|30.17%/**35.04%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**59.29%**/**55.50%**|**0.00%**/**0.00%**|**33.33%**/**35.04%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--235-bycat14');
+`, 'gt-probs-roundscore-gr--235-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-240, wenn Kategorie unter ersten 14 vorliegt
@@ -5200,7 +5200,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|56.60%/**52.73%**|2.70%/**2.77%**|32.59%/**34.40%**|0.75%/**0.64%**|
 |4|Dr|Ph|Do|-|50.00%/**52.73%**|4.24%/**2.77%**|29.44%/**34.40%**|0.73%/**0.64%**|
 |4|Dr|Ph|Do|Ma|**56.60%**/**52.73%**|**2.70%**/**2.77%**|**32.59%**/**34.40%**|**0.75%**/**0.64%**|
-`, 'gt-probs-roundscore-gr--240-bycat14');
+`, 'gt-probs-roundscore-gr--240-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-245, wenn Kategorie unter ersten 14 vorliegt
@@ -5288,7 +5288,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|56.60%/**52.73%**|0.00%/**0.00%**|32.59%/**34.40%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|50.00%/**52.73%**|0.00%/**0.00%**|29.44%/**34.40%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**56.60%**/**52.73%**|**0.00%**/**0.00%**|**32.59%**/**34.40%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--245-bycat14');
+`, 'gt-probs-roundscore-gr--245-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-250, wenn Kategorie unter ersten 14 vorliegt
@@ -5376,7 +5376,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|53.76%/**49.50%**|2.84%/**3.23%**|31.84%/**33.33%**|0.75%/**1.07%**|
 |4|Dr|Ph|Do|-|47.27%/**49.50%**|2.73%/**3.23%**|28.71%/**33.33%**|0.73%/**1.07%**|
 |4|Dr|Ph|Do|Ma|**53.76%**/**49.50%**|**2.84%**/**3.23%**|**31.84%**/**33.33%**|**0.75%**/**1.07%**|
-`, 'gt-probs-roundscore-gr--250-bycat14');
+`, 'gt-probs-roundscore-gr--250-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-255, wenn Kategorie unter ersten 14 vorliegt
@@ -5464,7 +5464,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|53.76%/**49.50%**|0.00%/**0.00%**|31.84%/**33.33%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|47.27%/**49.50%**|0.00%/**0.00%**|28.71%/**33.33%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**53.76%**/**49.50%**|**0.00%**/**0.00%**|**31.84%**/**33.33%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--255-bycat14');
+`, 'gt-probs-roundscore-gr--255-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-260, wenn Kategorie unter ersten 14 vorliegt
@@ -5552,7 +5552,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|49.65%/**46.58%**|4.11%/**2.92%**|31.84%/**32.91%**|0.00%/**0.43%**|
 |4|Dr|Ph|Do|-|43.33%/**46.58%**|3.94%/**2.92%**|28.71%/**32.91%**|0.00%/**0.43%**|
 |4|Dr|Ph|Do|Ma|**49.65%**/**46.58%**|**4.11%**/**2.92%**|**31.84%**/**32.91%**|**0.00%**/**0.43%**|
-`, 'gt-probs-roundscore-gr--260-bycat14');
+`, 'gt-probs-roundscore-gr--260-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-265, wenn Kategorie unter ersten 14 vorliegt
@@ -5640,7 +5640,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|49.65%/**46.58%**|0.00%/**0.00%**|31.84%/**32.91%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|43.33%/**46.58%**|0.00%/**0.00%**|28.71%/**32.91%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**49.65%**/**46.58%**|**0.00%**/**0.00%**|**31.84%**/**32.91%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--265-bycat14');
+`, 'gt-probs-roundscore-gr--265-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-270, wenn Kategorie unter ersten 14 vorliegt
@@ -5728,7 +5728,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|47.38%/**44.97%**|2.27%/**1.61%**|31.84%/**32.69%**|0.00%/**0.21%**|
 |4|Dr|Ph|Do|-|41.52%/**44.97%**|1.82%/**1.61%**|28.71%/**32.69%**|0.00%/**0.21%**|
 |4|Dr|Ph|Do|Ma|**47.38%**/**44.97%**|**2.27%**/**1.61%**|**31.84%**/**32.69%**|**0.00%**/**0.21%**|
-`, 'gt-probs-roundscore-gr--270-bycat14');
+`, 'gt-probs-roundscore-gr--270-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-275, wenn Kategorie unter ersten 14 vorliegt
@@ -5816,7 +5816,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|47.38%/**44.97%**|0.00%/**0.00%**|31.84%/**32.69%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|41.52%/**44.97%**|0.00%/**0.00%**|28.71%/**32.69%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**47.38%**/**44.97%**|**0.00%**/**0.00%**|**31.84%**/**32.69%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--275-bycat14');
+`, 'gt-probs-roundscore-gr--275-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-280, wenn Kategorie unter ersten 14 vorliegt
@@ -5904,7 +5904,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|45.25%/**42.43%**|2.13%/**2.54%**|31.59%/**32.26%**|0.25%/**0.43%**|
 |4|Dr|Ph|Do|-|40.00%/**42.43%**|1.52%/**2.54%**|28.22%/**32.26%**|0.49%/**0.43%**|
 |4|Dr|Ph|Do|Ma|**45.25%**/**42.43%**|**2.13%**/**2.54%**|**31.59%**/**32.26%**|**0.25%**/**0.43%**|
-`, 'gt-probs-roundscore-gr--280-bycat14');
+`, 'gt-probs-roundscore-gr--280-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-285, wenn Kategorie unter ersten 14 vorliegt
@@ -5992,7 +5992,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|45.25%/**42.43%**|0.00%/**0.00%**|31.59%/**32.26%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|40.00%/**42.43%**|0.00%/**0.00%**|28.22%/**32.26%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**45.25%**/**42.43%**|**0.00%**/**0.00%**|**31.59%**/**32.26%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--285-bycat14');
+`, 'gt-probs-roundscore-gr--285-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-290, wenn Kategorie unter ersten 14 vorliegt
@@ -6080,7 +6080,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|42.84%/**41.05%**|2.41%/**1.38%**|31.59%/**31.62%**|0.00%/**0.64%**|
 |4|Dr|Ph|Do|-|38.33%/**41.05%**|1.67%/**1.38%**|27.98%/**31.62%**|0.24%/**0.64%**|
 |4|Dr|Ph|Do|Ma|**42.84%**/**41.05%**|**2.41%**/**1.38%**|**31.59%**/**31.62%**|**0.00%**/**0.64%**|
-`, 'gt-probs-roundscore-gr--290-bycat14');
+`, 'gt-probs-roundscore-gr--290-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-295, wenn Kategorie unter ersten 14 vorliegt
@@ -6168,7 +6168,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|42.84%/**41.05%**|0.00%/**0.00%**|31.59%/**31.62%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|38.33%/**41.05%**|0.00%/**0.00%**|27.98%/**31.62%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**42.84%**/**41.05%**|**0.00%**/**0.00%**|**31.59%**/**31.62%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--295-bycat14');
+`, 'gt-probs-roundscore-gr--295-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-300, wenn Kategorie unter ersten 14 vorliegt
@@ -6256,7 +6256,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|40.99%/**38.89%**|1.84%/**2.15%**|2.49%/**12.29%**|29.10%/**10.61%**|
 |4|Dr|Ph|Do|-|36.36%/**38.89%**|1.97%/**2.15%**|1.70%/**11.67%**|26.28%/**10.49%**|
 |4|Dr|Ph|Do|Ma|**40.99%**/**38.89%**|**1.84%**/**2.15%**|**7.19%**/**12.29%**|**23.33%**/**10.61%**|
-`, 'gt-probs-roundscore-gr--300-bycat14');
+`, 'gt-probs-roundscore-gr--300-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-305, wenn Kategorie unter ersten 14 vorliegt
@@ -6344,7 +6344,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|40.99%/**38.89%**|0.00%/**0.00%**|2.49%/**12.29%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|36.36%/**38.89%**|0.00%/**0.00%**|1.70%/**11.67%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**40.99%**/**38.89%**|**0.00%**/**0.00%**|**7.19%**/**12.29%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--305-bycat14');
+`, 'gt-probs-roundscore-gr--305-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-310, wenn Kategorie unter ersten 14 vorliegt
@@ -6432,7 +6432,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|40.28%/**38.43%**|0.71%/**0.46%**|2.24%/**12.01%**|0.25%/**0.28%**|
 |4|Dr|Ph|Do|-|35.45%/**38.43%**|0.91%/**0.46%**|1.70%/**11.20%**|0.00%/**0.47%**|
 |4|Dr|Ph|Do|Ma|**40.28%**/**38.43%**|**0.71%**/**0.46%**|**7.02%**/**12.01%**|**0.18%**/**0.28%**|
-`, 'gt-probs-roundscore-gr--310-bycat14');
+`, 'gt-probs-roundscore-gr--310-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-315, wenn Kategorie unter ersten 14 vorliegt
@@ -6520,7 +6520,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|40.28%/**38.43%**|0.00%/**0.00%**|2.24%/**12.01%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|35.45%/**38.43%**|0.00%/**0.00%**|1.70%/**11.20%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**40.28%**/**38.43%**|**0.00%**/**0.00%**|**7.02%**/**12.01%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--315-bycat14');
+`, 'gt-probs-roundscore-gr--315-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-320, wenn Kategorie unter ersten 14 vorliegt
@@ -6608,7 +6608,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|39.43%/**38.20%**|0.85%/**0.23%**|2.24%/**10.89%**|0.00%/**1.12%**|
 |4|Dr|Ph|Do|-|35.15%/**38.20%**|0.30%/**0.23%**|1.46%/**10.38%**|0.24%/**0.19%**|
 |4|Dr|Ph|Do|Ma|**39.43%**/**38.20%**|**0.85%**/**0.23%**|**6.32%**/**10.89%**|**0.70%**/**1.12%**|
-`, 'gt-probs-roundscore-gr--320-bycat14');
+`, 'gt-probs-roundscore-gr--320-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-325, wenn Kategorie unter ersten 14 vorliegt
@@ -6696,7 +6696,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|39.43%/**38.20%**|0.00%/**0.00%**|2.24%/**10.89%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|35.15%/**38.20%**|0.00%/**0.00%**|1.46%/**10.38%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**39.43%**/**38.20%**|**0.00%**/**0.00%**|**6.32%**/**10.89%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--325-bycat14');
+`, 'gt-probs-roundscore-gr--325-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-330, wenn Kategorie unter ersten 14 vorliegt
@@ -6784,7 +6784,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|38.72%/**38.05%**|0.71%/**0.15%**|2.24%/**10.61%**|0.00%/**0.28%**|
 |4|Dr|Ph|Do|-|35.00%/**38.05%**|0.15%/**0.15%**|1.46%/**9.95%**|0.00%/**0.39%**|
 |4|Dr|Ph|Do|Ma|**38.72%**/**38.05%**|**0.71%**/**0.15%**|**6.14%**/**10.61%**|**0.18%**/**0.28%**|
-`, 'gt-probs-roundscore-gr--330-bycat14');
+`, 'gt-probs-roundscore-gr--330-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-335, wenn Kategorie unter ersten 14 vorliegt
@@ -6872,7 +6872,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|38.72%/**38.05%**|0.00%/**0.00%**|2.24%/**10.61%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|35.00%/**38.05%**|0.00%/**0.00%**|1.46%/**9.95%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**38.72%**/**38.05%**|**0.00%**/**0.00%**|**6.14%**/**10.61%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--335-bycat14');
+`, 'gt-probs-roundscore-gr--335-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-340, wenn Kategorie unter ersten 14 vorliegt
@@ -6960,7 +6960,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|38.16%/**37.28%**|0.57%/**0.77%**|2.24%/**10.34%**|0.00%/**0.28%**|
 |4|Dr|Ph|Do|-|34.85%/**37.28%**|0.15%/**0.77%**|1.46%/**9.71%**|0.00%/**0.23%**|
 |4|Dr|Ph|Do|Ma|**38.16%**/**37.28%**|**0.57%**/**0.77%**|**5.44%**/**10.34%**|**0.70%**/**0.28%**|
-`, 'gt-probs-roundscore-gr--340-bycat14');
+`, 'gt-probs-roundscore-gr--340-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-345, wenn Kategorie unter ersten 14 vorliegt
@@ -7048,7 +7048,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|38.16%/**37.28%**|0.00%/**0.00%**|2.24%/**10.34%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|34.85%/**37.28%**|0.00%/**0.00%**|1.46%/**9.71%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**38.16%**/**37.28%**|**0.00%**/**0.00%**|**5.44%**/**10.34%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--345-bycat14');
+`, 'gt-probs-roundscore-gr--345-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-350, wenn Kategorie unter ersten 14 vorliegt
@@ -7136,7 +7136,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|37.73%/**36.97%**|0.43%/**0.31%**|2.24%/**9.78%**|0.00%/**0.56%**|
 |4|Dr|Ph|Do|-|34.85%/**36.97%**|0.00%/**0.31%**|1.46%/**9.55%**|0.00%/**0.16%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.97%**|**0.43%**/**0.31%**|**5.19%**/**9.78%**|**0.18%**/**0.56%**|
-`, 'gt-probs-roundscore-gr--350-bycat14');
+`, 'gt-probs-roundscore-gr--350-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-355, wenn Kategorie unter ersten 14 vorliegt
@@ -7224,7 +7224,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|37.73%/**36.97%**|0.00%/**0.00%**|2.24%/**9.78%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|34.85%/**36.97%**|0.00%/**0.00%**|1.46%/**9.55%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.97%**|**0.00%**/**0.00%**|**5.19%**/**9.78%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--355-bycat14');
+`, 'gt-probs-roundscore-gr--355-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-360, wenn Kategorie unter ersten 14 vorliegt
@@ -7312,7 +7312,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|37.73%/**36.97%**|0.00%/**0.00%**|2.24%/**9.50%**|0.00%/**0.28%**|
 |4|Dr|Ph|Do|-|34.85%/**36.97%**|0.00%/**0.00%**|1.46%/**9.24%**|0.00%/**0.31%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.97%**|**0.00%**/**0.00%**|**5.09%**/**9.50%**|**0.00%**/**0.28%**|
-`, 'gt-probs-roundscore-gr--360-bycat14');
+`, 'gt-probs-roundscore-gr--360-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-365, wenn Kategorie unter ersten 14 vorliegt
@@ -7400,7 +7400,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|37.73%/**36.97%**|0.00%/**0.00%**|2.24%/**9.50%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|34.85%/**36.97%**|0.00%/**0.00%**|1.46%/**9.24%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.97%**|**0.00%**/**0.00%**|**5.09%**/**9.50%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--365-bycat14');
+`, 'gt-probs-roundscore-gr--365-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-370, wenn Kategorie unter ersten 14 vorliegt
@@ -7488,7 +7488,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|37.73%/**36.82%**|0.00%/**0.15%**|2.24%/**8.94%**|0.00%/**0.56%**|
 |4|Dr|Ph|Do|-|34.70%/**36.82%**|0.15%/**0.15%**|1.46%/**8.83%**|0.00%/**0.10%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.82%**|**0.00%**/**0.15%**|**5.09%**/**8.94%**|**0.00%**/**0.56%**|
-`, 'gt-probs-roundscore-gr--370-bycat14');
+`, 'gt-probs-roundscore-gr--370-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-375, wenn Kategorie unter ersten 14 vorliegt
@@ -7576,7 +7576,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|37.73%/**36.82%**|0.00%/**0.00%**|2.24%/**8.94%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|34.70%/**36.82%**|0.00%/**0.00%**|1.46%/**8.83%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.82%**|**0.00%**/**0.00%**|**5.09%**/**8.94%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--375-bycat14');
+`, 'gt-probs-roundscore-gr--375-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-380, wenn Kategorie unter ersten 14 vorliegt
@@ -7664,7 +7664,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|37.73%/**36.82%**|0.00%/**0.00%**|1.99%/**8.54%**|0.25%/**0.23%**|
 |4|Dr|Ph|Do|-|34.70%/**36.82%**|0.00%/**0.00%**|1.46%/**8.63%**|0.00%/**0.19%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.82%**|**0.00%**/**0.00%**|**4.91%**/**8.63%**|**0.18%**/**0.19%**|
-`, 'gt-probs-roundscore-gr--380-bycat14');
+`, 'gt-probs-roundscore-gr--380-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-385, wenn Kategorie unter ersten 14 vorliegt
@@ -7752,7 +7752,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|37.73%/**36.82%**|0.00%/**0.00%**|1.99%/**8.54%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|34.70%/**36.82%**|0.00%/**0.00%**|1.46%/**8.63%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.82%**|**0.00%**/**0.00%**|**4.91%**/**8.63%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--385-bycat14');
+`, 'gt-probs-roundscore-gr--385-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-390, wenn Kategorie unter ersten 14 vorliegt
@@ -7840,7 +7840,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|37.73%/**36.66%**|0.00%/**0.15%**|1.99%/**8.30%**|0.00%/**0.23%**|
 |4|Dr|Ph|Do|-|34.70%/**36.66%**|0.00%/**0.15%**|1.46%/**8.30%**|0.00%/**0.23%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.66%**|**0.00%**/**0.15%**|**4.91%**/**8.30%**|**0.00%**/**0.23%**|
-`, 'gt-probs-roundscore-gr--390-bycat14');
+`, 'gt-probs-roundscore-gr--390-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-395, wenn Kategorie unter ersten 14 vorliegt
@@ -7928,7 +7928,7 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|37.73%/**36.66%**|0.00%/**0.00%**|1.99%/**8.30%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|-|34.70%/**36.66%**|0.00%/**0.00%**|1.46%/**8.30%**|0.00%/**0.00%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.66%**|**0.00%**/**0.00%**|**4.91%**/**8.30%**|**0.00%**/**0.00%**|
-`, 'gt-probs-roundscore-gr--395-bycat14');
+`, 'gt-probs-roundscore-gr--395-bycat14', false);
 </script>
 
  Wahrscheinlichkeit von relativem Rundengewinn für p=-400, wenn Kategorie unter ersten 14 vorliegt
@@ -8016,5 +8016,5 @@ createFilterableTable(`
 |4|Dr|Ph|-|Ma|1.42%/**7.49%**|36.31%/**13.66%**|0.25%/**2.85%**|1.74%/**5.24%**|
 |4|Dr|Ph|Do|-|1.82%/**7.49%**|32.88%/**13.66%**|0.73%/**3.01%**|0.73%/**5.14%**|
 |4|Dr|Ph|Do|Ma|**4.49%**/**7.49%**|**16.39%**/**13.66%**|**1.28%**/**3.01%**|**2.29%**/**5.14%**|
-`, 'gt-probs-roundscore-gr--400-bycat14');
+`, 'gt-probs-roundscore-gr--400-bycat14', false);
 </script>
