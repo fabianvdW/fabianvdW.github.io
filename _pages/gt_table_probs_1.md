@@ -2,8 +2,14 @@
 layout: post
 ---
 <script src="{{ '/assets/js/tichu-table-filter.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/p_equals_selector.js' | relative_url }}"></script>
 
-Bedienen dieser Seite durch Strg+F und p=... eingeben!
+Bedienen dieser Seite durch Strg+F und p=... eingeben oder alternativ mit dem Tool oben rechts auf der Seite:
+
+<div id="p-value-selector"></div>
+<script>
+createPValueSelector(document.getElementById('p-value-selector'));
+</script>
 
 <div id="global-filter-container"></div>
 <script>

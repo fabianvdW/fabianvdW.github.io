@@ -2,8 +2,14 @@
 layout: post
 ---
 <script src="{{ '/assets/js/tichu-table-filter.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/p_equals_selector.js' | relative_url }}"></script>
 
-Bedienen dieser Seite durch Strg+F und p=... eingeben!
+Bedienen dieser Seite durch Strg+F und p=... eingeben oder alternativ mit dem Tool oben rechts auf der Seite:
+
+<div id="p-value-selector"></div>
+<script>
+createPValueSelector(document.getElementById('p-value-selector'));
+</script>
 
 <div id="global-filter-container"></div>
 <script>
@@ -13,6 +19,8 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 
  Wahrscheinlichkeit von Sieg für p=50, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.80%/35.00%|51.12%/48.32%|
 |0|-|-|-|Ma|36.74%/35.68%|51.39%/49.45%|
@@ -94,9 +102,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|88.43%/**87.39%**|
 |4|Dr|Ph|Do|-|83.65%/**84.56%**|86.95%/**87.39%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**88.43%**/**87.39%**|
+`, 'gt-probs-roundscore-gr-50-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=45, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.75%/34.93%|50.30%/47.74%|
 |0|-|-|-|Ma|36.69%/35.63%|50.60%/48.90%|
@@ -178,9 +190,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|88.31%/**87.18%**|
 |4|Dr|Ph|Do|-|83.65%/**84.53%**|86.62%/**87.18%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**88.31%**/**87.18%**|
+`, 'gt-probs-roundscore-gr-45-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=40, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.72%/34.86%|49.45%/47.16%|
 |0|-|-|-|Ma|36.64%/35.53%|49.77%/48.34%|
@@ -262,9 +278,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|87.95%/**87.07%**|
 |4|Dr|Ph|Do|-|83.65%/**84.50%**|86.47%/**87.07%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**88.03%**/**87.07%**|
+`, 'gt-probs-roundscore-gr-40-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=35, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.68%/34.79%|48.60%/46.59%|
 |0|-|-|-|Ma|36.60%/35.44%|48.94%/47.77%|
@@ -346,9 +366,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|87.59%/**86.97%**|
 |4|Dr|Ph|Do|-|83.65%/**84.46%**|86.34%/**86.97%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**87.82%**/**86.97%**|
+`, 'gt-probs-roundscore-gr-35-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=30, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.65%/34.74%|47.83%/46.06%|
 |0|-|-|-|Ma|36.56%/35.42%|48.20%/47.27%|
@@ -430,9 +454,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|87.08%/**86.65%**|
 |4|Dr|Ph|Do|-|83.65%/**84.46%**|85.52%/**86.65%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**87.22%**/**86.65%**|
+`, 'gt-probs-roundscore-gr-30-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=25, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.61%/34.69%|47.06%/45.54%|
 |0|-|-|-|Ma|36.52%/35.39%|47.46%/46.76%|
@@ -514,9 +542,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|86.57%/**86.32%**|
 |4|Dr|Ph|Do|-|83.65%/**84.46%**|84.70%/**86.32%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**86.61%**/**86.32%**|
+`, 'gt-probs-roundscore-gr-25-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=20, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.57%/34.64%|46.28%/45.01%|
 |0|-|-|-|Ma|36.49%/35.38%|46.69%/46.24%|
@@ -598,9 +630,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|86.19%/**85.79%**|
 |4|Dr|Ph|Do|-|83.65%/**84.46%**|84.33%/**85.79%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**86.19%**/**85.79%**|
+`, 'gt-probs-roundscore-gr-20-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=15, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.54%/34.59%|45.49%/44.48%|
 |0|-|-|-|Ma|36.46%/35.37%|45.91%/45.73%|
@@ -682,9 +718,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|85.82%/**85.26%**|
 |4|Dr|Ph|Do|-|83.65%/**84.46%**|83.96%/**85.26%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**85.82%**/**85.26%**|
+`, 'gt-probs-roundscore-gr-15-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=10, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.51%/34.54%|44.76%/43.99%|
 |0|-|-|-|Ma|36.43%/35.32%|45.20%/45.26%|
@@ -766,9 +806,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|85.20%/**84.62%**|
 |4|Dr|Ph|Do|-|83.65%/**84.43%**|83.04%/**84.62%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**85.22%**/**84.62%**|
+`, 'gt-probs-roundscore-gr-10-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=5, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.49%/34.50%|44.03%/43.50%|
 |0|-|-|-|Ma|36.41%/35.27%|44.49%/44.78%|
@@ -850,9 +894,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.93%**|84.59%/**83.97%**|
 |4|Dr|Ph|Do|-|83.65%/**84.40%**|82.12%/**83.97%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.93%**|**84.67%**/**83.97%**|
+`, 'gt-probs-roundscore-gr-5-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=0, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.38%/34.42%|43.20%/42.90%|
 |0|-|-|-|Ma|36.30%/35.20%|43.65%/44.19%|
@@ -934,9 +982,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.87%**|83.85%/**83.12%**|
 |4|Dr|Ph|Do|-|83.65%/**84.25%**|80.97%/**83.12%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.87%**|**84.02%**/**83.12%**|
+`, 'gt-probs-roundscore-gr-0-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-5, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.28%/34.34%|42.36%/42.30%|
 |0|-|-|-|Ma|36.19%/35.13%|42.82%/43.59%|
@@ -1018,9 +1070,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.82%**|83.12%/**82.26%**|
 |4|Dr|Ph|Do|-|83.65%/**84.11%**|79.83%/**82.26%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.82%**|**83.37%**/**82.26%**|
+`, 'gt-probs-roundscore-gr--5-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-10, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.26%/34.33%|41.65%/41.82%|
 |0|-|-|-|Ma|36.17%/35.11%|42.11%/43.08%|
@@ -1102,9 +1158,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.76%**|81.91%/**80.98%**|
 |4|Dr|Ph|Do|-|83.65%/**84.11%**|78.85%/**80.98%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.76%**|**82.40%**/**80.98%**|
+`, 'gt-probs-roundscore-gr--10-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-15, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.24%/34.32%|40.95%/41.35%|
 |0|-|-|-|Ma|36.14%/35.09%|41.40%/42.57%|
@@ -1186,9 +1246,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|80.70%/**79.70%**|
 |4|Dr|Ph|Do|-|83.65%/**84.10%**|77.88%/**79.70%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**81.43%**/**79.70%**|
+`, 'gt-probs-roundscore-gr--15-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-20, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.22%/34.30%|40.21%/40.87%|
 |0|-|-|-|Ma|36.13%/35.07%|40.66%/42.08%|
@@ -1270,9 +1334,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|79.91%/**78.85%**|
 |4|Dr|Ph|Do|-|83.65%/**84.06%**|76.89%/**78.85%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**80.34%**/**78.85%**|
+`, 'gt-probs-roundscore-gr--20-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-25, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.20%/34.28%|39.48%/40.39%|
 |0|-|-|-|Ma|36.11%/35.05%|39.93%/41.59%|
@@ -1354,9 +1422,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|79.12%/**77.99%**|
 |4|Dr|Ph|Do|-|83.65%/**84.03%**|75.90%/**77.99%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**79.25%**/**77.99%**|
+`, 'gt-probs-roundscore-gr--25-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-30, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.18%/34.25%|38.77%/39.92%|
 |0|-|-|-|Ma|36.09%/35.03%|39.20%/41.08%|
@@ -1438,9 +1510,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|78.86%/**77.14%**|
 |4|Dr|Ph|Do|-|83.65%/**84.03%**|75.32%/**77.14%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**78.86%**/**77.14%**|
+`, 'gt-probs-roundscore-gr--30-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-35, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.16%/34.22%|38.07%/39.45%|
 |0|-|-|-|Ma|36.07%/35.00%|38.47%/40.58%|
@@ -1522,9 +1598,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|78.61%/**76.28%**|
 |4|Dr|Ph|Do|-|83.65%/**84.03%**|74.76%/**76.28%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**78.61%**/**76.28%**|
+`, 'gt-probs-roundscore-gr--35-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-40, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.14%/34.20%|37.31%/38.94%|
 |0|-|-|-|Ma|36.05%/34.98%|37.70%/40.06%|
@@ -1606,9 +1686,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|77.99%/**75.00%**|
 |4|Dr|Ph|Do|-|83.65%/**84.03%**|73.51%/**75.00%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**77.99%**/**75.00%**|
+`, 'gt-probs-roundscore-gr--40-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-45, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.13%/34.18%|36.56%/38.43%|
 |0|-|-|-|Ma|36.02%/34.95%|36.93%/39.55%|
@@ -1690,9 +1774,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.70%**|77.36%/**73.72%**|
 |4|Dr|Ph|Do|-|83.65%/**84.03%**|72.26%/**73.72%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.70%**|**77.36%**/**73.72%**|
+`, 'gt-probs-roundscore-gr--45-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-50, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.10%/34.13%|35.84%/37.93%|
 |0|-|-|-|Ma|35.99%/34.89%|36.18%/39.01%|
@@ -1774,9 +1862,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.58%**|76.24%/**72.65%**|
 |4|Dr|Ph|Do|-|83.52%/**83.98%**|71.48%/**72.65%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.58%**|**76.24%**/**72.65%**|
+`, 'gt-probs-roundscore-gr--50-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-55, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.06%/34.07%|35.11%/37.42%|
 |0|-|-|-|Ma|35.95%/34.84%|35.43%/38.46%|
@@ -1858,9 +1950,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.47%**|75.12%/**71.58%**|
 |4|Dr|Ph|Do|-|83.39%/**83.93%**|70.70%/**71.58%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.47%**|**75.12%**/**71.58%**|
+`, 'gt-probs-roundscore-gr--55-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-60, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|36.02%/34.04%|34.34%/36.90%|
 |0|-|-|-|Ma|35.90%/34.78%|34.65%/37.93%|
@@ -1942,9 +2038,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**84.21%**|73.12%/**70.19%**|
 |4|Dr|Ph|Do|-|83.32%/**83.73%**|69.59%/**70.19%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**84.21%**|**72.99%**/**70.19%**|
+`, 'gt-probs-roundscore-gr--60-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-65, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|35.98%/34.00%|33.58%/36.37%|
 |0|-|-|-|Ma|35.84%/34.73%|33.86%/37.40%|
@@ -2026,9 +2126,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.08%/**83.94%**|71.23%/**68.80%**|
 |4|Dr|Ph|Do|-|83.26%/**83.53%**|68.59%/**68.80%**|
 |4|Dr|Ph|Do|Ma|**89.08%**/**83.94%**|**71.83%**/**68.80%**|
+`, 'gt-probs-roundscore-gr--65-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-70, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|35.91%/33.93%|32.90%/35.89%|
 |0|-|-|-|Ma|35.78%/34.62%|33.17%/36.86%|
@@ -2110,9 +2214,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|89.01%/**83.60%**|70.40%/**67.74%**|
 |4|Dr|Ph|Do|-|83.11%/**83.22%**|66.92%/**67.74%**|
 |4|Dr|Ph|Do|Ma|**89.01%**/**83.60%**|**70.40%**/**67.74%**|
+`, 'gt-probs-roundscore-gr--70-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-75, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|35.85%/33.86%|32.23%/35.40%|
 |0|-|-|-|Ma|35.72%/34.51%|32.47%/36.33%|
@@ -2194,9 +2302,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|88.94%/**83.25%**|69.65%/**66.67%**|
 |4|Dr|Ph|Do|-|82.97%/**82.91%**|65.34%/**66.67%**|
 |4|Dr|Ph|Do|Ma|**88.94%**/**83.25%**|**69.65%**/**66.67%**|
+`, 'gt-probs-roundscore-gr--75-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-80, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|35.76%/33.76%|31.51%/34.88%|
 |0|-|-|-|Ma|35.62%/34.43%|31.73%/35.79%|
@@ -2278,9 +2390,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|88.72%/**82.64%**|68.53%/**65.60%**|
 |4|Dr|Ph|Do|-|82.75%/**82.46%**|63.92%/**65.60%**|
 |4|Dr|Ph|Do|Ma|**88.72%**/**82.64%**|**68.53%**/**65.60%**|
+`, 'gt-probs-roundscore-gr--80-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-85, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|35.67%/33.67%|30.79%/34.36%|
 |0|-|-|-|Ma|35.52%/34.35%|30.99%/35.24%|
@@ -2362,9 +2478,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|88.51%/**82.02%**|67.41%/**64.53%**|
 |4|Dr|Ph|Do|-|82.52%/**82.02%**|62.50%/**64.53%**|
 |4|Dr|Ph|Do|Ma|**88.51%**/**82.02%**|**67.41%**/**64.53%**|
+`, 'gt-probs-roundscore-gr--85-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-90, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|35.56%/33.56%|30.15%/33.88%|
 |0|-|-|-|Ma|35.40%/34.25%|30.34%/34.73%|
@@ -2446,9 +2566,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|88.09%/**81.36%**|66.17%/**63.57%**|
 |4|Dr|Ph|Do|-|82.07%/**81.36%**|61.18%/**63.57%**|
 |4|Dr|Ph|Do|Ma|**88.09%**/**81.36%**|**66.17%**/**63.57%**|
+`, 'gt-probs-roundscore-gr--90-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-95, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|35.44%/33.44%|29.52%/33.39%|
 |0|-|-|-|Ma|35.29%/34.15%|29.68%/34.21%|
@@ -2530,9 +2654,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|87.66%/**80.71%**|64.93%/**62.61%**|
 |4|Dr|Ph|Do|-|81.62%/**80.71%**|59.85%/**62.61%**|
 |4|Dr|Ph|Do|Ma|**87.66%**/**80.71%**|**64.93%**/**62.61%**|
+`, 'gt-probs-roundscore-gr--95-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-100, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|35.21%/33.16%|28.77%/32.78%|
 |0|-|-|-|Ma|35.03%/33.88%|28.91%/33.55%|
@@ -2614,9 +2742,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|86.88%/**80.40%**|64.18%/**61.75%**|
 |4|Dr|Ph|Do|-|81.19%/**80.40%**|58.80%/**61.75%**|
 |4|Dr|Ph|Do|Ma|**86.88%**/**80.40%**|**64.18%**/**61.75%**|
+`, 'gt-probs-roundscore-gr--100-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-105, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|34.98%/32.87%|28.01%/32.17%|
 |0|-|-|-|Ma|34.78%/33.60%|28.13%/32.89%|
@@ -2698,9 +2830,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|86.10%/**80.09%**|63.43%/**60.90%**|
 |4|Dr|Ph|Do|-|80.76%/**80.09%**|57.75%/**60.90%**|
 |4|Dr|Ph|Do|Ma|**86.10%**/**80.09%**|**63.43%**/**60.90%**|
+`, 'gt-probs-roundscore-gr--105-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-110, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|34.78%/32.65%|27.45%/31.67%|
 |0|-|-|-|Ma|34.54%/33.33%|27.53%/32.33%|
@@ -2782,9 +2918,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|85.67%/**79.52%**|62.56%/**59.19%**|
 |4|Dr|Ph|Do|-|79.91%/**79.52%**|56.36%/**59.19%**|
 |4|Dr|Ph|Do|Ma|**85.67%**/**79.52%**|**62.56%**/**59.19%**|
+`, 'gt-probs-roundscore-gr--110-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-115, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|34.57%/32.43%|26.88%/31.17%|
 |0|-|-|-|Ma|34.31%/33.05%|26.93%/31.77%|
@@ -2866,9 +3006,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|85.25%/**78.94%**|61.69%/**57.48%**|
 |4|Dr|Ph|Do|-|79.07%/**78.94%**|54.97%/**57.48%**|
 |4|Dr|Ph|Do|Ma|**85.25%**/**78.94%**|**61.69%**/**57.48%**|
+`, 'gt-probs-roundscore-gr--115-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-120, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|34.32%/32.19%|26.27%/30.61%|
 |0|-|-|-|Ma|34.02%/32.77%|26.29%/31.16%|
@@ -2950,9 +3094,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|84.40%/**78.17%**|60.45%/**56.62%**|
 |4|Dr|Ph|Do|-|78.56%/**78.17%**|54.07%/**56.62%**|
 |4|Dr|Ph|Do|Ma|**84.40%**/**78.17%**|**60.45%**/**56.62%**|
+`, 'gt-probs-roundscore-gr--120-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-125, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|34.06%/31.96%|25.66%/30.05%|
 |0|-|-|-|Ma|33.73%/32.48%|25.66%/30.55%|
@@ -3034,9 +3182,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|83.55%/**77.40%**|59.20%/**55.77%**|
 |4|Dr|Ph|Do|-|78.06%/**77.40%**|53.17%/**55.77%**|
 |4|Dr|Ph|Do|Ma|**83.55%**/**77.40%**|**59.20%**/**55.77%**|
+`, 'gt-probs-roundscore-gr--125-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-130, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|33.73%/31.59%|25.08%/29.51%|
 |0|-|-|-|Ma|33.34%/32.12%|25.05%/29.99%|
@@ -3118,9 +3270,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|82.34%/**76.48%**|58.21%/**54.38%**|
 |4|Dr|Ph|Do|-|77.51%/**76.48%**|52.20%/**54.38%**|
 |4|Dr|Ph|Do|Ma|**82.34%**/**76.48%**|**58.21%**/**54.38%**|
+`, 'gt-probs-roundscore-gr--130-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-135, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|33.40%/31.22%|24.51%/28.97%|
 |0|-|-|-|Ma|32.94%/31.75%|24.45%/29.42%|
@@ -3202,9 +3358,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|81.13%/**75.56%**|57.21%/**52.99%**|
 |4|Dr|Ph|Do|-|76.96%/**75.56%**|51.22%/**52.99%**|
 |4|Dr|Ph|Do|Ma|**81.13%**/**75.56%**|**57.21%**/**52.99%**|
+`, 'gt-probs-roundscore-gr--135-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-140, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|32.99%/30.85%|23.85%/28.33%|
 |0|-|-|-|Ma|32.53%/31.29%|23.77%/28.74%|
@@ -3286,9 +3446,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|80.15%/**75.02%**|55.72%/**52.14%**|
 |4|Dr|Ph|Do|-|76.05%/**75.02%**|49.44%/**52.14%**|
 |4|Dr|Ph|Do|Ma|**80.19%**/**75.02%**|**55.72%**/**52.14%**|
+`, 'gt-probs-roundscore-gr--140-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-145, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|32.59%/30.48%|23.19%/27.69%|
 |0|-|-|-|Ma|32.11%/30.82%|23.09%/28.05%|
@@ -3370,9 +3534,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|79.19%/**74.48%**|54.23%/**51.28%**|
 |4|Dr|Ph|Do|-|75.16%/**74.48%**|47.65%/**51.28%**|
 |4|Dr|Ph|Do|Ma|**79.46%**/**74.48%**|**54.23%**/**51.28%**|
+`, 'gt-probs-roundscore-gr--145-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-150, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|32.14%/30.06%|22.61%/27.09%|
 |0|-|-|-|Ma|31.60%/30.30%|22.48%/27.42%|
@@ -3454,9 +3622,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|78.03%/**73.37%**|52.61%/**50.21%**|
 |4|Dr|Ph|Do|-|73.99%/**73.37%**|46.71%/**50.21%**|
 |4|Dr|Ph|Do|Ma|**78.61%**/**73.37%**|**52.61%**/**50.21%**|
+`, 'gt-probs-roundscore-gr--150-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-155, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|31.69%/29.64%|22.02%/26.48%|
 |0|-|-|-|Ma|31.09%/29.78%|21.87%/26.79%|
@@ -3538,9 +3710,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|76.86%/**72.25%**|51.00%/**49.15%**|
 |4|Dr|Ph|Do|-|72.83%/**72.25%**|45.76%/**49.15%**|
 |4|Dr|Ph|Do|Ma|**77.76%**/**72.25%**|**51.00%**/**49.15%**|
+`, 'gt-probs-roundscore-gr--155-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-160, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|31.18%/29.20%|21.34%/25.77%|
 |0|-|-|-|Ma|30.60%/29.22%|21.17%/26.06%|
@@ -3622,9 +3798,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|75.81%/**70.98%**|49.25%/**47.76%**|
 |4|Dr|Ph|Do|-|72.04%/**70.98%**|44.80%/**47.76%**|
 |4|Dr|Ph|Do|Ma|**76.77%**/**70.98%**|**49.25%**/**47.76%**|
+`, 'gt-probs-roundscore-gr--160-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-165, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|30.68%/28.77%|20.65%/25.07%|
 |0|-|-|-|Ma|30.11%/28.67%|20.47%/25.33%|
@@ -3706,9 +3886,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|74.76%/**69.72%**|47.51%/**46.37%**|
 |4|Dr|Ph|Do|-|71.25%/**69.72%**|43.83%/**46.37%**|
 |4|Dr|Ph|Do|Ma|**75.78%**/**69.72%**|**47.51%**/**46.37%**|
+`, 'gt-probs-roundscore-gr--165-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-170, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|30.18%/28.30%|20.11%/24.48%|
 |0|-|-|-|Ma|29.58%/28.13%|19.92%/24.73%|
@@ -3790,9 +3974,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|73.12%/**68.56%**|46.14%/**45.30%**|
 |4|Dr|Ph|Do|-|70.05%/**68.56%**|43.02%/**45.30%**|
 |4|Dr|Ph|Do|Ma|**74.60%**/**68.56%**|**46.14%**/**45.30%**|
+`, 'gt-probs-roundscore-gr--170-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-175, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|29.69%/27.83%|19.58%/23.89%|
 |0|-|-|-|Ma|29.04%/27.60%|19.37%/24.12%|
@@ -3874,9 +4062,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|71.48%/**67.41%**|44.78%/**44.23%**|
 |4|Dr|Ph|Do|-|68.84%/**67.41%**|42.22%/**44.23%**|
 |4|Dr|Ph|Do|Ma|**73.42%**/**67.41%**|**44.78%**/**44.23%**|
+`, 'gt-probs-roundscore-gr--175-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-180, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|29.14%/27.39%|18.98%/23.25%|
 |0|-|-|-|Ma|28.47%/27.09%|18.76%/23.47%|
@@ -3958,9 +4150,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|70.76%/**66.45%**|43.66%/**43.27%**|
 |4|Dr|Ph|Do|-|67.88%/**66.45%**|41.44%/**43.27%**|
 |4|Dr|Ph|Do|Ma|**72.13%**/**66.45%**|**43.66%**/**43.27%**|
+`, 'gt-probs-roundscore-gr--180-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-185, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|28.59%/26.95%|18.37%/22.61%|
 |0|-|-|-|Ma|27.89%/26.59%|18.16%/22.82%|
@@ -4042,9 +4238,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|70.04%/**65.49%**|42.54%/**42.31%**|
 |4|Dr|Ph|Do|-|66.92%/**65.49%**|40.66%/**42.31%**|
 |4|Dr|Ph|Do|Ma|**70.83%**/**65.49%**|**42.54%**/**42.31%**|
+`, 'gt-probs-roundscore-gr--185-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-190, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|28.05%/26.47%|17.90%/22.08%|
 |0|-|-|-|Ma|27.31%/26.08%|17.69%/22.27%|
@@ -4126,9 +4326,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|69.01%/**64.72%**|41.11%/**41.67%**|
 |4|Dr|Ph|Do|-|65.90%/**64.72%**|39.68%/**41.67%**|
 |4|Dr|Ph|Do|Ma|**69.54%**/**64.72%**|**40.70%**/**41.67%**|
+`, 'gt-probs-roundscore-gr--190-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-195, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|27.52%/25.99%|17.43%/21.54%|
 |0|-|-|-|Ma|26.74%/25.56%|17.22%/21.72%|
@@ -4210,9 +4414,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|67.98%/**63.95%**|39.89%/**41.03%**|
 |4|Dr|Ph|Do|-|64.87%/**63.95%**|38.92%/**41.03%**|
 |4|Dr|Ph|Do|Ma|**68.24%**/**63.95%**|**40.53%**/**41.03%**|
+`, 'gt-probs-roundscore-gr--195-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-200, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|26.89%/25.42%|15.63%/20.33%|
 |0|-|-|-|Ma|26.07%/24.87%|15.45%/20.48%|
@@ -4294,9 +4502,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|66.56%/**62.76%**|37.64%/**38.68%**|
 |4|Dr|Ph|Do|-|63.37%/**62.76%**|35.11%/**38.68%**|
 |4|Dr|Ph|Do|Ma|**66.83%**/**62.76%**|**38.16%**/**38.68%**|
+`, 'gt-probs-roundscore-gr--200-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-205, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|26.27%/24.85%|13.84%/19.13%|
 |0|-|-|-|Ma|25.41%/24.19%|13.68%/19.23%|
@@ -4378,9 +4590,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|65.15%/**61.57%**|35.38%/**36.32%**|
 |4|Dr|Ph|Do|-|61.87%/**61.57%**|31.30%/**36.32%**|
 |4|Dr|Ph|Do|Ma|**65.42%**/**61.57%**|**35.79%**/**36.32%**|
+`, 'gt-probs-roundscore-gr--205-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-210, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|25.71%/24.34%|13.50%/18.68%|
 |0|-|-|-|Ma|24.88%/23.72%|13.33%/18.77%|
@@ -4462,9 +4678,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|64.26%/**60.45%**|34.89%/**36.22%**|
 |4|Dr|Ph|Do|-|60.20%/**60.45%**|31.24%/**36.22%**|
 |4|Dr|Ph|Do|Ma|**64.26%**/**60.45%**|**35.35%**/**36.22%**|
+`, 'gt-probs-roundscore-gr--210-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-215, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|25.14%/23.82%|13.15%/18.23%|
 |0|-|-|-|Ma|24.34%/23.25%|12.97%/18.30%|
@@ -4546,9 +4766,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|63.40%/**59.34%**|34.40%/**36.11%**|
 |4|Dr|Ph|Do|-|58.57%/**59.34%**|31.19%/**36.11%**|
 |4|Dr|Ph|Do|Ma|**63.40%**/**59.34%**|**34.91%**/**36.11%**|
+`, 'gt-probs-roundscore-gr--215-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-220, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|24.51%/23.28%|12.81%/17.77%|
 |0|-|-|-|Ma|23.72%/22.74%|12.62%/17.83%|
@@ -4630,9 +4854,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|62.27%/**58.46%**|34.01%/**36.00%**|
 |4|Dr|Ph|Do|-|57.50%/**58.46%**|31.12%/**36.00%**|
 |4|Dr|Ph|Do|Ma|**62.27%**/**58.46%**|**34.39%**/**36.00%**|
+`, 'gt-probs-roundscore-gr--220-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-225, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|23.87%/22.74%|12.47%/17.30%|
 |0|-|-|-|Ma|23.10%/22.24%|12.28%/17.35%|
@@ -4714,9 +4942,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|61.13%/**57.57%**|33.62%/**35.90%**|
 |4|Dr|Ph|Do|-|56.43%/**57.57%**|31.06%/**35.90%**|
 |4|Dr|Ph|Do|Ma|**61.13%**/**57.57%**|**33.86%**/**35.90%**|
+`, 'gt-probs-roundscore-gr--225-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-230, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|23.28%/22.17%|12.14%/16.86%|
 |0|-|-|-|Ma|22.53%/21.70%|11.94%/16.88%|
@@ -4798,9 +5030,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|60.21%/**56.53%**|33.46%/**35.47%**|
 |4|Dr|Ph|Do|-|55.65%/**56.53%**|30.79%/**35.47%**|
 |4|Dr|Ph|Do|Ma|**60.21%**/**56.53%**|**33.46%**/**35.47%**|
+`, 'gt-probs-roundscore-gr--230-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-235, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|22.69%/21.61%|11.82%/16.42%|
 |0|-|-|-|Ma|21.96%/21.16%|11.61%/16.41%|
@@ -4882,9 +5118,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|59.29%/**55.50%**|33.33%/**35.04%**|
 |4|Dr|Ph|Do|-|54.87%/**55.50%**|30.57%/**35.04%**|
 |4|Dr|Ph|Do|Ma|**59.29%**/**55.50%**|**33.33%**/**35.04%**|
+`, 'gt-probs-roundscore-gr--235-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-240, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|21.99%/20.94%|11.48%/15.93%|
 |0|-|-|-|Ma|21.25%/20.47%|11.27%/15.92%|
@@ -4966,9 +5206,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|57.94%/**54.11%**|32.96%/**34.72%**|
 |4|Dr|Ph|Do|-|52.85%/**54.11%**|30.20%/**34.72%**|
 |4|Dr|Ph|Do|Ma|**57.94%**/**54.11%**|**32.96%**/**34.72%**|
+`, 'gt-probs-roundscore-gr--240-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-245, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|21.30%/20.26%|11.15%/15.44%|
 |0|-|-|-|Ma|20.54%/19.79%|10.94%/15.42%|
@@ -5050,9 +5294,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|56.60%/**52.73%**|32.59%/**34.40%**|
 |4|Dr|Ph|Do|-|50.82%/**52.73%**|29.83%/**34.40%**|
 |4|Dr|Ph|Do|Ma|**56.60%**/**52.73%**|**32.59%**/**34.40%**|
+`, 'gt-probs-roundscore-gr--245-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-250, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|20.68%/19.67%|10.85%/15.00%|
 |0|-|-|-|Ma|19.94%/19.28%|10.64%/14.96%|
@@ -5134,9 +5382,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|55.18%/**51.11%**|32.21%/**33.87%**|
 |4|Dr|Ph|Do|-|49.45%/**51.11%**|29.47%/**33.87%**|
 |4|Dr|Ph|Do|Ma|**55.18%**/**51.11%**|**32.21%**/**33.87%**|
+`, 'gt-probs-roundscore-gr--250-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-255, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|20.06%/19.08%|10.56%/14.55%|
 |0|-|-|-|Ma|19.33%/18.78%|10.34%/14.49%|
@@ -5218,9 +5470,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|53.76%/**49.50%**|31.84%/**33.33%**|
 |4|Dr|Ph|Do|-|48.08%/**49.50%**|29.10%/**33.33%**|
 |4|Dr|Ph|Do|Ma|**53.76%**/**49.50%**|**31.84%**/**33.33%**|
+`, 'gt-probs-roundscore-gr--255-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-260, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|19.33%/18.44%|10.24%/14.06%|
 |0|-|-|-|Ma|18.63%/18.13%|10.04%/14.00%|
@@ -5302,9 +5558,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|51.70%/**48.04%**|31.84%/**33.12%**|
 |4|Dr|Ph|Do|-|46.10%/**48.04%**|29.10%/**33.12%**|
 |4|Dr|Ph|Do|Ma|**51.70%**/**48.04%**|**31.84%**/**33.12%**|
+`, 'gt-probs-roundscore-gr--260-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-265, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|18.61%/17.79%|9.93%/13.57%|
 |0|-|-|-|Ma|17.93%/17.48%|9.74%/13.51%|
@@ -5386,9 +5646,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|49.65%/**46.58%**|31.84%/**32.91%**|
 |4|Dr|Ph|Do|-|44.12%/**46.58%**|29.10%/**32.91%**|
 |4|Dr|Ph|Do|Ma|**49.65%**/**46.58%**|**31.84%**/**32.91%**|
+`, 'gt-probs-roundscore-gr--265-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-270, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|18.06%/17.36%|9.70%/13.21%|
 |0|-|-|-|Ma|17.43%/17.08%|9.51%/13.14%|
@@ -5470,9 +5734,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|48.51%/**45.77%**|31.84%/**32.80%**|
 |4|Dr|Ph|Do|-|43.19%/**45.77%**|29.10%/**32.80%**|
 |4|Dr|Ph|Do|Ma|**48.51%**/**45.77%**|**31.84%**/**32.80%**|
+`, 'gt-probs-roundscore-gr--270-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-275, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|17.52%/16.92%|9.47%/12.85%|
 |0|-|-|-|Ma|16.92%/16.68%|9.28%/12.76%|
@@ -5554,9 +5822,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|47.38%/**44.97%**|31.84%/**32.69%**|
 |4|Dr|Ph|Do|-|42.25%/**44.97%**|29.10%/**32.69%**|
 |4|Dr|Ph|Do|Ma|**47.38%**/**44.97%**|**31.84%**/**32.69%**|
+`, 'gt-probs-roundscore-gr--275-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-280, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|16.92%/16.44%|9.21%/12.44%|
 |0|-|-|-|Ma|16.33%/16.04%|9.03%/12.35%|
@@ -5638,9 +5910,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|46.31%/**43.70%**|31.72%/**32.48%**|
 |4|Dr|Ph|Do|-|41.45%/**43.70%**|28.87%/**32.48%**|
 |4|Dr|Ph|Do|Ma|**46.31%**/**43.70%**|**31.72%**/**32.48%**|
+`, 'gt-probs-roundscore-gr--280-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-285, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|16.32%/15.96%|8.95%/12.03%|
 |0|-|-|-|Ma|15.74%/15.41%|8.78%/11.94%|
@@ -5722,9 +5998,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|45.25%/**42.43%**|31.59%/**32.26%**|
 |4|Dr|Ph|Do|-|40.66%/**42.43%**|28.64%/**32.26%**|
 |4|Dr|Ph|Do|Ma|**45.25%**/**42.43%**|**31.59%**/**32.26%**|
+`, 'gt-probs-roundscore-gr--285-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-290, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|15.89%/15.63%|8.77%/11.74%|
 |0|-|-|-|Ma|15.34%/15.15%|8.60%/11.66%|
@@ -5806,9 +6086,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|44.04%/**41.74%**|31.59%/**31.94%**|
 |4|Dr|Ph|Do|-|39.78%/**41.74%**|28.54%/**31.94%**|
 |4|Dr|Ph|Do|Ma|**44.04%**/**41.74%**|**31.59%**/**31.94%**|
+`, 'gt-probs-roundscore-gr--290-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-295, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|15.45%/15.30%|8.58%/11.44%|
 |0|-|-|-|Ma|14.94%/14.88%|8.43%/11.37%|
@@ -5890,9 +6174,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|42.84%/**41.05%**|31.59%/**31.62%**|
 |4|Dr|Ph|Do|-|38.90%/**41.05%**|28.43%/**31.62%**|
 |4|Dr|Ph|Do|Ma|**42.84%**/**41.05%**|**31.59%**/**31.62%**|
+`, 'gt-probs-roundscore-gr--295-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-300, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|14.89%/14.83%|6.38%/9.46%|
 |0|-|-|-|Ma|14.43%/14.39%|6.24%/9.41%|
@@ -5974,9 +6262,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|41.91%/**39.97%**|17.27%/**17.60%**|
 |4|Dr|Ph|Do|-|37.92%/**39.97%**|15.34%/**17.00%**|
 |4|Dr|Ph|Do|Ma|**41.91%**/**39.97%**|**18.86%**/**17.60%**|
+`, 'gt-probs-roundscore-gr--300-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-305, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|14.33%/14.36%|4.17%/7.49%|
 |0|-|-|-|Ma|13.92%/13.90%|4.06%/7.44%|
@@ -6058,9 +6350,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|40.99%/**38.89%**|3.08%/**12.29%**|
 |4|Dr|Ph|Do|-|36.94%/**38.89%**|2.39%/**11.75%**|
 |4|Dr|Ph|Do|Ma|**40.99%**/**38.89%**|**7.19%**/**12.29%**|
+`, 'gt-probs-roundscore-gr--305-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-310, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|14.07%/14.11%|4.06%/7.30%|
 |0|-|-|-|Ma|13.66%/13.62%|3.95%/7.24%|
@@ -6142,9 +6438,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|40.64%/**38.66%**|2.96%/**12.15%**|
 |4|Dr|Ph|Do|-|36.50%/**38.66%**|2.38%/**11.52%**|
 |4|Dr|Ph|Do|Ma|**40.64%**/**38.66%**|**7.11%**/**12.15%**|
+`, 'gt-probs-roundscore-gr--310-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-315, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|13.81%/13.85%|3.95%/7.11%|
 |0|-|-|-|Ma|13.40%/13.33%|3.83%/7.04%|
@@ -6226,9 +6526,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|40.28%/**38.43%**|2.84%/**12.01%**|
 |4|Dr|Ph|Do|-|36.06%/**38.43%**|2.37%/**11.30%**|
 |4|Dr|Ph|Do|Ma|**40.28%**/**38.43%**|**7.02%**/**12.01%**|
+`, 'gt-probs-roundscore-gr--315-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-320, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|13.56%/13.64%|3.85%/6.94%|
 |0|-|-|-|Ma|13.17%/13.08%|3.73%/6.85%|
@@ -6310,9 +6614,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|39.86%/**38.32%**|2.79%/**11.45%**|
 |4|Dr|Ph|Do|-|35.87%/**38.32%**|2.22%/**10.60%**|
 |4|Dr|Ph|Do|Ma|**39.86%**/**38.32%**|**6.67%**/**11.45%**|
+`, 'gt-probs-roundscore-gr--320-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-325, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|13.32%/13.43%|3.75%/6.77%|
 |0|-|-|-|Ma|12.94%/12.84%|3.63%/6.67%|
@@ -6394,9 +6702,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|39.43%/**38.20%**|2.75%/**10.89%**|
 |4|Dr|Ph|Do|-|35.69%/**38.20%**|2.07%/**10.44%**|
 |4|Dr|Ph|Do|Ma|**39.43%**/**38.20%**|**6.32%**/**10.89%**|
+`, 'gt-probs-roundscore-gr--325-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-330, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|13.09%/13.17%|3.66%/6.61%|
 |0|-|-|-|Ma|12.71%/12.53%|3.54%/6.49%|
@@ -6478,9 +6790,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|39.08%/**38.12%**|2.74%/**10.75%**|
 |4|Dr|Ph|Do|-|35.58%/**38.12%**|2.06%/**10.22%**|
 |4|Dr|Ph|Do|Ma|**39.08%**/**38.12%**|**6.23%**/**10.75%**|
+`, 'gt-probs-roundscore-gr--330-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-335, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|12.85%/12.92%|3.56%/6.45%|
 |0|-|-|-|Ma|12.49%/12.22%|3.44%/6.31%|
@@ -6562,9 +6878,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|38.72%/**38.05%**|2.73%/**10.61%**|
 |4|Dr|Ph|Do|-|35.47%/**38.05%**|2.04%/**10.03%**|
 |4|Dr|Ph|Do|Ma|**38.72%**/**38.05%**|**6.14%**/**10.61%**|
+`, 'gt-probs-roundscore-gr--335-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-340, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|12.63%/12.69%|3.49%/6.29%|
 |0|-|-|-|Ma|12.29%/12.05%|3.36%/6.15%|
@@ -6646,9 +6966,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|38.44%/**37.66%**|2.68%/**10.47%**|
 |4|Dr|Ph|Do|-|35.36%/**37.66%**|2.00%/**9.91%**|
 |4|Dr|Ph|Do|Ma|**38.44%**/**37.66%**|**5.79%**/**10.47%**|
+`, 'gt-probs-roundscore-gr--340-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-345, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|12.41%/12.45%|3.41%/6.14%|
 |0|-|-|-|Ma|12.09%/11.87%|3.28%/5.98%|
@@ -6730,9 +7054,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|38.16%/**37.28%**|2.64%/**10.34%**|
 |4|Dr|Ph|Do|-|35.26%/**37.28%**|1.96%/**9.79%**|
 |4|Dr|Ph|Do|Ma|**38.16%**/**37.28%**|**5.44%**/**10.34%**|
+`, 'gt-probs-roundscore-gr--345-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-350, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|12.20%/12.24%|3.34%/6.01%|
 |0|-|-|-|Ma|11.88%/11.66%|3.21%/5.84%|
@@ -6814,9 +7142,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|37.94%/**37.13%**|2.62%/**10.06%**|
 |4|Dr|Ph|Do|-|35.24%/**37.13%**|1.94%/**9.68%**|
 |4|Dr|Ph|Do|Ma|**37.94%**/**37.13%**|**5.29%**/**10.06%**|
+`, 'gt-probs-roundscore-gr--350-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-355, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|11.99%/12.02%|3.27%/5.88%|
 |0|-|-|-|Ma|11.67%/11.45%|3.14%/5.70%|
@@ -6898,9 +7230,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|37.73%/**36.97%**|2.61%/**9.78%**|
 |4|Dr|Ph|Do|-|35.21%/**36.97%**|1.93%/**9.58%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.97%**|**5.19%**/**9.78%**|
+`, 'gt-probs-roundscore-gr--355-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-360, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|11.80%/11.76%|3.21%/5.75%|
 |0|-|-|-|Ma|11.49%/11.18%|3.08%/5.57%|
@@ -6982,9 +7318,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|37.73%/**36.97%**|2.59%/**9.64%**|
 |4|Dr|Ph|Do|-|35.21%/**36.97%**|1.91%/**9.43%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.97%**|**5.09%**/**9.64%**|
+`, 'gt-probs-roundscore-gr--360-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-365, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|11.60%/11.49%|3.16%/5.63%|
 |0|-|-|-|Ma|11.31%/10.90%|3.03%/5.44%|
@@ -7066,9 +7406,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|37.73%/**36.97%**|2.59%/**9.50%**|
 |4|Dr|Ph|Do|-|35.21%/**36.97%**|1.91%/**9.27%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.97%**|**5.09%**/**9.50%**|
+`, 'gt-probs-roundscore-gr--365-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-370, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|11.43%/11.30%|3.12%/5.54%|
 |0|-|-|-|Ma|11.16%/10.65%|2.98%/5.35%|
@@ -7150,9 +7494,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|37.73%/**36.89%**|2.59%/**9.22%**|
 |4|Dr|Ph|Do|-|35.14%/**36.89%**|1.91%/**8.92%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.89%**|**5.09%**/**9.22%**|
+`, 'gt-probs-roundscore-gr--370-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-375, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|11.27%/11.10%|3.08%/5.45%|
 |0|-|-|-|Ma|11.00%/10.40%|2.94%/5.25%|
@@ -7234,9 +7582,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|37.73%/**36.82%**|2.59%/**8.94%**|
 |4|Dr|Ph|Do|-|35.08%/**36.82%**|1.91%/**8.84%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.82%**|**5.09%**/**8.94%**|
+`, 'gt-probs-roundscore-gr--375-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-380, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|11.08%/10.85%|3.03%/5.35%|
 |0|-|-|-|Ma|10.83%/10.11%|2.89%/5.14%|
@@ -7318,9 +7670,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|37.73%/**36.82%**|2.48%/**8.66%**|
 |4|Dr|Ph|Do|-|35.08%/**36.82%**|1.90%/**8.73%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.82%**|**5.00%**/**8.73%**|
+`, 'gt-probs-roundscore-gr--380-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-385, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|10.90%/10.60%|2.98%/5.24%|
 |0|-|-|-|Ma|10.65%/9.82%|2.84%/5.02%|
@@ -7402,9 +7758,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|37.73%/**36.82%**|2.36%/**8.55%**|
 |4|Dr|Ph|Do|-|35.08%/**36.82%**|1.89%/**8.63%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.82%**|**4.91%**/**8.63%**|
+`, 'gt-probs-roundscore-gr--385-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-390, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|10.74%/10.37%|2.95%/5.17%|
 |0|-|-|-|Ma|10.51%/9.67%|2.81%/4.94%|
@@ -7486,9 +7846,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|37.73%/**36.74%**|2.36%/**8.42%**|
 |4|Dr|Ph|Do|-|35.08%/**36.74%**|1.89%/**8.42%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.74%**|**4.91%**/**8.42%**|
+`, 'gt-probs-roundscore-gr--390-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-395, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|10.59%/10.13%|2.91%/5.09%|
 |0|-|-|-|Ma|10.37%/9.51%|2.77%/4.86%|
@@ -7570,9 +7934,13 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|37.73%/**36.66%**|2.36%/**8.30%**|
 |4|Dr|Ph|Do|-|35.08%/**36.66%**|1.89%/**8.30%**|
 |4|Dr|Ph|Do|Ma|**37.73%**/**36.66%**|**4.91%**/**8.30%**|
+`, 'gt-probs-roundscore-gr--395-bycat8', false);
+</script>
 
  Wahrscheinlichkeit von Sieg für p=-400, wenn Kategorie unter ersten 8 vorliegt
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Wsk Sieg bei GT (\*/\*\*)|Wsk Sieg bei nicht GT (\*/\*\*)|
 |0|-|-|-|-|7.05%/7.11%|1.77%/3.30%|
 |0|-|-|-|Ma|6.89%/6.62%|1.70%/3.17%|
@@ -7654,3 +8022,5 @@ createGlobalTichuFilter(document.getElementById('global-filter-container'));
 |4|Dr|Ph|-|Ma|18.71%/**14.32%**|1.28%/**5.48%**|
 |4|Dr|Ph|Do|-|17.56%/**14.32%**|1.26%/**5.58%**|
 |4|Dr|Ph|Do|Ma|**12.68%**/**14.32%**|**2.42%**/**5.58%**|
+`, 'gt-probs-roundscore-gr--400-bycat8', false);
+</script>
