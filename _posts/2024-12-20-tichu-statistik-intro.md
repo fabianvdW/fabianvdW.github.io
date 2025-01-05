@@ -42,9 +42,10 @@ eigenen Punkte mit derer der Gegner > 0 ist oder nicht, ist es naheliegend, dass
 Häufig gibt es auch Fälle, wo dies klar nicht gilt, da Tichu ein terminiertes Spiel ist (wir kennen es alle, 6 Runden in der App Tichu.one).
 Ich illustriere kurz an einem Beispiel was ich damit meine:
 Es ist die letzte Runde, mein Team liegt 170 Punkte zurück. Ich habe Drache+ Hund unter meinen ersten 8. GT ansagen, ja oder nein?
-Was den erwarteten Punktegewinn angeht, so lautet die Antwort (denke ich zumindest mal) nein, denn ich bin besser dran die Runde einfach normal zu spielen.
+Was den erwarteten Punktegewinn angeht, so lautet die Antwort  nein, denn ich bin besser dran die Runde einfach normal zu spielen.
 Wenn ich aber meine Gewinnchancen maximieren will, so wäre das GT keine schlechte Idee.
-Ich hoffe man hat den Unterschied verstanden, unabhängig davon ob man mit den exakten Aussagen im Beispiel d'accord geht oder nicht.
+> Die Aussagen sind nicht meinungsbasiert, sondern lassen sich tatsächlich aus den GT Analysen [[1]({% post_url 2024-12-30-tichu-gt %}) und [2]({% post_url 2024-12-31-tichu-gt-nachteil %})] ableiten.
+
 
 Das macht vorallem bei Spielen auf 6 Runden einen größeren Unterschied, als bei Spielen auf 1000 Punkte. 
 Eine kurze Analogie dazu: Den erwarteten Punktegewinn zu maximieren, ist wie ein Marathon zu laufen.
