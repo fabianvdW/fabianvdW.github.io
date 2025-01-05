@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tichu & Statistik Pt.2.2: Große Tichus bei Rückstand (T-1, T-2 Runden)"
+title: "Tichu & Statistik Pt.2.2: Große Tichus bei Rückstand in der letzten Runde"
 date: 2024-12-31
 categories: tichu analysis
 description: "Spielverhalten bezüglich Großen Tichus"
@@ -79,6 +79,16 @@ $$ \text{Pr}( \text{Sieg} | k \text{ unter den ersten 8}, \text{Punktedifferenz 
 zu schätzen.
 
 Wie oben gibt es eine Tabelle für jeden möglichen Wert von $$p \in \{ -400, -395, -390, \ldots, 50 \}$$, die du [hier]({{ site.baseurl }}/_pages/gt_table_probs_2) findest.
+
+Bei einer Differenz von beispielsweise p=-305 macht es laut der Tabelle also Sinn, mit jeder Hand ein GT anzusagen. Man sollte darauf achten,
+hier seinem Partner nicht zuvorzukommen, wenn man sehr schwache Kategorien hat. Hier kann es eine implizite Strategie sein, durch die Dauer des Wartens für die Ansage die Handgüte mit seinem Partner zu kommunizieren.
+
+Für p=50 hat es mit fast keiner Hand einen Vorteil, ein GT anzusagen.
+
+### Kritik
+
+Die oben angesprochenen Wahrscheinlichkeiten wurden jeweils auf dem gesamten Datensatz ausgewertet und nicht nur in der letzten Runde von terminierten Spielen. Das kann die genannten Wahrscheinlichkeiten beeinflussen - gute Spieler können  in der letzten Runde eines Spiels nämlich ganz anders spielen, als sonst. Insgesamt sollten die Ergebnisse dieser Analyse also mit großer Vorsicht genossen werden.
+
 
 ---
 *Nächster Post: [Tichu & Statistik Pt.3: Riskantes Spielen mit Straßen: Fallbeispiele]({% post_url 2025-01-01-tichu-strassen-beispiele %})*

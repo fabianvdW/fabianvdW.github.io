@@ -6,7 +6,7 @@ categories: tichu analysis
 description: "Spielverhalten bezüglich Straßen"
 ---
 
-*Vorheriger Post: [Tichu & Statistik Pt.2.2: Große Tichus bei Rückstand (T-1, T-2 Runden)]({% post_url 2024-12-31-tichu-gt-nachteil %})*
+*Vorheriger Post: [Tichu & Statistik Pt.2.2: Große Tichus bei Rückstand in der letzten Runde]({% post_url 2024-12-31-tichu-gt-nachteil %})*
 
 ### Ansage mit Straße
 
