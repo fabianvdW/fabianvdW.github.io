@@ -59,8 +59,9 @@ Sagt man ein GT an und hat den Hund nicht unter den ersten 14, bekommt man ihn a
 Wird er zum Gegner geschupft, liegt der erwartete Punktegewinn bei **-13.9(\*)/-5.3(\*)** Punkten. Wir wissen natürlich nicht, wie die Runden ohne diese Aktion ausgegangen wären. 
 
 ## Der Partner
-TODO:
-    Wsk Ass schupfen vs. Wsk Ass schupfen bei einziger HighCard vs. Wsk Ass schupfen bei einzigem Ass
-    Wsk, dass Partner Ass hat, wenn er mir eins schupft?
-    
+
+Wenn der Partner kein GT angesagt hat, ist die Wahrscheinlichkeit eines Spielers seinem Partner ein Ass zu schupfen bei **19.2%(\*)/18.7%(\*\*)**. Ist das Ass die einzige HighCard (HighCards sind Asse, Drache, Phönix), so ist die Wahrscheinlichkeit bereits **53.1%(\*)/59.9%(\*\*)**, dieses zum Partner zu schupfen. 
+
+Sage ich kein GT an, und erhalte ich von meinem Partner ein Ass, so hat dieser in noch **30.8%(\*)/27.2%(\*\*)** ein weiteres Ass. Unter guten Spielern ist das also etwas seltener.
+
 ---
