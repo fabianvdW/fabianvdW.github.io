@@ -43,13 +43,20 @@ Sagt man ein GT an, ändern sich die Verteilungen der Karten, die man erhält. A
 Man erhält in etwas über 70% aller Fälle eine Premium Karte vom Partner. Bei den Gegnern ändert sich lediglich die Bereitschaft, den Hund zu verschupfen, ansonsten bleiben die Wahrscheinlichkeitsverteilungen sehr ähnlich.
 
 ## Der Hund
-TODO: 
-- ERS bei Hund zum Gegner schupfen
-- Wahrscheinlichkeit, Hund zu erhalten (bei GT), wenn man ihn nicht selbst hat.
-- ERS (bei GT) wenn man Hund kriegt vs. ERS (bei GT) insgesamt
-- DS % wenn man Hund kriegt vs. normal
-- DS % (bei GT) wenn man Hund kriegt vs. normal
 
+Der Hund ist eine der vier Spezialkarten im Spiel Tichu. Dennoch wird sie oft zum Gegner geschupft. Tatsächlich ist der erwartete Rundengewinn
+dafür aber stark negativ: **-21.8(\*)/-25.65(\**)** Punkte. Wir wissen natürlich nicht, wie die Runde ohne diese Aktion ausgegangen wäre. Was wir aber wissen, ist dass dies die Doppelsiegquote von **11.8%(\*)/11.3%(\*\*)** auf **16.4%(\*)/17.4%(\*\*)** erhöht. 
+Ich würde generell also eher davon absehen, den Hund zum Gegner zu schupfen.
+
+Wenn der Gegner ein GT ansagt, kann man den Ansager *etwas* schwächen, indem man ihm den Hund zuschupft. Die GT Success Rate verringert sich von **61.8%(\*)/59.2%(\*\*)** auf **58.3%(\*)/55.9%(\*\*)**. Jedoch erhöht sich die Dopplesiegquote, die bei GT Ansage standardmäßig schon erhöht ist (**15.2%(\*)/14.4%(\*\*)**), drastisch auf (**22.5%(\*)/21.1%(\*\*)**). 
+
+Den Hund zum GT Ansager zu schupfen, ist tatsächlich auch was den erwarteten Rundengewinn angeht nicht förderlich: Standardmäßig beträgt der erwartete Rundengewinn bei GT Ansage **52.5(\*)/39.6(\*\*)** Punkte, wenn man den Hund erhält erhöht sich dies auf **53.3(\*)/40.1(\*\*)** Punkte. Zugegebenermaßen schupft man den Hund auch eher zum GT Ansager, wenn man selbst nicht so gute Karten hat und wir haben auch keinen Vergleichswert, wie die Runde ausgegangen wäre, wenn man ihn behalten hätte oder zum Partner hätte. Man sollte sich aber dennoch überlegen, ob man gerade nur die Erfolgswahrscheinlichkeit des GT Ansagers schwächen möchte, oder eher einen 400-0 verhindern möchte.
+
+Sagt man ein GT an und hat den Hund nicht unter den ersten 14, bekommt man ihn auch relativ häufig vom Gegner: In immerhin **40.6%(\*)/32.3%(\*\*)** wird er zum Ansager geschupft. Gute Spieler schupfen den Hund also etwas seltener zum GT Ansager.
+
+## Der Mahjong
+
+Wird er zum Gegner geschupft, liegt der erwartete Punktegewinn bei **-13.9(\*)/-5.3(\*)** Punkten. Wir wissen natürlich nicht, wie die Runden ohne diese Aktion ausgegangen wären. 
 
 ## Der Partner
 TODO:
