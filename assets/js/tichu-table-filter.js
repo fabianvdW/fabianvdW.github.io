@@ -39,6 +39,16 @@ style.textContent = `
     .tichu-stats-table th {
         background-color: #f5f5f5;
     }
+    .global-tichu-filter {
+        position: fixed;
+        top: 10px;
+        left: 20px;
+        background: white;
+        padding: 8px 12px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
 `;
 document.head.appendChild(style);
 
@@ -48,7 +58,7 @@ function createGlobalTichuFilter(targetElement) {
     const uniqueId = 'global-tichu-filter';
     
     filterDiv.innerHTML = `
-        <div class="tichu-filter-container">
+        <div class="tichu-filter-container global-tichu-filter">
             <div class="tichu-filter-item">
                 <span class="tichu-filter-label">Anzahl Asse:</span>
                 <input type="number" id="aces-filter-${uniqueId}" min="0" max="4" class="tichu-filter-input">
