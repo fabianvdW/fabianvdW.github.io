@@ -2,10 +2,15 @@
 layout: post
 ---
 
+<script src="{{ '/assets/js/tichu-table-filter.js' | relative_url }}"></script>
+
+
 Für jede Kategorie der geschätzten Rundengewinn bei Vorlage unter ersten 14 &GT Ansage, die theoretische Wahrscheinlichkeit, unter den ersten 14 vorliegend zu sein, und
 $ E(\text{relativer Rundengewinn} | \text{k' unter ersten 14, Spieler hat kein GT angesagt}). $
  In der sechsten und achten Spalte sind alle "korrigierten" Werte fett markiert. 
 
+<script>
+createFilterableTable(`
 |Asse|Dr|Ph|Dog|Ma|Erwarteter relativer Rundengewinn wenn unter ersten 14 & GT (\*)/(\*\*)|Wahrscheinlichkeit unter ersten 14 (exakt)| Erwarteter relativer Rundengewinn wenn unter ersten 14 & kein GT |
 |--|--|--|--|--|---|
 |0|-|-|-|-|-164.63(\*)/-185.46(\*\*)|8.30909%|-60.96(\*)/-69.91(\*\*)|
@@ -88,6 +93,8 @@ $ E(\text{relativer Rundengewinn} | \text{k' unter ersten 14, Spieler hat kein G
 |4|Dr|Ph|-|Ma|234.57(\*)/**206.72(\*\*)**|0.00127%|143.93(\*)/**143.10(\*\*)**|
 |4|Dr|Ph|Do|-|197.91(\*)/**206.72(\*\*)**|0.00127%|124.36(\*)/**143.10(\*\*)**|
 |4|Dr|Ph|Do|Ma|**234.57(\*)**/**206.72(\*\*)**|0.00021%|**143.93(\*)**/**143.10(\*\*)**|
+`, 'gt-round-score-by-cat14');  
+</script>
 
 
 <script type="text/javascript">

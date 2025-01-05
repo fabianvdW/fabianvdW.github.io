@@ -69,35 +69,35 @@ function createTichuTableFilter(tableElement) {
                 <input type="number" id="aces-filter-${tableElement.id}" min="0" max="4" class="tichu-filter-input">
             </div>
             <div class="tichu-filter-item">
-                <span class="tichu-filter-label">Drache:</span>
+                <span class="tichu-filter-label">Dragon:</span>
                 <select id="dragon-filter-${tableElement.id}" class="tichu-filter-select">
-                    <option value="all">Alle</option>
-                    <option value="yes">Ja</option>
-                    <option value="no">Nein</option>
+                    <option value="all">All</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                 </select>
             </div>
             <div class="tichu-filter-item">
                 <span class="tichu-filter-label">Phoenix:</span>
                 <select id="phoenix-filter-${tableElement.id}" class="tichu-filter-select">
-                    <option value="all">Alle</option>
-                    <option value="yes">Ja</option>
-                    <option value="no">Nein</option>
+                    <option value="all">All</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                 </select>
             </div>
             <div class="tichu-filter-item">
                 <span class="tichu-filter-label">Dog:</span>
                 <select id="dog-filter-${tableElement.id}" class="tichu-filter-select">
-                    <option value="all">Alle</option>
-                    <option value="yes">Ja</option>
-                    <option value="no">Nein</option>
+                    <option value="all">All</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                 </select>
             </div>
             <div class="tichu-filter-item">
                 <span class="tichu-filter-label">Mahjong:</span>
                 <select id="mahjong-filter-${tableElement.id}" class="tichu-filter-select">
-                    <option value="all">Alle</option>
-                    <option value="yes">Ja</option>
-                    <option value="no">Nein</option>
+                    <option value="all">All</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                 </select>
             </div>
         </div>
@@ -159,10 +159,24 @@ function convertMarkdownTableToHTML(markdownTable) {
     
     let html = `<table id="${tableId}" class="tichu-stats-table">`;
     
+    // Function to process cell content
+    function processCellContent(content) {
+        // First, handle escaped asterisks
+        content = content.replace(/\\\*/g, '&#42;');
+        
+        // Then handle bold text
+        content = content.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+        
+        // Finally, restore any escaped asterisks back to regular asterisks
+        content = content.replace(/&#42;/g, '*');
+        
+        return content;
+    }
+    
     // Add header
     html += '<thead><tr>';
     headers.forEach(header => {
-        html += `<th>${header}</th>`;
+        html += `<th>${processCellContent(header)}</th>`;
     });
     html += '</tr></thead>';
     
@@ -175,7 +189,7 @@ function convertMarkdownTableToHTML(markdownTable) {
         const cells = row.split('|').filter(cell => cell.trim()).map(cell => cell.trim());
         html += '<tr>';
         cells.forEach(cell => {
-            html += `<td>${cell}</td>`;
+            html += `<td>${processCellContent(cell)}</td>`;
         });
         html += '</tr>';
     }
