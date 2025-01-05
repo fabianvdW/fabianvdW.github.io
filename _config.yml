@@ -43,6 +43,11 @@ defaults:
       layout: "post"
       author: "Fabian vdW"
       mathjax: true  # Enable MathJax by default for posts
+  -
+    scope: 
+      path: "assets/js"
+    values:
+      js: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
