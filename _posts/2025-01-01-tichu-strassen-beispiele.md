@@ -34,6 +34,29 @@ eine Straße aufgespielt. Bei längeren Straßen ist die Wahrscheinlichkeit noch
 
 Man sollte sich also keineswegs auf dieses Aufspiel verlassen. Hat man sonst keine weitere Gelegenheit, ein Aufspiel zu erlangen, würde ich also eine hohe Straße ohne schlechtes Gewissen brechen.
 
+### Unfertige Straße zugeschupft bekommen
+
+Beim Schupfen stellt sich oft die Frage, ob sich eine existierende 4er Straße nach dem Schupfen zu einer spielbaren 5er Straße ergänzt. Diese Wahrscheinlichkeit habe ich untersucht. Untersucht werden Hände,
+die nach Abgabe ihrer 3 Schupfkarten an alle Mitspieler eine 4er Straße (startend ab 2-5, endend bei J-A) enthalten und diese auch mit keine weiteren Karte auf der verbleibenden Hand eine 5er Straße bildet. Der Phönix wird dabei außen vorgelassen. Aufgenommen wird, wie oft diese Straße mit den eingehenden 3 Schupfkarten zu einer 5er Straße ergänzt wurde.
+
+| Situation | Wahrscheinlichkeit Standard (*) | Wahrscheinlichkeit Gefiltert (**) |
+|-----------|--------------------------------|-----------------------------------|
+| Straße 1-2-3-4 wird zu 1-2-3-4-5 ergänzt | 25.6%  | 25.7%|
+| Straße 2-3-4-5 wird zu 2-3-4-5-6 ergänzt | 26.2%  | 28.8%|
+| Straße 3-4-5-6 wird zu valider 5er Straße ergänzt | 59.6%  | 59.3%|
+| Straße 4-5-6-7 wird zu valider 5er Straße ergänzt | 50.2%  | 50.6%|
+| Straße 5-6-7-8 wird zu valider 5er Straße ergänzt | 42.5%  | 44.3%|
+| Straße 6-7-8-9 wird zu valider 5er Straße ergänzt | 36.6%  | 38.6%|
+| Straße 7-8-9-10 wird zu valider 5er Straße ergänzt | 34.3%  | 35.3%|
+| Straße 8-9-10-J wird zu valider 5er Straße ergänzt | 33.2%  | 32.9%|
+| Straße 9-10-J-Q wird zu valider 5er Straße ergänzt | 33.1%  | 32.5%|
+| Straße 10-J-Q-K wird zu valider 5er Straße ergänzt | 36.4%  | 37.9%|
+| Straße J-Q-K-A wird zu valider 5er Straße ergänzt | 12.8%  | 12.7%|
+
+Die Ergebnisse zwischen dem gefilterten und ungefiltereten Datensatz sind marginal, vor allem was die niedrigen Karten angeht, was aber auch daran liegt, dass auf den beiden Datensätzen ähnlich geschupft wird. Das kann man sich im nächsten Kapitel nochmal genauer durchlesen.
+
+Wenn überhaupt macht es also Sinn, auf eine beidseitig offene vierer Straße 3-4-5-6 oder 4-5-6-7 zu hoffen, wenn man den Phönix nicht hat und auch ansonsten keinen Backupplan über Paare/Paarstraßen hat.
+
 
 ---
 
